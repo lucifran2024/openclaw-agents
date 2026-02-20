@@ -1,0 +1,179 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "d4d367d1-b4fb-446e-948d-5c78b48f8f2e",
+      "agentId": "main",
+      "name": "05:00 — 3 Mensagens Extraordinárias",
+      "enabled": true,
+      "createdAtMs": 1771356329380,
+      "updatedAtMs": 1771590695865,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[05:00 — ENTREGA DAS 3 MENSAGENS EXTRAORDINÁRIAS]\\n\\nEntrega final das 3 peças selecionadas do lote polido.\\n\\nObrigatório:\\n1) LER o último arquivo polido (_rN) em devocionais/historico/ para a data de hoje.\\n2) Selecionar as 3 peças extraordinárias (Candidatas Ouro) identificadas nas rodadas anteriores.\\n3) Realizar a entrega em 3 mensagens individuais com BOTÕES NATIVOS.\\n4) PROIBIDO incluir texto de botões no corpo da mensagem.\\n5) Confirmar cabeçalho obrigatório e DNA Lucifran.\\n6) Registrar a entrega final no PROGRESSO_POLIMENTO.md."
+      },
+      "state": {
+        "nextRunAtMs": 1771660800000,
+        "lastRunAtMs": 1771574400006,
+        "lastStatus": "ok",
+        "lastDurationMs": 6344,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "14bc960b-f0bb-481d-ac80-f1607e65f739",
+      "agentId": "main",
+      "name": "Modo Master 04:00 — Excelência de Mensagens",
+      "enabled": true,
+      "createdAtMs": 1771450131620,
+      "updatedAtMs": 1771590681970,
+      "schedule": {
+        "kind": "cron",
+        "tz": "America/Sao_Paulo",
+        "expr": "0 4 * * *"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[MODO MASTER 04:00 — ENTREGA DE MENSAGENS POLIDAS]\\n\\nEntrega final das 15 peças extraordinárias.\\n\\nObrigatório:\\n1) LER o último arquivo polido (_rN) em devocionais/historico/ para a data de hoje.\\n2) Realizar a entrega final das 15 peças em mensagens individuais.\\n3) Usar obrigatoriamente BOTÕES NATIVOS (message tool property) para: [📋 Copiar] [🔁 Refazer] [⭐ Favoritar] [🎨 Variar Tom].\\n4) PROIBIDO incluir texto de botões no corpo da mensagem.\\n5) Confirmar clima do dia e cabeçalho em todas as peças antes de disparar.\\n6) Registrar a entrega final no PROGRESSO_POLIMENTO.md."
+      },
+      "state": {
+        "nextRunAtMs": 1771657200000,
+        "lastRunAtMs": 1771570800007,
+        "lastStatus": "ok",
+        "lastDurationMs": 63210,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "3cad4472-ca1b-478f-bca9-adc7173b8c47",
+      "agentId": "main",
+      "name": "Polimento Soberano Horário — Mensagens",
+      "enabled": true,
+      "createdAtMs": 1771357479200,
+      "updatedAtMs": 1771596425821,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 * * * *",
+        "tz": "America/Sao_Paulo",
+        "staggerMs": 300000
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[POLIMENTO SOBERANO HORÁRIO — MENSAGENS]\\n\\nExecução principal de polimento.\\n\\nA cada execução:\\n1) Ler último lote D+1 em devocionais/historico/.\\n2) Revisar também o lote de ONTEM para bloquear repetição de ângulos e temas.\\n3) Aplicar melhoria real (gancho, contraste, cadência, profundidade cristocêntrica).\\n4) Ajustar tamanho e diversidade estrutural.\\n5) Variar posição do versículo (início/meio/fim).\\n6) Comparar com FAVORITOS (MEMORY.md), Banco, BASE e CCE.\\n7) Salvar nova versão incremental (_rN) SOMENTE se houver melhoria real.\\n8) Registrar em auditoria/relatorios/ + atualizar devocionais/historico/PROGRESSO_POLIMENTO.md (append) com: rodada, seção(ões) aplicada(s), mudanças e pendências.\\n9) Reportar no chat: Feito | Pendente | Próxima ação.\\n\\nRegra anti-círculo: é proibido repetir a mesma alteração da rodada anterior."
+      },
+      "state": {
+        "lastRunAtMs": 1771596294915,
+        "lastStatus": "ok",
+        "lastDurationMs": 130906,
+        "consecutiveErrors": 0,
+        "nextRunAtMs": 1771599894914
+      }
+    },
+    {
+      "id": "a0284439-7451-42d3-b4da-e12f030d684a",
+      "agentId": "main",
+      "name": "Sentinela V8 — Integridade de Documentos e Links",
+      "enabled": false,
+      "createdAtMs": 1771552937133,
+      "updatedAtMs": 1771583360096,
+      "schedule": {
+        "kind": "cron",
+        "expr": "30 * * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[CHECK EXTRA — DOCUMENTOS/SEÇÕES/LINKS]\n\nAntes da auditoria geral, executar foco de integridade:\n1) Abrir e validar leitura de: MEMORY.md, BASE_CONHECIMENTO.md, MEU_ESTILO_PESSOAL.md, BANCO_DE_OURO_EXEMPLOS.md, CONHECIMENTO_COMPILADO_ESSENCIAL.md.\n2) Verificar se todos os INSTRUCTIONS dos pastores têm hierarquia explícita desses documentos.\n3) Escanear links/caminhos .md citados nos INSTRUCTIONS e corrigir quebrados.\n4) Registrar no relatório: arquivos revisados, links quebrados encontrados, correções aplicadas.\n\nSaída obrigatória em: auditoria/relatorios/YYYY-MM-DD_HH-mm_SENTINELA.md"
+      },
+      "state": {
+        "lastRunAtMs": 1771579800006,
+        "lastStatus": "ok",
+        "lastDurationMs": 6158,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "b86af070-b0fa-45a3-b906-f55d27ec3022",
+      "agentId": "main",
+      "name": "Polimento Horário D+1 — Favoritos Primeiro",
+      "enabled": true,
+      "createdAtMs": 1771580095273,
+      "updatedAtMs": 1771596661292,
+      "schedule": {
+        "kind": "cron",
+        "expr": "10 * * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[POLIMENTO HORÁRIO D+1 — FAVORITOS PRIMEIRO]\\n\\nRodada de revisão de progresso e lapidação.\\n\\nChecklist:\\n1) Comparar abertura/versículo/ritmo/fechamento com FAVORITOS.\\n2) Aplicar 1 ou 2 seções concretas de docs soberanos e registrar: seção + ajuste + efeito.\\n3) Revisar rN atual e pendências da rodada anterior em PROGRESSO_POLIMENTO.md.\\n4) Revisar também o que foi criado ONTEM em devocionais/historico/ para evitar repetição de ângulos e temas.\\n5) Criar novo _rN apenas se houver ganho mensurável; se não houver, manter versão e registrar \"sem avanço\" com causa.\\n6) Atualizar auditoria/relatorios + PROGRESSO_POLIMENTO.md (append).\\n7) Reportar no chat: Feito | Pendente | Próxima ação."
+      },
+      "state": {
+        "nextRunAtMs": 1771600200000,
+        "lastRunAtMs": 1771596600006,
+        "lastStatus": "ok",
+        "lastDurationMs": 61286,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "0ccb0573-ecd8-4fd8-abe1-96034c939e46",
+      "agentId": "main",
+      "name": "Checkpoint Final de Postagem (03:40)",
+      "enabled": true,
+      "createdAtMs": 1771580140436,
+      "updatedAtMs": 1771584817681,
+      "schedule": {
+        "kind": "cron",
+        "expr": "40 3 * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[CHECKPOINT FINAL DE POSTAGEM]\\n\\nValidação final GO/NO-GO.\\n\\nChecklist:\\n1) Conferir lote final salvo e completo.\\n2) Validar formato de entrega (mensagens individuais + botões nativos).\\n3) Validar versículos e variação de posição.\\n4) Validar tamanho e antirrepetição.\\n5) Garantir DNA Lucifran e clima do dia.\\n6) Conferir PROGRESSO_POLIMENTO.md para garantir que pendências críticas foram fechadas; se não, NO-GO com ação imediata.\\n7) Registrar relatório final com decisão GO/NO-GO."
+      },
+      "state": {
+        "nextRunAtMs": 1771656000000
+      }
+    },
+    {
+      "id": "7e2589be-28fa-4d09-8330-087a09bfeaf1",
+      "agentId": "main",
+      "name": "Pré-criação D+1 pós-postagem (05:35)",
+      "enabled": true,
+      "createdAtMs": 1771580238418,
+      "updatedAtMs": 1771584809770,
+      "schedule": {
+        "kind": "cron",
+        "expr": "35 5 * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[PRÉ-CRIAÇÃO D+1 PÓS-POSTAGEM]\\n\\nApós a postagem, criar lote base de amanhã e iniciar trilha de progresso.\\n\\nAções:\\n1) Identificar leitura de amanhã no PLANO_LEITURA_BIBLICA.md.\\n2) Criar lote base r0 em devocionais/historico/.\\n3) Registrar pendências iniciais em auditoria/relatorios/.\\n4) Criar/atualizar devocionais/historico/PROGRESSO_POLIMENTO.md com baseline da data (objetivo, riscos, metas de excelência)."
+      },
+      "state": {
+        "nextRunAtMs": 1771662900000
+      }
+    }
+  ]
+}

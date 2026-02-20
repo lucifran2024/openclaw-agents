@@ -1,0 +1,393 @@
+{
+  "meta": {
+    "lastTouchedVersion": "2026.2.17",
+    "lastTouchedAt": "2026-02-20T00:38:02.126Z"
+  },
+  "wizard": {
+    "lastRunAt": "2026-02-20T00:37:13.465Z",
+    "lastRunVersion": "2026.2.17",
+    "lastRunCommand": "configure",
+    "lastRunMode": "local"
+  },
+  "update": {
+    "channel": "stable"
+  },
+  "browser": {
+    "headless": true,
+    "noSandbox": true,
+    "defaultProfile": "openclaw"
+  },
+  "auth": {
+    "profiles": {
+      "google-antigravity:dj_lucifran@hotmail.com": {
+        "provider": "google-antigravity",
+        "mode": "oauth",
+        "email": "dj_lucifran@hotmail.com"
+      },
+      "zai:default": {
+        "provider": "zai",
+        "mode": "api_key"
+      },
+      "openrouter:default": {
+        "provider": "openrouter",
+        "mode": "api_key"
+      },
+      "openai-codex:default": {
+        "provider": "openai-codex",
+        "mode": "oauth"
+      }
+    }
+  },
+  "models": {
+    "mode": "merge",
+    "providers": {
+      "zai": {
+        "baseUrl": "https://api.z.ai/api/coding/paas/v4",
+        "api": "openai-completions",
+        "models": [
+          {
+            "id": "glm-5",
+            "name": "GLM-5",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7",
+            "name": "GLM-4.7",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flash",
+            "name": "GLM-4.7 Flash",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          },
+          {
+            "id": "glm-4.7-flashx",
+            "name": "GLM-4.7 FlashX",
+            "reasoning": true,
+            "input": [
+              "text"
+            ],
+            "cost": {
+              "input": 0,
+              "output": 0,
+              "cacheRead": 0,
+              "cacheWrite": 0
+            },
+            "contextWindow": 204800,
+            "maxTokens": 131072
+          }
+        ]
+      }
+    }
+  },
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "zai/glm-4.7",
+        "fallbacks": [
+          "zai/glm-5"
+        ]
+      },
+      "models": {
+        "zai/glm-4.7": {}
+      },
+      "compaction": {
+        "mode": "safeguard"
+      },
+      "maxConcurrent": 4,
+      "subagents": {
+        "maxConcurrent": 8,
+        "archiveAfterMinutes": 60,
+        "model": "zai/glm-4.7",
+        "thinking": "minimal"
+      }
+    },
+    "list": [
+      {
+        "id": "main",
+        "name": "main",
+        "workspace": "/data/.openclaw/workspace/agents/main",
+        "agentDir": "/data/.openclaw/workspace/agents/main",
+        "subagents": {
+          "allowAgents": [
+            "master-curador",
+            "pastor-profetico",
+            "pastor-consolador",
+            "pastor-revisor",
+            "pastor-formatador"
+          ]
+        },
+        "tools": {
+          "profile": "coding",
+          "alsoAllow": [
+            "web_search",
+            "web_fetch",
+            "message",
+            "gateway",
+            "cron",
+            "nodes",
+            "agents_list",
+            "sessions_spawn",
+            "sessions_list",
+            "sessions_history",
+            "sessions_send",
+            "canvas",
+            "browser"
+          ]
+        }
+      },
+      {
+        "id": "pastor-profetico",
+        "name": "Pastor Profético",
+        "workspace": "/data/.openclaw/workspace/agents/pastor-profetico",
+        "agentDir": "/data/.openclaw/workspace/agents/pastor-profetico",
+        "identity": {
+          "name": "Pastor Profético",
+          "emoji": "🔥"
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      },
+      {
+        "id": "pastor-consolador",
+        "name": "Pastor Consolador",
+        "workspace": "/data/.openclaw/workspace/agents/pastor-consolador",
+        "agentDir": "/data/.openclaw/workspace/agents/pastor-consolador",
+        "identity": {
+          "name": "Pastor Consolador",
+          "emoji": "🤗"
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      },
+      {
+        "id": "pastor-revisor",
+        "name": "Pastor Revisor",
+        "workspace": "/data/.openclaw/workspace/agents/pastor-revisor",
+        "agentDir": "/data/.openclaw/workspace/agents/pastor-revisor",
+        "identity": {
+          "name": "Pastor Revisor",
+          "emoji": "📚"
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      },
+      {
+        "id": "pastor-formatador",
+        "name": "Pastor Formatador",
+        "workspace": "/data/.openclaw/workspace/agents/pastor-formatador",
+        "agentDir": "/data/.openclaw/workspace/agents/pastor-formatador",
+        "identity": {
+          "name": "Pastor Formatador",
+          "emoji": "📱"
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      },
+      {
+        "id": "master-curador",
+        "name": "master-curador",
+        "workspace": "/data/.openclaw/workspace/agents/master-curador",
+        "agentDir": "/data/.openclaw/workspace/agents/master-curador",
+        "model": "zai/glm-4.7",
+        "identity": {
+          "name": "Master Curador",
+          "emoji": "💎"
+        },
+        "subagents": {
+          "allowAgents": [
+            "pastor-profetico",
+            "pastor-consolador",
+            "pastor-revisor",
+            "pastor-formatador"
+          ]
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      }
+    ]
+  },
+  "tools": {
+    "agentToAgent": {
+      "enabled": true
+    },
+    "subagents": {
+      "tools": {
+        "deny": [
+          "gateway",
+          "cron",
+          "message"
+        ]
+      }
+    }
+  },
+  "messages": {
+    "ackReactionScope": "group-mentions",
+    "tts": {
+      "auto": "tagged",
+      "provider": "edge",
+      "edge": {
+        "enabled": true,
+        "voice": "pt-BR-FranciscaNeural",
+        "lang": "pt-BR",
+        "outputFormat": "audio-24khz-48kbitrate-mono-mp3",
+        "pitch": "+0%",
+        "rate": "+0%",
+        "volume": "+0%"
+      }
+    }
+  },
+  "commands": {
+    "native": "auto",
+    "nativeSkills": "auto",
+    "bash": true,
+    "restart": true
+  },
+  "cron": {
+    "enabled": true
+  },
+  "hooks": {
+    "token": "YYRjJX6HYAd9b2DEbAJoabqRSJvRjDIM"
+  },
+  "web": {
+    "enabled": true
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "pairing",
+      "botToken": "8090445037:AAFDjC2YxmOviKf_PpOCW_sEDu80j0ySAMg",
+      "groupPolicy": "allowlist",
+      "streamMode": "partial"
+    }
+  },
+  "gateway": {
+    "mode": "local",
+    "controlUi": {
+      "allowInsecureAuth": true
+    },
+    "auth": {
+      "mode": "token",
+      "token": "YYRjJX6HYAd9b2DEbAJoabqRSJvRjDIM"
+    },
+    "trustedProxies": [
+      "127.0.0.1/32"
+    ],
+    "remote": {
+      "token": "YYRjJX6HYAd9b2DEbAJoabqRSJvRjDIM"
+    }
+  },
+  "skills": {
+    "entries": {
+      "Bible": {
+        "enabled": true
+      },
+      "copywriter": {
+        "enabled": true
+      },
+      "social-media-agent": {
+        "enabled": true
+      }
+    }
+  },
+  "plugins": {
+    "enabled": true,
+    "entries": {
+      "whatsapp": {
+        "enabled": true
+      },
+      "discord": {
+        "enabled": true
+      },
+      "imessage": {
+        "enabled": false
+      },
+      "telegram": {
+        "enabled": true
+      },
+      "slack": {
+        "enabled": true
+      },
+      "nostr": {
+        "enabled": true
+      },
+      "signal": {
+        "enabled": false
+      },
+      "googlechat": {
+        "enabled": true
+      },
+      "google-antigravity-auth": {
+        "enabled": true
+      }
+    }
+  }
+}

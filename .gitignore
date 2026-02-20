@@ -1,0 +1,16 @@
+node_modules/
+sessions/
+logs/
+.cache/
+data/gateway.log
+workspace/node_modules/
+cron/runs/
+*.bak
+
+# Keep archived OpenClaw config backups versioned
+!backups/
+!backups/openclaw-configs/
+!backups/openclaw-configs/**
+auth.json
+auth-profiles.json
+models.json

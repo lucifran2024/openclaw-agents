@@ -1,0 +1,1 @@
+/data/.openclaw/workspace/ESTILO_DEVOCIONAL.md

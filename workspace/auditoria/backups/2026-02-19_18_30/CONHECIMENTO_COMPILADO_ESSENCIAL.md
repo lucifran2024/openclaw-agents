@@ -1,0 +1,1169 @@
+# ==============================================================================
+# SYSTEM_SPEC: CONHECIMENTO_COMPILADO_ESSENCIAL (CCE) v1.4 — MEMÓRIA DE REPERTÓRIO
+# NOTA: este arquivo é CONTEÚDO (atlas/temas), não define ordem de execução. Ver MODOS LOCAL
+
+# ══════════════════════════════════════════════════════════════════════════════
+
+## INICIO CCE ##
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- META — REGRAS SOBERANAS E CONFIGURAÇÃO                              -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<meta>
+<regra_soberana>
+- PROIBIDO usar CCE para definir estrutura, formato ou quantidade
+- PROIBIDO usar CCE para abortar ou bloquear geração
+- Em QUALQUER conflito: MODO > BASE > CCE (CCE sempre perde)
+- USAR CCE apenas como banco de temas, metáforas e citações
+- Acesso UNIVERSAL: todos os modos acessam todas as seções
+</regra_soberana>
+
+<hierarquia_lexica>
+Ordem de consulta obrigatória:
+1. BASE §3.12 (LEXICO_POLICY) → regras
+2. OAD_BOOSTER (extração da PASSAGEM_DO_DIA) → dados primários
+4. CCE SEÇÃO 8 (Anti-Arcaísmo A001-A120) → tradução
+
+Papel do CCE: CATÁLOGO ILUSTRATIVO e BANCO DE VARIAÇÕES
+NÃO É: Autoridade de regras léxicas ou filtros
+
+Em conflito de tradução: BASE §3.7.21 > CCE SEÇÃO 8 (sempre)
+</hierarquia_lexica>
+
+<protocolo_mineracao>
+```
+PASSO 1 → Identificar tema via SEÇÃO 0 (Mapa)
+PASSO 2 → Extrair movimento DE→PARA + SELO da SEÇÃO 3
+PASSO 3 → Aplicar tradução sensorial via SEÇÃO 8.1
+PASSO 4 → Selecionar conectores da SEÇÃO 5.4 conforme clima
+PASSO 5 → SE precisar autoridade → 1 frase da SEÇÃO 14 (máximo)
+```
+</protocolo_mineracao>
+
+<glossario_operacional>
+| Termo | Definição |
+|-------|-----------|
+| PASSAGEM_DO_DIA | Texto bíblico soberano do dia (PLANO_LEITURA_BIBLICA.md) |
+| MINERAÇÃO | Buscar ID específico neste arquivo para injetar no rascunho |
+| PIVÔ DE VIDA | Movimento "DE → PARA" extraído dos temas (Seção 3) |
+| PONTE SENSORIAL | Tradução de objetos antigos para cenas modernas (Seção 8) |
+| TRADUTOR DE REALIDADE | Dicionário que mata jargão técnico (§10.1) |
+</glossario_operacional>
+</meta>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 0 — MAPA DE NAVEGAÇÃO (Indexador de Mineração)                -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="0" nome="MAPA_NAVEGACAO" tipo="indice">
+<rotas_por_gatilho>
+| Gatilho | Ir para |
+|---------|---------|
+| versículo, promessa, consolo, força, coragem, paz, graça, perdão, fé, ansiedade | SEÇÃO 1 |
+| doutrina, teologia, trindade, salvação, justificação, santificação, escatologia | SEÇÃO 2 |
+| tema, atlas, pivô, de_para, identidade, provisão, tentação, família, trabalho | SEÇÃO 3 (T001-T200) |
+| história bíblica, narrativa, personagem, parábola, eventos, livros | SEÇÃO 4 |
+| conector, retórica, transição, ponte, contraste, dor_graça | SEÇÃO 5.4 |
+| anti-arcaísmo, dicionário, ponte sensorial, traduzir termos | SEÇÃO 8 (A001-A120) |
+| clima, tom, lamento, esperança, confronto, exortação | SEÇÃO 9 (C001-C005) |
+| anti-jargão, tradutor de realidade, guarda, segurança | SEÇÃO 10 |
+| testemunho, história real, caso real | SEÇÃO 11 (TEST_001+) |
+| púlpito, pregação, insights, voz autoral | SEÇÃO 12 (PREG_001+) |
+| biblioteca, referência externa, catálogo | SEÇÃO 13 |
+| citação curta, nuvem de testemunhas, spurgeon, lutero | SEÇÃO 14 (F001-F100) |
+</rotas_por_gatilho>
+
+<indice_secoes>
+1. SABEDORIA_BIBLICA: Versículos por tema + Insights Pastorais
+2. FUNDAMENTOS_TEOLOGICOS: Doutrina central (Trindade, Salvação, Escatologia)
+3. ATLAS_TEMATICO: Pivôs DE→PARA (T001-T200)
+4. NARRATIVA_BIBLICA: Livros, eventos, figuras, parábolas, sabedoria poética
+5. FERRAMENTAS_RETORICAS: Contrastes, conectores LQC, diretrizes
+8. ANTI_ARCAISMO: Gabarito mestre + Dicionário A001-A120
+9. CLIMAS_SAZONAIS: Ajuste de tom por época (C001-C005)
+10. TRADUTOR_GUARDA: Anti-jargão + limites doutrinários
+11. TESTEMUNHOS: Histórias reais (TEST_001-005)
+12. INSIGHTS_PULPITO: Voz autoral (PREG_001-005)
+13. CATALOGO_BIBLIOTECA: Referência externa (opcional)
+14. NUVEM_TESTEMUNHAS: 100 frases de autoridade (F001-F100)
+</indice_secoes>
+
+<armadilhas_semanticas>
+Fonte canônica: BASE §3.18 (Banco de Clichês Global)
+CCE NÃO mantém lista separada de clichês globais.
+CCE pode listar armadilhas ESPECÍFICAS de um tema (não globais).
+Em dúvida: sempre consultar BASE §3.18 primeiro.
+</armadilhas_semanticas>
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 1 — SABEDORIA BÍBLICA E INSIGHTS                              -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="1" nome="SABEDORIA_BIBLICA" tipo="repertorio">
+<regra_uso>
+- SE PASSAGEM_DO_DIA não fornecer verso de apoio suficiente → buscar aqui por TAG
+- Máximo 1-2 versos de apoio por geração
+- Prioridade: PASSAGEM_DO_DIA > versos desta seção
+</regra_uso>
+
+### 1.1.1. Esperança e Renovação [#ESPERANCA #CONSOLO #RECOMECO]
+* Lamentações 3:21-23 — "As misericórdias do SENHOR são a causa de não sermos consumidos... Novas são cada manhã; grande é a sua fidelidade."
+* Isaías 40:29-31 — "Os que esperam no SENHOR renovarão as forças, subirão com asas como águias..."
+* Romanos 15:13 — "O Deus de esperança vos encha de todo o gozo e paz em crença..."
+* 1 Pedro 1:3 — "...nos gerou de novo para uma viva esperança, pela ressurreição de Jesus Cristo..."
+* Apocalipse 21:4-5a — "Não haverá mais morte, nem pranto... Eis que faço novas todas as coisas."
+* Jeremias 29:11 — "Pensamentos de paz, e não de mal, para vos dar o fim que esperais."
+* Romanos 5:5 — "A esperança não nos decepciona, porque Deus derramou seu amor..."
+* Tito 2:13 — "Aguardando a bendita esperança e o aparecimento da glória..."
+* Hebreus 6:19 — "Âncora da alma, segura e firme..."
+* Salmos 42:11 — "Espera em Deus, pois ainda o louvarei..."
+* Isaías 43:19 — "Eis que faço uma coisa nova... porei caminho no deserto..."
+* 2 Coríntios 4:16 — "O interior se renova de dia em dia."
+* Colossenses 1:27 — "Cristo em vós, a esperança da glória."
+* Romanos 12:12 — "Alegrai-vos na esperança, sede pacientes na tribulação..."
+* Provérbios 23:18 — "A sua esperança não será frustrada."
+
+### 1.1.2. Força, Coragem e Confiança [#CORAGEM #FORCA #CONFIANCA]
+* Filipenses 4:13 — "Posso todas as coisas em Cristo que me fortalece."
+* Salmos 46:1-3 — "Deus é o nosso refúgio e fortaleza, socorro bem presente na angústia."
+* Josué 1:9 — "Esforça-te e tem bom ânimo... o SENHOR seu Deus é contigo."
+* Isaías 41:10 — "Não temas, porque eu sou contigo... eu te esforço, e te ajudo."
+* 2 Timóteo 1:7 — "Deus não nos deu espírito de temor, mas de fortaleza, amor e moderação."
+* Efésios 6:10 — "Fortalecei-vos no Senhor e na força do seu poder."
+* Salmos 27:1 — "O SENHOR é a minha luz e a minha salvação; a quem temerei?"
+* Deuteronômio 31:6 — "Sede fortes e corajosos... não vos deixará, nem vos desamparará."
+* Neemias 8:10 — "A alegria do SENHOR é a vossa força."
+* Isaías 30:15 — "No sossego e na confiança estaria a vossa força."
+* Habacuque 3:19 — "O SENHOR Deus é a minha força..."
+* Zacarias 4:6 — "Não por força nem por violência, mas pelo meu Espírito..."
+* Romanos 8:37 — "Somos mais do que vencedores, por aquele que nos amou."
+* 2 Coríntios 12:10 — "Quando estou fraco então sou forte."
+
+### 1.1.3. Amor e Compaixão [#AMOR #MISERICORDIA #CUIDADO]
+* 1 João 4:16,19 — "Deus é amor... Nós o amamos porque ele nos amou primeiro."
+* Romanos 5:8 — "Cristo morreu por nós, sendo nós ainda pecadores."
+* João 15:12-13 — "Que vos ameis uns aos outros... dar a vida pelos amigos."
+* Efésios 3:17-19 — "Conhecer o amor de Cristo, que excede todo entendimento..."
+* 1 Coríntios 13:4-7 — "O amor é sofredor, é benigno... tudo sofre, tudo crê, tudo espera."
+* Salmos 103:8 — "Piedoso e benigno é o SENHOR, longânimo e grande em misericórdia."
+* João 3:16 — "Deus amou o mundo de tal maneira que deu o seu Filho unigênito..."
+* Romanos 8:38-39 — "Nada nos poderá separar do amor de Deus..."
+* 1 Pedro 4:8 — "O amor cobrirá a multidão de pecados."
+* Deuteronômio 7:9 — "O Deus fiel, que guarda a aliança até mil gerações..."
+
+### 1.1.4. Fé, Perseverança e Vitória [#FE #PERSEVERANCA #RESILIENCIA]
+* Hebreus 11:1 — "A fé é o firme fundamento das coisas que se esperam..."
+* Marcos 9:23b — "Tudo é possível ao que crê."
+* Gálatas 6:9 — "Não nos cansemos de fazer bem, porque a seu tempo ceifaremos..."
+* Romanos 8:31,37 — "Se Deus é por nós, quem será contra nós?... mais do que vencedores."
+* Tiago 1:2-4 — "Tende gozo quando cairdes em provações... paciência obra perfeita."
+* Hebreus 12:1-2 — "Corramos com paciência... olhando para Jesus, autor e consumador da fé."
+* 2 Timóteo 4:7 — "Combati o bom combate, acabei a carreira, guardei a fé."
+* 1 Coríntios 15:57 — "Graças a Deus que nos dá a vitória por nosso Senhor Jesus Cristo."
+
+### 1.1.5. Sabedoria, Direção e Propósito [#SABEDORIA #DIRECAO #PROPOSITO]
+* Tiago 1:5 — "Se algum de vós tem falta de sabedoria, peça-a a Deus..."
+* Provérbios 3:5-6 — "Confia no SENHOR de todo o coração... ele endireitará suas veredas."
+* Salmos 119:105 — "Lâmpada para os meus pés é sua palavra..."
+* Jeremias 29:11 — "Pensamentos de paz... para vos dar o fim que esperais."
+* Efésios 2:10 — "Criados em Cristo Jesus para as boas obras..."
+* Provérbios 16:9 — "O coração planeja o caminho, mas o SENHOR dirige os passos."
+* Salmos 32:8 — "Instruir-te-ei e ensinar-te-ei o caminho..."
+* Romanos 8:28 — "Todas as coisas contribuem para o bem dos que amam a Deus..."
+
+### 1.1.6. Paz e Descanso [#PAZ #DESCANSO #ALIVIO]
+* João 14:27 — "A minha paz vos dou; não vo-la dou como o mundo a dá."
+* Filipenses 4:6-7 — "Não estejais inquietos... a paz de Deus guardará vossos corações."
+* Mateus 11:28-30 — "Vinde a mim, todos os cansados... encontrareis descanso para as almas."
+* Salmos 4:8 — "Em paz me deitarei e dormirei, porque só tu me fazes habitar em segurança."
+* Isaías 26:3 — "Tu conservarás em paz aquele cuja mente está firme em ti."
+* Salmos 23:2-3 — "Faz-me repousar em pastos verdejantes..."
+* Colossenses 3:15 — "A paz de Deus domine em vossos corações."
+
+### 1.1.7. Graça e Misericórdia [#GRACA #FAVOR_IMERECIDO #BONDADE]
+* Efésios 2:8-9 — "Pela graça sois salvos, por meio da fé... dom de Deus."
+* Hebreus 4:16 — "Cheguemos com confiança ao trono da graça..."
+* 2 Coríntios 12:9 — "A minha graça te basta, meu poder se aperfeiçoa na fraqueza."
+* Salmos 103:10-12 — "Não nos tratou segundo nossos pecados... quanto o oriente do ocidente..."
+* Lamentações 3:22 — "As misericórdias do SENHOR não têm fim."
+
+### 1.1.8. Perdão e Reconciliação [#PERDAO #RECONCILIACAO #PAZ_RELACIONAL]
+* 1 João 1:9 — "Se confessarmos os pecados, ele é fiel e justo para nos perdoar..."
+* Efésios 4:32 — "Perdoando-vos uns aos outros, como Deus vos perdoou em Cristo."
+* Mateus 6:14-15 — "Se perdoardes, vosso Pai celestial vos perdoará."
+* Miqueias 7:18-19 — "Quem é Deus semelhante a ti, que perdoa a iniquidade..."
+* Isaías 1:18 — "Ainda que pecados sejam como escarlata, tornar-se-ão brancos como neve."
+* Mateus 18:21-22 — "Até setenta vezes sete."
+
+### 1.1.9. Oração e Busca [#ORACAO #BUSCA #INTIMIDADE]
+* Jeremias 33:3 — "Clama a mim, e responder-te-ei..."
+* Mateus 6:6 — "Ora a seu Pai que está em secreto..."
+* Tiago 5:16b — "A oração do justo pode muito em seus efeitos."
+* 1 Tessalonicenses 5:17 — "Orai sem cessar."
+* Romanos 8:26 — "O Espírito ajuda as nossas fraquezas... intercede com gemidos."
+* Mateus 7:7 — "Pedi, e dar-se-vos-á; buscai, e encontrareis."
+
+### 1.1.10. Santidade e Crescimento [#SANTIDADE #TRANSFORMACAO #MATURIDADE]
+* 1 Pedro 1:15-16 — "Sede santos, porque eu sou santo."
+* Romanos 12:1-2 — "Sede transformados pela renovação do entendimento..."
+* Filipenses 1:6 — "Aquele que começou a boa obra a aperfeiçoará..."
+* 2 Coríntios 5:17 — "Se alguém está em Cristo, nova criatura é..."
+
+### 1.1.11. Discipulado e Comunhão [#COMUNIDADE #DISCIPULADO #UNIDADE]
+* Mateus 28:19-20 — "Fazei discípulos de todas as nações..."
+* Hebreus 10:24-25 — "Consideremo-nos uns aos outros, para estimular ao amor..."
+* João 13:34-35 — "Que vos ameis uns aos outros... nisto conhecerão que sois meus discípulos."
+* Gálatas 6:2 — "Levai as cargas uns dos outros..."
+
+### 1.1.12. Soberania de Deus [#SOBERANIA #CONTROLE #CONFIANCA]
+* Salmos 115:3 — "O nosso Deus está nos céus; fez tudo o que lhe agradou."
+* Daniel 4:35 — "Segundo a sua vontade opera... não há quem estorve a sua mão."
+* Romanos 8:28 — "Todas as coisas contribuem para o bem..."
+* Isaías 46:10 — "O meu conselho será firme, e farei toda a minha vontade."
+
+### 1.2. Insights Pastorais Diretos [#INSIGHTS #APLICACAO_RAPIDA]
+
+#### Sobre Ansiedade e Direção
+* "Aquele que criou galáxias cuida do seu dia — largue o peso." (Salmos 55:22)
+* "Deus não precisa do seu plano perfeito; Ele pede só o próximo passo." (Provérbios 16:9)
+* "Deus pesa motivos; alinhe decisões ao Seu peso." (Provérbios 16:2)
+* "Entregue decisões ao Senhor; Ele age em confiança." (Salmos 37:5)
+* "Deus dirige passos; confie mesmo sem entender totalmente." (Provérbios 20:24)
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 2 — FUNDAMENTOS TEOLÓGICOS (Cercas de Segurança)              -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="2" nome="FUNDAMENTOS_TEOLOGICOS" tipo="doutrina">
+<regra_uso>
+1. Aplicar para garantir que a Tese não saia da ortodoxia
+2. Toda aplicação prática deve estar ancorada em um destes fundamentos
+3. Usar para validar "Segurança Teológica" na Auditoria Final
+</regra_uso>
+
+### 2.1. Doutrina Evangélica Clássica [#DOUTRINA #ORTODOXIA]
+* **Bíblia como Palavra Infalível:** Revelação completa, inerrante, autoridade final (2Tm 3:16-17; 2Pe 1:20-21)
+* **Trindade:** Três pessoas, uma essência: Pai, Filho, Espírito Santo (Mt 28:19; 2Co 13:14)
+* **Divindade/Humanidade de Cristo:** Totalmente Deus e homem, sem pecado (Jo 1:1,14; Fp 2:5-11)
+* **Salvação pela Graça:** Dom de Deus, não por obras, pela fé em Jesus (Ef 2:8-9; Rm 10:9-10)
+* **Pecado e Queda:** Todo humano nasce em pecado, separado de Deus (Rm 3:23; 5:12)
+* **Expiação Substitutiva:** Jesus morreu como substituto, satisfazendo a justiça (Is 53:5-6; 1Pe 2:24)
+* **Ressurreição Corporal:** Jesus ressuscitou fisicamente (1Co 15:3-8)
+* **Segunda Vinda:** Retorno visível para julgar e estabelecer Seu reino (At 1:11; Ap 19:11-16)
+* **Igreja como Corpo:** Todos os crentes verdadeiros; comunidades locais (Ef 4:4-6; Mt 28:18-20)
+* **Sacramentos:** Batismo por imersão e Ceia do Senhor (Mt 28:19; 1Co 11:23-26)
+* **Vida Eterna e Juízo:** Crentes herdam vida eterna; separação para não-crentes (Jo 3:16; Ap 20:11-15)
+* **Soberania na Salvação:** Predestinação + responsabilidade humana (Ef 1:4-5; Jo 6:37)
+* **Espírito Santo na Santificação:** Capacita vida santa, produz fruto e dons (Gl 5:22-23; 1Co 12:4-11)
+* **Autoridade da Escritura:** Nenhuma tradição supera a Bíblia (Gl 1:8; Cl 2:8)
+* **Missão Evangelística:** Todo crente proclama o evangelho (Mc 16:15; At 1:8)
+* **Dignidade Humana:** Criado à imagem de Deus (Gn 1:27; Tg 3:9)
+
+### 2.2. Teologia Bíblica de Temas Centrais
+
+#### 2.2.1. Natureza de Deus [#DEUS #ATRIBUTOS]
+Eterno, imutável, onipotente, onisciente, onipresente, santo, justo, amoroso, misericordioso, fiel, soberano, criador, juiz, provedor, consolador, redentor, paciente, sábio, glorioso.
+
+#### 2.2.2. Obra da Trindade na Salvação [#TRINDADE #SALVACAO]
+Pai planeja (Ef 1:3-6) → Filho executa pela cruz (Ef 1:7-12) → Espírito aplica (Ef 1:13-14).
+Pai envia Filho → Filho envia Espírito → Espírito testifica do Filho.
+
+#### 2.2.3. Escatologia [#ESCATOLOGIA #ESPERANCA]
+Segunda vinda (1Ts 4:16-17), Ressurreição (1Co 15:51-54), Juízo final (Ap 20:11-15), Novos céus e terra (Ap 21:1-5), Milênio (Ap 20:1-6), Eternidade com Deus (Ap 22:3-5).
+
+#### 2.2.4. Ética Cristã [#ETICA #SANTIDADE]
+Amar a Deus e ao próximo (Mt 22:37-40), Fruto do Espírito (Gl 5:22-23), Santificação progressiva (1Ts 5:23), Perdão (Mt 6:14-15), Humildade (Fp 2:3-4), Pureza (1Ts 4:3-5), Generosidade (2Co 9:6-7), Justiça social (Mq 6:8).
+
+#### 2.2.5-2.2.10. Outros Temas
+* **Igreja/Sacramentos:** Corpo de Cristo, unidade, dons, adoração (1Co 12:12-27)
+* **Homem/Pecado:** Imagem de Deus, queda, depravação, libertação em Cristo (Rm 6:6-7)
+* **Vida Após Morte:** Paraíso, ressurreição corporal, Nova Jerusalém (Ap 21:2-3)
+* **Reino de Deus:** Já presente, futuro consumado, entrada pela fé (Lc 17:21; Mt 6:10)
+* **Criação/Queda:** Ex nihilo, bondade, pecado, promessa de redenção (Gn 3:15)
+* **Graça Comum/Especial:** Benefícios a todos vs. salvação aos eleitos (Mt 5:45; Ef 2:8)
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 3 — ATLAS TEMÁTICO PASTORAL (T001-T200)                       -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="3" nome="ATLAS_TEMATICO_PASTORAL" tipo="catalogo">
+<regra_uso>
+1. Identificar tema central da PASSAGEM_DO_DIA
+2. Localizar ID correspondente (Ex: T196)
+3. Aplicar movimento "DE → PARA" para guiar o rascunho
+4. Usar "SELO" para fechar o texto com imagem forte e memorável
+</regra_uso>
+
+<!-- Formato: ID | Grupo | DE | PARA | Selo -->
+
+#### Identidade e Pertencimento (T001-T020)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T001 | Rejeição | Adoção | Filho amado |
+| T002 | Vergonha | Dignidade | Rosto levantado |
+| T003 | Orfandade emocional | Pertença | Casa do Pai |
+| T004 | Inferioridade | Valor | Imagem de Deus |
+| T005 | Falta de identidade | Direção | Nome novo |
+| T006 | Autocrítica | Graça | Descanso interno |
+| T007 | Invisibilidade | Atenção divina | Ele me vê |
+| T008 | Medo de desapontar | Acolhimento | Amor maior |
+| T009 | Autoabandono | Cuidado | Reparação |
+| T010 | Vergonha da história | Reescrita | Página nova |
+| T011 | Exclusão | Inclusão | Mesa aberta |
+| T012 | Solidão | Comunhão | Família espiritual |
+| T013 | Medo de ser descartado | Fidelidade | Deus não abandona |
+| T014 | Sensação de ser menos | Igual valor | Filho igualmente amado |
+| T015 | Identidade fragmentada | Inteireza | Coração unificado |
+| T016 | Autonegação tóxica | Autoaceitação saudável | Paz interior |
+| T017 | Dependência emocional | Estabilidade | Raiz firme |
+| T018 | Necessidade de aprovação | Liberdade | Olhar de Deus basta |
+| T019 | Baixa autoestima | Elevação | Ele me levanta do pó |
+| T020 | Vida sem pertencimento | Adoção | Lugar na mesa |
+
+#### Medo, Ansiedade e Controle (T021-T040)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T021 | Medo do futuro | Segurança | Deus já está lá |
+| T022 | Ansiedade oculta | Paz | Presença constante |
+| T023 | Controle excessivo | Entrega | Soltar as rédeas |
+| T024 | Preocupação crônica | Confiança | Coração firme |
+| T025 | Catastrofização | Realidade sustentada | Deus governa |
+| T026 | Pânico emocional | Respiração espiritual | Ele acalma |
+| T027 | Expectativas desmoronadas | Firmeza | Rochedo seguro |
+| T028 | Insônia espiritual | Descanso | Deito e durmo |
+| T029 | Falta de controle | Fé ativa | Ele dirige |
+| T030 | Medo de perder | Estabilidade | Nada falta |
+| T031 | Hipervigilância | Paz guardada | Guarda da mente |
+| T032 | Angústia | Consolação | Braço estendido |
+| T033 | Pensamentos acelerados | Silêncio divino | Brisa suave |
+| T034 | Previsão de desastres | Cuidado | Ele sustém |
+| T035 | Exaustão mental | Refrigério | Água viva |
+| T036 | Medo de mudança | Constância | Ele não muda |
+| T037 | Medo de decisões | Sabedoria | Caminho iluminado |
+| T038 | Pressão interna | Alívio | Jugo leve |
+| T039 | Sentimento de ameaça | Proteção | Escudo ao redor |
+| T040 | Incerteza constante | Direção | Norte claro |
+
+#### Dor, Sofrimento e Processos (T041-T060)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T041 | Silêncio de Deus | Maturidade | Raiz profunda |
+| T042 | Noite escura | Esperança | Aurora |
+| T043 | Deserto | Formação | Escola de Deus |
+| T044 | Queda | Reerguimento | Ele me levanta |
+| T045 | Humilhação | Honra | Lugar na mesa |
+| T046 | Traição | Cura | Coração remendado |
+| T047 | Cicatrizes | Testemunho | Marcas de graça |
+| T048 | Espera prolongada | Fidelidade | Tempo certo |
+| T049 | Porta fechada | Reorientação | Outro caminho |
+| T050 | Processo lento | Propósito | Semente crescendo |
+| T051 | Medo da dor | Presença real | Ele caminha junto |
+| T052 | Sofrimento injusto | Consolo | Justiça que vê |
+| T053 | Feridas antigas | Restauração | Pano remendado |
+| T054 | Desânimo profundo | Fôlego | Ele renova |
+| T055 | Decepção espiritual | Cura | Brasa reacendida |
+| T056 | Vergonha do fracasso | Recomeço | Capítulo novo |
+| T057 | Luto | Acompanhamento | Choro abraçado |
+| T058 | Frustração acumulada | Liberação | Águas que fluem |
+| T059 | Falta de perspectiva | Luz | Direção no escuro |
+| T060 | Sensação de abandono | Companheirismo | Eu estou contigo |
+
+#### Emoções Difíceis (T061-T080)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T061 | Ira | Sabedoria | Coração estável |
+| T062 | Ressentimento | Rendição | Portas abertas |
+| T063 | Amargura | Doçura nova | Água limpa |
+| T064 | Auto-ódio | Amor recebido | Coração reparado |
+| T065 | Ciúme | Segurança | Valor interno |
+| T066 | Inveja | Gratidão | Meu chão basta |
+| T067 | Raiva guardada | Paz ativa | Descompressão |
+| T068 | Frustração | Paciência | Tempo de Deus |
+| T069 | Vergonha social | Aceitação divina | Rosto levantado |
+| T070 | Melancolia | Consolação | Brisa da manhã |
+| T071 | Estresse | Descanso | Sombra do Onipotente |
+| T072 | Instabilidade emocional | Suporte | Rocha firme |
+| T073 | Culpa repetitiva | Perdão permanente | Dívida apagada |
+| T074 | Autossabotagem | Clareza | Voz que alinha |
+| T075 | Sensação de vazio | Presença | Pão vivo |
+| T076 | Falta de energia | Reforço | Fôlego do Espírito |
+| T077 | Coração gelado | Calor | Fogo brando |
+| T078 | Vergonha moral | Graça ativa | Manto de justiça |
+| T079 | Medos internos | Fortalecimento | Âncora |
+| T080 | Ansiedade espiritual | Consolo | Águas tranquilas |
+
+#### Relacionamentos (T081-T100)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T081 | Conflito | Reconciliar | Ponte construída |
+| T082 | Desentendimento | Escuta | Solo fértil |
+| T083 | Falta de perdão | Soltura | Correntes quebradas |
+| T084 | Ciúmes | Segurança | Coração firme |
+| T085 | Distância emocional | Aproximação | Mesa maior |
+| T086 | Pais feridos | Cura | História restaurada |
+| T087 | Lares partidos | Recomeço | Casa refeita |
+| T088 | Amizade tóxica | Limite | Porta fechada |
+| T089 | Carência extrema | Estabilidade | Reservatório cheio |
+| T090 | Culpa no casamento | Perdão | Dois reconstruindo |
+| T091 | Rotina seca | Renovação | Água nova |
+| T092 | Frieza relacional | Calor | Chama reacendida |
+| T093 | Desconfiança | Caminho de verdade | Parede reconstruída |
+| T094 | Vínculos rompidos | Restauração | Costura nova |
+| T095 | Comunicação falha | Diálogo | Janela aberta |
+| T096 | Isolamento | Comunhão | Mesa cheia |
+| T097 | Rejeição conjugal | Acolhimento | Braço que abraça |
+| T098 | Dor familiar | Cura | Solo tratado |
+| T099 | Fofoca | Verdade | Lâmpada acesa |
+| T100 | Falta de apoio | Sustentação | Coluna firme |
+
+#### Chamado, Propósito e Vida (T101-T120)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T101 | Falta de sentido | Vocação | Semente desperta |
+| T102 | Rotina vazia | Significado | Luz interna |
+| T103 | Medo de começar | Coragem | Primeiro passo |
+| T104 | Falta de direção | Norte | Seta divina |
+| T105 | Procrastinação | Disciplina | Ritmo |
+| T106 | Portas fechadas | Redirecionamento | Nova rota |
+| T107 | Falta de visão | Clareza | Céu limpo |
+| T108 | Falta de motivação | Inspiração | Fôlego do alto |
+| T109 | Vida parada | Movimento | Rio fluindo |
+| T110 | Identidade profissional | Chamado | Serviço santo |
+| T111 | Pequenos começos | Crescimento | Broto fiel |
+| T112 | Desânimo vocacional | Firmeza | Chama reacendida |
+| T113 | Falta de impacto | Propósito | Sal e luz |
+| T114 | Estagnação | Mudança | Primavera nova |
+| T115 | Vida corrida | Pausa | Sábado da alma |
+| T116 | Exaustão | Renovação | Troca de forças |
+| T117 | Falta de foco | Direção | Uma coisa só |
+| T118 | Desalinhamento | Retorno | Trilho certo |
+| T119 | Falta de convicção | Fé | Raiz segura |
+| T120 | Medo de falhar | Descanso | Graça sustenta |
+
+#### Pecado, Luta Interior e Santificação (T121-T140)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T121 | Tentação | Escape | Porta de saída |
+| T122 | Quedas repetidas | Acolhimento | Recomeço possível |
+| T123 | Orgulho | Quebrantamento | Coração macio |
+| T124 | Vaidade | Sobriedade | Solo firme |
+| T125 | Mentiras internas | Verdade | Luz acesa |
+| T126 | Travas emocionais | Libertação | Corrente quebrada |
+| T127 | Autossabotagem | Cura | Voz alinhada |
+| T128 | Hipocrisia | Integridade | Caminho reto |
+| T129 | Resíduos do passado | Purificação | Casa limpa |
+| T130 | Coração dividido | Inteireza | Um só foco |
+| T131 | Religião fria | Relacionamento | Fogo vivo |
+| T132 | Medo de julgamento | Misericórdia | Manto |
+| T133 | Idolatria moderna | Reordenação | Centro correto |
+| T134 | Impureza de pensamentos | Renovação | Água viva |
+| T135 | Arrependimento superficial | Verdade profunda | Corte real |
+| T136 | Solidão moral | Graça | Mesa aberta |
+| T137 | Tédio espiritual | Fome | Pão do céu |
+| T138 | Desinteresse pelas coisas de Deus | Despertar | Aurora espiritual |
+| T139 | Resistência interna | Rendição | Braços abertos |
+| T140 | Autodomínio fraco | Força | Muro firme |
+
+#### Esperança e Futuro (T141-T160)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T141 | Medo do futuro | Esperança | Deus já está lá |
+| T142 | Ciclos difíceis | Propósito | Nada é perdido |
+| T143 | Incerteza econômica | Sustento | Mesa posta |
+| T144 | Ameaças invisíveis | Proteção | Escudo |
+| T145 | Projetos falhando | Recomeço | Novo plano |
+| T146 | Portas trancadas | Chave | Deus abre |
+| T147 | Medo da morte | Vida eterna | Porto seguro |
+| T148 | Tempo perdido | Restauração | Deus devolve |
+| T149 | Sonhos estagnados | Movimento | Vento novo |
+| T150 | Mudanças bruscas | Estabilidade | Rochedo |
+| T151 | Transições | Fidelidade | A coluna não se move |
+| T152 | Incertezas | Luz | Farol |
+| T153 | Desesperança | Renovação | Árvore revivida |
+| T154 | Recomeços dolorosos | Consolo | Ombro divino |
+| T155 | Expectativas frustradas | Alinhamento | Agenda de Deus |
+| T156 | Medo de envelhecer | Graça | Força renovada |
+| T157 | Fim de ciclos | Continuidade | Página nova |
+| T158 | Falta de direção | Mapa divino | Seta certa |
+| T159 | Terra seca | Chuva | Renovo |
+| T160 | Espera longa | Colheita | Tempo certo |
+
+#### Vida Espiritual (T161-T180)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T161 | Oração seca | Perseverança | Incenso aceso |
+| T162 | Bíblia distante | Redescoberta | Lâmpada |
+| T163 | Distração | Foco | Olho único |
+| T164 | Frieza espiritual | Reavivamento | Chama viva |
+| T165 | Falta de fé | Recordação | Memorial |
+| T166 | Oração cansada | Força | Brasa soprada |
+| T167 | Rotina espiritual fraca | Disciplina | Ritmo santo |
+| T168 | Dúvidas | Confiança | Mão estendida |
+| T169 | Falta de sensibilidade | Quebrantamento | Coração de carne |
+| T170 | Vida dupla | Integridade | Um só caminho |
+| T171 | Encontros superficiais | Profundidade | Águas profundas |
+| T172 | Relacionamento frio | Aquece | Sol da justiça |
+| T173 | Medo espiritual | Presença | Nuvem |
+| T174 | Seca emocional | Chuva de graça | Refrigério |
+| T175 | Ausência de paixão | Reacendimento | Fogo santo |
+| T176 | Rotina sem propósito | Intencionalidade | Semente plantada |
+| T177 | Falta de testemunho | Luz | Cidade no monte |
+| T178 | Falta de disciplina | Ordem | Casa organizada |
+| T179 | Vida espiritual frágil | Fortalecimento | Coluna |
+| T180 | Falta de devoção | Cultivo | Jardim regado |
+
+#### Batalha Espiritual / Guerra Emocional (T181-T200)
+| ID | DE | PARA | Selo |
+|----|-----|------|------|
+| T181 | Acusações internas | Verdade | Escudo da fé |
+| T182 | Ataques mentais | Blindagem | Capacete |
+| T183 | Influências tóxicas | Proteção | Muro |
+| T184 | Vozes negativas | Silêncio | Paz profunda |
+| T185 | Cansaço prolongado | Sustento | Braço forte |
+| T186 | Opressão | Liberdade | Jugo quebrado |
+| T187 | Confusão | Ordem | Luz clara |
+| T188 | Mentiras do inimigo | Exposição | Lâmpada |
+| T189 | Fraqueza espiritual | Força | Mão direita |
+| T190 | Falta de firmeza | Estaca | Base sólida |
+| T191 | Cansaço existencial | Vida | Árvore plantada |
+| T192 | Perseguições internas | Consolo | Manto |
+| T193 | Tentação intensa | Escape | Porta aberta |
+| T194 | Medo espiritual | Coragem | Leão |
+| T195 | Sobrecarga emocional | Descanso | Sombra |
+| T196 | Ataques de ansiedade | Paz | Águas tranquilas |
+| T197 | Sentimento de perda | Restauração | Dobrar de sorte |
+| T198 | Sufocamento emocional | Ar novo | Sopro divino |
+| T199 | Opacidade espiritual | Clareza | Janela aberta |
+| T200 | Desorientação completa | Direção | Compasso divino |
+| T201 | Cativeiro Hereditário | Leme na Mão | Vida Nova |
+| T202 | Escória no Cadinho | Purificação | Prata Pura |
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- PARTE B — ACERVO DE ESTUDOS TEMÁTICOS                               -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="3B" nome="ESTUDOS_TEMATICOS" tipo="base_doutrinaria">
+<regra_uso>
+- Use a PARTE A (atlas acima) para definir o Ângulo/Movimento do texto
+- Use esta PARTE B para encontrar argumentos bíblicos e explicações
+</regra_uso>
+
+### 3.1. Salvação pela Graça [#SALVACAO #GRACA #EVANGELHO]
+* Ef 2:8-9; Jo 3:16; Rm 10:9-10 — Salvação é dom gratuito, pela fé em Jesus, não por méritos.
+* Tt 3:5; At 4:12 — Regeneração pelo Espírito, única salvação em Jesus.
+* Rm 5:1; Fp 2:12-13 — Justificação pela fé, santificação progressiva.
+* 1Jo 5:13; Rm 8:38-39 — Certeza da salvação, nada separa do amor de Deus.
+* Jo 1:12; Gl 4:7 — Adoção como filhos, herdeiros de Deus.
+* 2Co 5:17; Cl 3:3 — Nova criação, vida escondida em Cristo.
+* Hb 7:25; Jd 24 — Intercessão de Cristo, preservação até o fim.
+* Ef 1:13-14; 2Co 1:22 — Selados com o Espírito, penhor da herança.
+* Jo 10:28; Fp 1:6 — Vida eterna segura, obra aperfeiçoada.
+
+### 3.2. Oração Eficaz [#ORACAO #FE #INTIMIDADE]
+* Mt 6:9-13; Fp 4:6 — Modelo do Pai Nosso, oração com gratidão.
+* Tg 5:16; 1Jo 5:14 — Oração do justo avança, conforme vontade de Deus.
+* Rm 8:26; Ef 6:18 — Espírito ajuda em fraquezas, ore no Espírito.
+* Sl 66:18; 1Pe 3:7 — Pecado impede oração, relacionamentos afetam.
+* Lc 18:1; 1Ts 5:17 — Ore sempre, sem cessar.
+* Jo 14:13-14; Mc 11:24 — Peça em nome de Jesus, creia para receber.
+* Jr 33:3; Sl 50:15 — Clame, Deus responde em angústia.
+
+### 3.3. Frutos do Espírito [#ESPIRITO_SANTO #CARATER]
+* **Amor:** 1Co 13:4-7; Jo 15:12 — Ágape, sacrificial e paciente.
+* **Gozo:** Fp 4:4; Sl 16:11 — Alegria profunda, independente de circunstâncias.
+* **Paz:** Fp 4:7; Jo 14:27 — Excede entendimento, de Cristo.
+* **Longanimidade:** Cl 1:11; Ef 4:2 — Paciência em sofrimentos.
+* **Benignidade:** Ef 4:32; Tt 3:4 — Bondade gentil.
+* **Bondade:** Sl 23:6; Rm 2:4 — Leva ao arrependimento.
+* **Fé:** Hb 11:1; Gl 2:20 — Confiança em Cristo, vivendo pela fé.
+* **Mansidão:** Mt 5:5; Tg 3:13 — Força controlada.
+* **Temperança:** 1Co 9:25; 2Pe 1:6 — Autocontrole.
+* **Produzindo Fruto:** Jo 15:5; Sl 1:3 — Permanecer em Cristo para frutificar.
+
+### 3.4. Comunidade Cristã [#COMUNIDADE #IGREJA]
+* At 2:42-47; Hb 10:24-25 — Perseverança em doutrina, comunhão, orações.
+* 1Co 12:12-27; Rm 12:4-5 — Corpo de Cristo, membros interdependentes.
+* Ef 4:2-3; Fp 2:2-4 — Unidade com humildade.
+* Gl 6:2; Tg 5:16 — Leve cargas, confesse pecados uns aos outros.
+* Mt 18:15-17; Gl 6:1 — Correção fraternal, restaure com mansidão.
+
+### 3.5. Estudo Bíblico Pessoal [#ESTUDO_BIBLICO #DISCIPLINA]
+* **Método SOAP:** Escritura, Observação, Aplicação, Oração.
+* **Lectio Divina:** Leitura, meditação, oração, contemplação.
+* **Estudo Indutivo:** Observe, interprete, aplique (quem, o quê, quando, por quê).
+* **Memorização:** Cartões, apps para reter versículos.
+* **Comentários:** Matthew Henry, recursos confiáveis para contexto.
+
+### 3.6. Aplicações Práticas [#VIDA_PRATICA #COTIDIANO]
+Devocional diário, jejum, serviço voluntário, testemunho pessoal, gestão financeira bíblica, relacionamentos saudáveis, corpo como templo, trabalho como adoração, educação dos filhos, engajamento social.
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 4 — RECURSOS NARRATIVOS E ILUSTRAÇÕES                         -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="4" nome="RECURSOS_NARRATIVOS" tipo="humanizador">
+<regra_uso>
+1. Aplicar ilustração que conecte com o TEMA do dia
+2. Usar para criar a "Cena Concreta" (evitar abstrações)
+3. Trazer cena logo no início da peça
+4. PROIBIDO usar ilustrações externas se houver compatível neste banco
+</regra_uso>
+
+### 4.1-4.2. Visão Geral dos Livros Bíblicos
+
+#### Antigo Testamento (resumo)
+Gênesis (origens/patriarcas), Êxodo (libertação/lei), Levítico (santidade), Números (jornada/deserto), Deuteronômio (repetição da lei), Josué (conquista), Juízes (ciclos), Rute (lealdade/redenção), 1-2 Samuel (monarquia/Davi), 1-2 Reis (divisão/exílio), 1-2 Crônicas (genealogias/templo).
+
+#### Novo Testamento (resumo)
+Mateus (reino dos céus), Marcos (servo sofredor), Lucas (parábolas/gentios), João (divindade/sinais), Atos (expansão da igreja), Romanos (justificação), 1-2 Coríntios (problemas/defesa), Gálatas (liberdade), Efésios (unidade/armadura), Filipenses (alegria), Colossenses (supremacia), 1-2 Tessalonicenses (segunda vinda).
+
+### 4.3. Eventos Narrativos Principais (com Lições)
+* **Criação** (Gn 1-2): Deus criador ordenado, humanidade à Sua imagem.
+* **Queda** (Gn 3): Pecado traz separação, mas promessa de redentor.
+* **Dilúvio** (Gn 6-9): Juízo sobre pecado, graça em Noé.
+* **Chamado de Abraão** (Gn 12): Fé em promessas, bênção às nações.
+* **Êxodo** (Êx 12-14): Libertação pelo sangue, poder no Mar Vermelho.
+* **Entrega da Lei** (Êx 20): Aliança, mandamentos para vida santa.
+* **Conquista de Jericó** (Js 6): Obediência derruba muralhas.
+* **Reinado de Davi** (2Sm 5-7): Homem segundo coração de Deus.
+* **Exílio Babilônico** (2Rs 25): Consequência da idolatria, esperança na restauração.
+* **Nascimento de Jesus** (Lc 2): Humildade no presépio, salvador para todos.
+
+### 4.4. Figuras Bíblicas (Enriquecidas)
+
+#### Abraão — Fé, Obediência e Promessa [#ABRAAO #PROMESSA]
+Chamado para deixar terra, pai das nações pela fé. Momentos: Chamado (Gn 12), sacrifício de Isaque (Gn 22). Fraquezas: Mentira sobre Sara, impaciência com Hagar. Lição: Fé creditada como justiça, paciência nas promessas demoradas (Rm 4:18-21). Versículo: Gn 15:6.
+
+#### Moisés — Libertação e Humildade [#MOISES #LIDERANCA]
+Libertador de Israel, mediador da lei. Momentos: Sarça ardente (Êx 3), pragas e êxodo (Êx 7-14). Fraquezas: Matou egípcio, dúvida na chamada. Lição: Dependência de Deus, intercessão, mais manso da terra (Nm 12:3).
+
+#### Davi — Coração Segundo Deus [#DAVI #ADORACAO #ARREPENDIMENTO]
+Ungido pastor-rei, derrotou Golias, pecou gravemente, arrependeu-se genuinamente. Momentos: Ungição (1Sm 16), Golias (1Sm 17), pecado com Bate-Seba (2Sm 11-12), dança diante da arca (2Sm 6). Fraquezas: Impulsividade, favoritismo. Lições: Busque coração segundo Deus, fé vence impossíveis, arrependa-se genuinamente (Sl 51). Versículo: At 13:22.
+
+#### Paulo — Transformação e Missão [#PAULO #TRANSFORMACAO]
+Perseguidor tornado apóstolo. Momentos: Conversão em Damasco (At 9), viagens missionárias, prisão em Roma. Fraquezas: Espinho na carne (2Co 12:7-9), conflitos com Barnabé. Lições: Transformação radical, perseverança em missão, graça suficiente na fraqueza. Versículo: Fp 1:21.
+
+#### Maria — Submissão e Fé [#MARIA #OBEDIENCIA]
+Jovem virgem escolhida para mãe do Messias. Momentos: Anunciação (Lc 1:26-38), Magnificat (Lc 1:46-55), ao pé da cruz (Jo 19:25-27). Lições: Diga "sim" à vontade de Deus, medite a Palavra, seja fiel no sofrimento. Versículo: Lc 1:38.
+
+#### Outras Figuras
+* **José:** Integridade no sofrimento, perdão. Providência transforma mal em bem.
+* **Ester:** Coragem em risco, "para um tempo como este" (Et 4:14).
+* **Pedro:** Impulsividade → liderança. Restauração após negação (Jo 21).
+* **Noé:** Obediência em ridículo. Fidelidade salva gerações.
+* **Rute:** Lealdade sacrificial leva a redenção.
+* **Daniel:** Integridade em exílio, oração diária.
+* **Timóteo:** Juventude na liderança, não despreze dom (1Tm 4:12).
+
+### 4.5. Parábolas de Jesus
+
+| Parábola | Referência | Ensino Central | Aplicação |
+|----------|-----------|----------------|-----------|
+| Semeador | Mt 13:1-23 | Frutificação depende da receptividade | Examine seu coração, cultive boa terra |
+| Joio e Trigo | Mt 13:24-30 | Separação final por Deus | Foque em crescimento, não em julgar |
+| Bom Samaritano | Lc 10:25-37 | Amor prático transcende barreiras | Sirva sem preconceito |
+| Filho Pródigo | Lc 15:11-32 | Perdão incondicional do Pai | Arrependa-se, acolha retornantes |
+| Talentos | Mt 25:14-30 | Fidelidade com o confiado | Use dons produtivamente |
+| Fariseu/Publicano | Lc 18:9-14 | Humildade justifica | Ore com arrependimento |
+| Ovelha Perdida | Lc 15:1-7 | Valor individual para Deus | Busque perdidos, celebre conversões |
+| Semente de Mostarda | Mt 13:31-32 | Reino cresce de pequeno | Comece pequeno, confie |
+| Tesouro Escondido | Mt 13:44 | Reino vale tudo | Sacrifique por Cristo |
+| Dez Virgens | Mt 25:1-13 | Preparação para volta | Vigie com óleo (Espírito) |
+| Ovelhas/Cabritos | Mt 25:31-46 | Julgamento por misericórdia | Sirva o "menor" como a Cristo |
+
+### §4.6. Sabedoria Poética: Salmos e Provérbios [#SAPIENCIAL #LIRISMO #POESIA]
+
+<regra_execucao>
+- Lente POETICA ou SAPIENCIAL ativa este bloco
+- Salmos: Priorizar lirismo, honestidade emocional, ritmo de oração
+- Provérbios: Priorizar clareza, contraste "Tolo vs. Sábio", aplicação na rotina
+- Traduzir paralelismo hebraico em cadência moderna (frases curtas/rítmicas)
+- Validar emoção bruta (lamento/alegria) antes de apresentar tese
+</regra_execucao>
+
+| Tema | Trecho Poético | Significado Prático |
+|------|---------------|---------------------|
+| Confiança/Ansiedade | "Entrega o seu caminho ao Senhor; confia nele, e ele tudo fará." (Sl 37:5-6) | Convite para largar o peso. Entregar planos e medos nas mãos de Deus. |
+| Sabedoria | "O temor do Senhor é o princípio da sabedoria." (Pv 9:10) | Inteligência verdadeira começa com respeito profundo por Deus. |
+| Brevidade da Vida | "Ensina-nos a contar os nossos dias..." (Sl 90:12) | Oração por perspectiva. Viver com propósito alinhado à eternidade. |
+| Poder das Palavras | "A morte e a vida estão no poder da língua." (Pv 18:21) | Palavras constroem ou destroem. Somos responsáveis pelo fruto. |
+| Refúgio | "Aquele que habita no esconderijo do Altíssimo..." (Sl 91:1-2) | Decisão diária de viver perto de Deus. Descanso e proteção. |
+| Alegria na Adversidade | "Tende gozo quando passardes por provações." (Tg 1:2) | Provações são oportunidade de crescimento, forjam caráter. |
+| Humildade | "A humildade antecede a honra." (Pv 15:33) | Humildade é porta para honra verdadeira. |
+| Cuidado do Coração | "Guarda o seu coração, dele procedem as fontes da vida." (Pv 4:23) | Vigiar pensamentos e desejos, cultivar pureza. |
+| Força na Fraqueza | "O meu poder se aperfeiçoa na fraqueza." (2Co 12:9) | Fraquezas são palcos para poder de Deus. |
+| Gratidão | "Não te esqueças de nenhum dos seus benefícios." (Sl 103:2) | Lembrar benefícios cultiva alma bendita. |
+| Paciência | "Esperei confiantemente no SENHOR; ele se inclinou..." (Sl 40:1) | Espera confiante atrai resposta de Deus. |
+| Amor ao Próximo | "O que encobre a transgressão busca a amizade." (Pv 17:9) | Amor cobre falhas para preservar amizades. |
+| Integridade | "Melhor é o pobre que anda na integridade..." (Pv 28:6) | Integridade vale mais que riquezas. |
+| Proteção | "O anjo do SENHOR acampa ao redor dos que o temem." (Sl 34:7) | Proteção angélica para quem teme a Deus. |
+| Vitória Final | "Graças a Deus que nos dá a vitória..." (1Co 15:57) | Vitória sobre pecado e morte é dom em Cristo. |
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 5 — PRINCÍPIOS OPERACIONAIS INTERNOS                          -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="5" nome="PRINCIPIOS_OPERACIONAIS" tipo="ferramentas">
+
+### §5.1. Diretrizes de Persona [#PERSONA #VPU #PASTORAL]
+1. Validar tom como "Mesa de Café" (BASE §3.7)
+2. Persona: Sábio e didático, sem palestra acadêmica
+3. Concisão: Respeitar limites, focar no essencial
+
+### §5.2. Recursos Retóricos (Arco da Redenção) [#CONTRASTES #PROGRESSAO]
+<regra>
+1. Identificar tensão do texto (Ex: "Culpa")
+2. Selecionar par correspondente (Ex: "Redenção")
+3. Texto TERMINA obrigatoriamente no 2º termo (Boa Notícia)
+</regra>
+
+| Par 1 | Par 2 | Regra |
+|-------|-------|-------|
+| dor | graça | Conduzir progressão do 1º ao 2º |
+| queda | perdão | Encerrar no 2º termo |
+| espera | fidelidade | Contraste aparece naturalmente |
+| noite | luz | Não colar termos lado a lado |
+| culpa | redenção | Manter substantivo-teológico concreto |
+
+### §5.3. Regras de Ilustração por Modo
+| Modo | Permissão |
+|------|-----------|
+| MODO 1 (Devocional) | Moderação. Máximo 1 ilustração curta |
+| MODO 2 (FIA) | Extensivo. Até 2-3 ilustrações |
+| MODO Estudo | Encorajado. Aprofundar contexto |
+Regra geral: Ilustração serve ao texto bíblico, nunca o substitui.
+
+### §5.4. Conectores LQC (Voz Mesa de Café) [#CONECTORES #ORALIDADE #ANTI-ROBO]
+<regra>Substituir "Portanto", "Todavia", "Contudo" por transições de fala natural.</regra>
+
+**LAMENTO → ESPERANÇA:**
+- "Mas a verdade é que..."
+- "Só que Deus..."
+- "Ainda assim..."
+- "No meio disso tudo..."
+- "O cenário diz uma coisa, mas Deus diz..."
+
+**ENSINO → APLICAÇÃO:**
+- "O que isso muda na sua segunda-feira?"
+- "Na prática, significa que..."
+- "Então, o convite é..."
+- "Sabe o que isso quer dizer?"
+- "Para levar isso pra casa:"
+
+**CONFRONTO → GRAÇA:**
+- "Mas existe uma boa notícia."
+- "Apesar disso, Ele..."
+- "A virada acontece quando..."
+- "Não precisa terminar assim."
+- "A graça é que..."
+</secao>
+
+
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 8 — DICIONÁRIO ANTI-ARCAÍSMO                                  -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="8" nome="ANTI_ARCAISMO" tipo="dicionario">
+<precedencia>
+AUTORIDADE CANÔNICA: BASE §3.7.21 (TRADUTOR SENSORIAL)
+EM CONFLITO: BASE > CCE (sempre)
+MANTIDO: Gabarito de Tradução + Dicionário A001-A120.
+</precedencia>
+
+### §8.0. Gabarito Mestre (COMO traduzir — não O QUE)
+Instrução: Não explique o objeto antigo. Traduza a FUNÇÃO para hoje.
+
+| Imagem Bíblica | ❌ Explicação Histórica | ✅ Tradução Sensorial |
+|----------------|------------------------|----------------------|
+| Mesa no deserto | Antigamente se comia no chão | Deus prepara paz e sustento no meio da sua guerra diária |
+| Vara e Cajado | Ferramentas de pastoreio | Cuidado firme que protege e puxa de volta quando desvia |
+| Óleo sobre a cabeça | Ritual de hospitalidade | Sensação de ser escolhido e capacitado para o que vem |
+| Escudo | Feito de couro e madeira | Proteção contra ataques visíveis e invisíveis |
+| Rocha | Formação geológica | Lugar seguro onde dá para pisar sem medo |
+
+<regra_aplicacao>
+1. NÃO buscar imagem pronta neste arquivo
+2. USAR gabarito acima como MODELO de raciocínio
+3. CRIAR tradução original para o contexto do dia
+4. Se precisar de sinônimo simples → consultar §8.1
+</regra_aplicacao>
+
+### §8.1. Dicionário de Tradução Sensorial (A001-A120)
+Objetivo: Traduzir termos bíblicos em linguagem sensorial e cotidiana.
+Regras: Nunca "X significa Y". Usar frase pronta como explicação natural. 1 linha curta e concreta.
+
+| ID | Termo | Tradução Sensorial |
+|----|-------|-------------------|
+| A001 | Redenção | Resgate, fiança paga, segunda chance |
+| A002 | Justificação | Ficar em paz com Deus, sem dívida pendurada |
+| A003 | Santificação | Processo de amadurecer, ficando mais parecido com Jesus |
+| A004 | Glória | Presença de Deus tão forte que pesa e transforma o ambiente |
+| A005 | Ira de Deus | A reação justa de Deus contra tudo o que destrói |
+| A006 | Reverência | Respeito profundo, sem brincadeira, diante de quem Deus é |
+| A007 | Temor do Senhor | Levar Deus tão a sério que muda escolhas e limites |
+| A008 | Elevar o chifre | Ter a dignidade restaurada, cabeça erguida de novo |
+| A009 | Riquezas na casa | Estabilidade que permite cuidar bem e ser generoso |
+| A010 | Julgamento | Avaliação perfeita de Deus sobre o certo e o errado |
+| A011 | Iniquidade | Desalinhamento profundo, algo torto na raiz |
+| A012 | Transgressão | Passar de propósito um limite que traz vida |
+| A013 | Pecado | Atalhos e escolhas que nos ferem e ferem outros |
+| A014 | Carne | Impulsos descontrolados que querem mandar em tudo |
+| A015 | Idolatria | Colocar qualquer coisa no centro da vida no lugar de Deus |
+| A016 | Mundanismo | Viver como se Deus não existisse, só no ritmo do sistema |
+| A017 | Coração endurecido | Coração fechado, resistente, que não quer ser corrigido |
+| A018 | Concupiscência | Desejo que domina e passa por cima de qualquer limite |
+| A019 | Abominação | Algo totalmente destrutivo, que Deus não tolera |
+| A020 | Escribas e fariseus | Gente religiosa por fora, mas sem amor nem coerência |
+| A021 | Tribulação | Pressão grande, dias ruins que apertam por todos os lados |
+| A022 | Angústia | Aperto no peito, sensação de sufoco por dentro |
+| A023 | Lamento | Choro sincero diante da realidade como ela é |
+| A024 | Aflição | Dor que insiste, preocupação que não passa fácil |
+| A025 | Pranto | Choro forte, desabafado, de quem chegou no limite |
+| A026 | Sede espiritual | Vazio profundo, sensação de que algo essencial está faltando |
+| A027 | Languidez | Desânimo extremo, sem força nem brilho |
+| A028 | Quebrantamento | Coração partido, mas aberto para ser tratado |
+| A029 | Firmeza | Estabilidade emocional, pé no chão mesmo no caos |
+| A030 | Consolação | Alívio real, alguém segurando a dor junto com você |
+| A031 | Rocha | Lugar seguro onde dá para pisar sem medo |
+| A032 | Fortaleza | Abrigo forte, que ninguém consegue derrubar |
+| A033 | Escudo | Proteção constante contra ataques visíveis e invisíveis |
+| A034 | Vale da sombra da morte | Momento sombrio, onde parece que tudo vai acabar |
+| A035 | Manancial | Fonte de água que não seca, lugar que renova |
+| A036 | Cativeiro | Prisão interna, vida engatada em algo que aprisiona |
+| A037 | Libertação | Saída real das correntes que prendiam |
+| A038 | Caminho reto | Decisões simples e claras, sem jogo duplo |
+| A039 | Vara e cajado | Cuidado firme de Deus que protege e corrige |
+| A040 | Pão da vida | Aquilo que realmente alimenta a alma, não só distrai |
+| A041 | Circuncidar o coração | Deixar Deus cortar excessos e durezas por dentro |
+| A042 | Endurecer a cerviz | Ficar teimoso, travado, recusando ouvir |
+| A043 | Povo de dura cerviz | Gente que resiste a qualquer orientação de Deus |
+| A044 | Abatido de espírito | Emocionalmente esmagado, sem ânimo |
+| A045 | Espírito contrito | Coração quebrado, mas ainda sincero diante de Deus |
+| A046 | Espírito voluntário | Disposição verdadeira para obedecer |
+| A047 | Espírito queixoso | Postura interna de reclamação constante |
+| A048 | Espírito altivo | Atitude orgulhosa, se achando acima de todos |
+| A049 | Espírito humilde | Reconhecer limites e depender de Deus |
+| A050 | Idolatria do coração | Transformar coisas/pessoas/controle em centro da vida |
+| A051 | Obras da carne | Atitudes guiadas por impulsos descontrolados |
+| A052 | Fruto do Espírito | Conjunto de atitudes que mostram Jesus em nós |
+| A053 | Caminhar na carne | Viver só pelo impulso, sem considerar Deus |
+| A054 | Caminhar em espírito | Deixar Deus influenciar decisões e reações |
+| A055 | Crucificar a carne | Dizer 'não' com firmeza a certos desejos |
+| A056 | Velho homem | Modo antigo de viver, longe de Deus |
+| A057 | Novo homem | Nova forma de viver, alinhada com Cristo |
+| A058 | Velha natureza | Tendências destrutivas herdadas e aprendidas |
+| A059 | Regeneração | Reinício total por dentro, como nascer de novo |
+| A060 | Conversão | Virada de rota profunda na vida |
+| A061 | Justiça própria | Tentar se tornar aceitável por esforço próprio |
+| A062 | Justiça de Deus | Ser aceito por Deus por causa de Jesus, não da performance |
+| A063 | Impiedade | Viver como se Deus não existisse |
+| A064 | Piedade | Viver levando Deus a sério em tudo |
+| A065 | Santidade | Viver longe do que destrói e perto de Deus |
+| A066 | Graça | Deus dando o que não merecemos |
+| A067 | Misericórdia | Deus não dando o castigo que merecíamos |
+| A068 | Longanimidade | Paciência esticada de Deus com a nossa bagunça |
+| A069 | Ira tardia | Demorar muito para explodir em raiva |
+| A070 | Inabalável | Que não desmorona quando tudo balança |
+| A071 | Quadro de idolatria | Cenário onde algo tomou o lugar de Deus no centro |
+| A072 | Discernir espíritos | Perceber o que vem de Deus e o que não vem |
+| A073 | Profecia | Palavra que traz alinhamento e encorajamento em nome de Deus |
+| A074 | Palavra de conhecimento | Percepção específica que Deus traz sobre uma situação |
+| A075 | Palavra de sabedoria | Aplicar a verdade certa na hora certa |
+| A076 | Coração dobrado | Intenção dividida, meio com Deus, meio com o mundo |
+| A077 | Ser tíbio | Nem frio nem quente, apático espiritualmente |
+| A078 | Apagar o Espírito | Ignorar continuamente os alertas de Deus |
+| A079 | Entristecer o Espírito | Persistir em atitudes que ferem o coração de Deus |
+| A080 | Revestir-se de Cristo | Assumir atitudes e mentalidade parecidas com as de Jesus |
+| A081 | Bênção | Favor imerecido de Deus que impulsiona |
+| A082 | Maldizer | Falar para baixo, lançar palavras que esmagam |
+| A083 | Maldição | Sentença negativa tentando definir o futuro |
+| A084 | Galardão | Recompensa que vem de Deus |
+| A085 | Obra vã | Esforço que parece grande, mas não gera fruto real |
+| A086 | Colheita espiritual | Consequência dos caminhos que escolhemos |
+| A087 | Lançar o pão sobre as águas | Fazer o bem sem controlar o retorno |
+| A088 | Andar em verdade | Viver com coerência entre fé e prática |
+| A089 | Guardar o coração | Proteger o interior do que contamina |
+| A090 | Resistir ao diabo | Não ceder às sugestões destrutivas |
+| A091 | Ser sal da terra | Trazer sabor e preservação onde Deus te coloca |
+| A092 | Ser luz do mundo | Mostrar direção com a vida, não só com palavras |
+| A093 | Tomar a cruz | Assumir renúncias por amor a Jesus |
+| A094 | Negar a si mesmo | Abrir mão de vontades para cuidar de algo maior |
+| A095 | Renunciar tudo | Estar disposto a não ter nada acima de Deus |
+| A096 | Ser manso | Ter força sob controle, não fraqueza |
+| A097 | Ser pacificador | Construir pontes em vez de guerras |
+| A098 | Coração de pedra | Sensibilidade quase morta, sem empatia |
+| A099 | Coração de carne | Sensibilidade restaurada, aberta para Deus e para o outro |
+| A100 | Julgar segundo a carne | Analisar só pela aparência, sem considerar o coração |
+| A101 | Vigiar | Estar atento ao que entra na mente e no coração |
+| A102 | Jejuar | Abrir mão de algo para focar em Deus |
+| A103 | Ungir | Separar alguém ou algo para propósito especial de Deus |
+| A104 | Refrigério | Descanso profundo, ar novo na alma |
+| A105 | Consolador | Quem põe o braço no ombro e acompanha na dor |
+| A106 | Selo do Espírito | Marca de que pertencemos a Deus de verdade |
+| A107 | Primícias | Primeira parte entregue a Deus como prioridade |
+| A108 | Pão nosso de cada dia | Sustento diário, sem estoque de ansiedade |
+| A109 | Caminhar em novidade de vida | Viver de fato como quem recomeçou com Deus |
+| A110 | Estar em Cristo | Ter a vida conectada a Ele como fonte |
+| A111 | Casa sobre a rocha | Vida construída em fundamentos firmes |
+| A112 | Casa sobre a areia | Vida apoiada em coisas instáveis |
+| A113 | Servo fiel | Quem permanece constante, mesmo sem aplauso |
+| A114 | Servo infiel | Quem só serve quando é visto ou tem vantagem |
+| A115 | Lâmpada acesa | Consciência desperta e sensível |
+| A116 | Óleo na lamparina | Vida interior abastecida pela presença de Deus |
+| A117 | Vaso de barro | Fragilidade humana que Deus usa mesmo assim |
+| A118 | Tesouro em vasos de barro | Deus colocando algo precioso dentro de gente comum |
+| A119 | Arrancar a trave do olho | Encarar os próprios erros antes de apontar o do outro |
+| A120 | Julgar segundo a aparência | Formar opinião sem conhecer a história inteira |
+
+<protocolo_aplicacao>
+1. Mapear lexico_bruto_do_dia contra esta tabela
+2. Modos devocionais (M1, M2, M4) DEVEM:
+   - Evitar termos da coluna esquerda como vocabulário principal
+   - Usar equivalentes da direita na EXPLICAÇÃO e APLICAÇÃO
+3. Permitir 1 ocorrência quando fizer sentido teológico
+4. Em dúvida: escolher opção mais genérica, preservando teologia e experiência humana
+REGRA FINAL: Concretude Serena — teologia mesma, vocabulário moderno, paz e fluidez.
+</protocolo_aplicacao>
+
+### Exemplo Aplicado: Salmo 23:4
+**Antes:** "No vale da sombra da morte, a vara e o cajado do Senhor me consolam."
+**Depois:** "Mesmo no caminho mais escuro, onde o medo parece real, Ele está do meu lado. Sua direção firme e Seu cuidado me acalmam."
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 9 — CLIMAS SAZONAIS E CULTURAIS                               -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="9" nome="CLIMAS_SAZONAIS" tipo="calibragem">
+| ID | Evento | Clima Emocional | Regra Pastoral |
+|----|--------|----------------|----------------|
+| C001 | Início de Ano / Janeiro | Expectativa, pressão por mudança, ansiedade | Focar em constância e dependência de Deus, não apenas metas humanas |
+| C002 | Quaresma / Páscoa | Reflexão, arrependimento, gratidão | Enfatizar substituição na cruz e vitória sobre a morte |
+| C003 | Crises Financeiras | Insegurança, escassez, medo do amanhã | Focar em soberania e provisão diária (Jeová Jireh) |
+| C004 | Final de Ano / Natal | Cansaço, nostalgia, balanço de vida | Trazer paz do "Emanuel" (Deus conosco) e descanso |
+| C005 | Perda / Luto Coletivo | Fragilidade, busca por sentido, silêncio | Validar a dor (Lamento) antes de apontar esperança eterna |
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 10 — TRADUTOR, GUARDA E LITURGIAS                             -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="10" nome="TRADUTOR_GUARDA" tipo="filtros">
+
+### §10.1. Tradutor de Realidade (Anti-Jargão)
+<regra>Filtro final de "humanidade". Escanear rascunho e substituir:</regra>
+
+| Termo Técnico | Tradução Mesa de Café |
+|--------------|----------------------|
+| Guerra espiritual | Aquelas batalhas que a gente luta em silêncio |
+| Santificação | O processo doloroso de amadurecer |
+| Providência | O cuidado de Deus nos detalhes que a gente não vê |
+| Pecado / Queda | Nossas sabotagens / Nossas escolhas erradas |
+| Vitória | Passar pelo dia com o coração em paz |
+
+### §10.2. Doutrina-Limite (Guarda)
+* **Cristocentrismo:** Sem forçar tipologias indevidas.
+* **Prosperidade:** Vetar promessas deterministas de bens ou curas mágicas.
+* **Moralismo:** Proibido dar ordens sem apresentar o Evangelho (graça).
+* **Psicologismo:** Evitar conselhos puramente motivacionais sem base bíblica.
+
+### §10.4. Liturgias de Descanso (Suporte ao Pastor Consolador)
+* **Bênção de Sono:** "O Deus que nos sustenta é o mesmo que guarda a sua vida agora. Entregue o que você não resolveu; Ele não dorme."
+* **Frase de Desligamento:** "A graça de hoje foi suficiente para hoje. O amanhã pertence à providência. Descanse no silêncio do Pai."
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 11 — TESTEMUNHOS REAIS                                        -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="11" nome="TESTEMUNHOS_REAIS" tipo="humanizador">
+<regra_uso>
+- Gatilho: tema_id do dia coincide com tema_id de TEST_xxx
+- Inserir resumo como ilustração humanizadora
+- Máximo 1 testemunho por geração
+- Posição: início ou meio — nunca substituir aplicação
+- Focar na DOR (antes) e na GRAÇA (depois)
+</regra_uso>
+
+| ID | Tema | Resumo da Cena | Ponto de Virada | Selo |
+|----|------|----------------|-----------------|------|
+| TEST_001 | T196 | Executivo com ataques de pânico no carro antes do trabalho, peito explodindo pela pressão de metas | "Oração do Suspiro" + identidade não é cargo → paz que excede o entendimento | Paz no caos |
+| TEST_002 | T083 | Mulher carregou 15 anos peso do abandono do pai, adoecendo fisicamente | Entendeu que perdão é para liberdade dela. Soltou dívida, dor física sumiu | Correntes quebradas |
+| TEST_003 | T143 | Pai perdeu emprego na semana que filho nasceu, despensa vazia, medo de despejo | Não escondeu a dor de Deus. Oferta anônima na porta. Deus dá pão de cada dia | Mesa no deserto |
+| TEST_004 | T002 | Jovem se sentia "estragado" por erros do passado, achando que nunca seria usado | Lendo história de Davi: Deus não chama perfeitos, mas disponíveis. Hoje lidera jovens | Rosto levantado |
+| TEST_005 | T057 | Mãe perdeu único filho, meses em silêncio, achando que Deus era inimigo | Consolo na presença silenciosa de comunidade que chorou junto, até ouvir Deus de novo | Choro abraçado |
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 12 — INSIGHTS DE PÚLPITO                                      -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="12" nome="INSIGHTS_PULPITO" tipo="voz_autoral">
+<regra_uso>
+0. Nunca usar para trocar/ignorar a PASSAGEM_DO_DIA
+1. Buscar insights que aprofundem o tema do dia
+2. Usar "frase_de_efeito" para fechar parágrafos, títulos ou ganchos
+3. Mimetizar "estilo_de_fala" para autoridade + calor humano
+4. Se base_biblica não for Passagem do Dia → tratar como ilustração
+</regra_uso>
+
+| ID | Título | Base | Tema | Insight Chave | Frase de Efeito |
+|----|--------|------|------|---------------|-----------------|
+| PREG_001 | A História não está à deriva | Ap 5 | T112 | A história não é caminhão sem freio. O livro está na mão de Quem está no trono. Só o Cordeiro pode abrir os selos. | "O mundo pode parecer cinzento, mas Deus não é colhido de surpresa." |
+| PREG_002 | A Esperança que não se Desespera | Gn (Isaque/Jacó) | T059 | Só tem esperança que não desespera quem descansa na providência. Isaque orou 20 anos por filho. Deus não trabalha com nosso relógio. | "A pressa é inimiga da bênção; o tempo de Deus não é o seu." |
+| PREG_003 | O Tripé do Caos Social | 2Tm 3 | T071 | Caos da sociedade: três amores mal direcionados — Filutós (a si), Filarguros (dinheiro), Filedonos (prazeres). | "O dinheiro é um ídolo que exige adoração exclusiva, mas nunca satisfaz." |
+| PREG_004 | O Balanço Final de Paulo | 2Tm 4:6-8 | T002 | Para o crente, morte não é destino triste — é "partida": tirar fardo, desatar barco, desmontar barraca temporária. | "Mudar de endereço não é o fim, é o começo da glória." |
+| PREG_005 | A Intercessão do Espírito | Rm 8:26-30; Sl 73 | T195 | Não somos vencedores por sermos fortes, mas porque o Espírito nos assiste na fraqueza. Intercede com gemidos inexprimíveis. | "Quem tem o Filho, tem tudo." |
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 13 — CATÁLOGO PVC_BIBLIOTECA (Referência Externa)             -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="13" nome="CATALOGO_BIBLIOTECA" tipo="referencia">
+<regra>
+- OPCIONAL. Fontes auxiliares de sabedoria, nunca SSOT.
+- Somente usar se material disponível no contexto (arquivos carregados).
+- Se não disponível: pular em silêncio.
+- Subordinação: PASSAGEM_DO_DIA > BASE > CCE > PVC > BIBLIOTECA.
+</regra>
+
+| Categoria | Arquivo | Conteúdo | Uso |
+|-----------|---------|----------|-----|
+| Doutrina/Teologia | Principio_Teologico.txt | Confissão de fé, Justificação, Santificação, Graça, Trindade | GDS e M22 |
+| Respostas Difíceis | Apologetica_Respostas_Dificeis.txt | Keller/Strobel sobre sofrimento e exclusividade de Cristo | M17 e dúvidas céticas |
+| Consolo em Crise | Manual_Consolo_Luto_Ansiedade.txt | Roteiros emergência: luto, burnout, ansiedade severa | Sala de Espera, M1/M5/M7 |
+| Devocional Clássico | Mananciais_no_Deserto_Consolo.txt | Metáforas sobre silêncio de Deus e escola da dor | M1, M5, M7 |
+| Cultura/História | Curiosidades_Culturais_Biblicas.txt | Casamento judaico, pastoreio, agricultura | M21, M1.9 |
+| Liturgia/Oração | Oracoes_Puritanas_Vale_da_Visao.txt | Confissão, humilhação, adoração reverente | M10, M15 |
+| Sermões Clássicos | Sermoes_Jonathan_Edwards.txt | Teologia densa sobre soberania | M22 |
+| Hinário | Hinos_Classicos_Harpa_Crista.txt | Letras sobre cruz, promessas, fidelidade | M1, M5, M10 |
+| Ilustrações | Ilustracoes_O_Peregrino_Bunyan.txt | Alegorias: Pântano do Desânimo, Fardo, Cruz | M1.9, M2 |
+</secao>
+
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+<!-- SEÇÃO 14 — NUVEM DE TESTEMUNHAS (100 Frases de Autoridade)          -->
+<!-- ══════════════════════════════════════════════════════════════════════ -->
+
+<secao id="14" nome="NUVEM_TESTEMUNHAS" tipo="catalogo">
+<regra_uso>
+- Gatilho: tema ou autor coincidir com foco do dia
+- Inserir como gancho ou ponto de autoridade
+- Máximo 1 frase por geração
+- PROIBIDO substituir exegese por citação
+- Preferir frases curtas (1-2 linhas), atribuição clara
+</regra_uso>
+
+| ID | Autor | Tema | Frase |
+|----|-------|------|-------|
+| F001 | C.S. Lewis | Sofrimento | "Deus sussurra em nossos prazeres, fala em nossa consciência, mas grita em nossos sofrimentos." |
+| F002 | Spurgeon | Ansiedade | "A ansiedade não esvazia o amanhã de suas tristezas, mas esvazia o hoje de sua força." |
+| F003 | Billy Graham | Salvação | "Eu li a última página da Bíblia. Tudo vai terminar bem." |
+| F004 | Santo Agostinho | Descanso | "Fizeste-nos para Ti, Senhor, e nosso coração anda inquieto enquanto não descansar em Ti." |
+| F005 | M.L. King Jr. | Fé | "A fé é dar o primeiro passo, mesmo quando você não vê a escada inteira." |
+| F006 | Hudson Taylor | Provisão | "A obra de Deus, feita do jeito de Deus, jamais terá falta dos suprimentos de Deus." |
+| F007 | Elisabeth Elliot | Obediência | "Deus é Deus é o fundamento da minha confiança. Ele sabe o que está fazendo." |
+| F008 | John Piper | Alegria | "Deus é mais glorificado em nós quando estamos mais satisfeitos nEle." |
+| F009 | Corrie Ten Boom | Preocupação | "A preocupação é um ciclo de pensamentos ineficientes girando em torno de um centro de medo." |
+| F010 | Tim Keller | Evangelho | "Somos muito mais pecadores do que ousamos acreditar, mas muito mais amados do que ousamos esperar." |
+| F011 | A.W. Tozer | Adoração | "O que nos vem à mente quando pensamos sobre Deus é a coisa mais importante sobre nós." |
+| F012 | Bonhoeffer | Graça | "A graça barata é perdão sem arrependimento; a graça preciosa é o tesouro escondido." |
+| F013 | D.L. Moody | Oração | "Eu prefiro saber como orar do que saber como pregar." |
+| F014 | Jim Elliot | Propósito | "Não é tolo quem dá o que não pode reter para ganhar o que não pode perder." |
+| F015 | Max Lucado | Esperança | "Deus nunca disse que a jornada seria fácil, mas disse que a chegada valeria a pena." |
+| F016 | João Calvino | Conhecimento | "Quase toda a sabedoria consiste em duas partes: o conhecimento de Deus e o de nós mesmos." |
+| F017 | Martinho Lutero | Escrituras | "A Bíblia é viva, fala comigo; tem pés, corre atrás de mim; tem mãos, me segura." |
+| F018 | Oswald Chambers | Consagração | "O meu limite é o ponto onde Deus começa." |
+| F019 | Ravi Zacharias | Verdade | "Deus não nos dá explicações; Ele nos dá promessas." |
+| F020 | R.C. Sproul | Santidade | "Deus é santo e nós não somos. Entre esses dois fatos está o Evangelho." |
+| F021 | Rick Warren | Propósito | "Você não é um acidente. Sua vida é um ato de Deus." |
+| F022 | C.S. Lewis | Identidade | "Você não tem uma alma. Você é uma alma. Você tem um corpo." |
+| F023 | John Stott | Discipulado | "O chamado cristão não é para sermos bem-sucedidos, mas fiéis." |
+| F024 | A. Kuyper | Soberania | "Não há um centímetro quadrado sobre o qual Cristo não exclame: 'É meu!'" |
+| F025 | A.W. Pink | Soberania | "O destino é o braço de Deus; a sorte é o Seu segredo." |
+| F026 | Joni E. Tada | Sofrimento | "Deus permite o que Ele odeia, para realizar o que Ele ama." |
+| F027 | R. Wurmbrand | Perseguição | "Deus é 'Aquele que é'. O sofrimento é apenas 'aquele que passa'." |
+| F028 | Spurgeon | Depressão | "Aprendi a beijar a onda que me lança contra a Rocha dos Séculos." |
+| F029 | Vance Havner | Tristeza | "Deus usa homens quebrados porque é preciso pedaços quebrados para construir o Seu Reino." |
+| F030 | Thomas Watson | Aflição | "A aflição é o diamante de Deus para lapidar as Suas joias." |
+| F031 | E.M. Bounds | Oração | "Deus não responde a orações; Ele responde a pessoas que oram." |
+| F032 | Kierkegaard | Oração | "A oração não muda a Deus, mas muda quem ora." |
+| F033 | Martin Lutero | Oração | "Tenho tanto para fazer hoje que preciso passar as primeiras três horas em oração." |
+| F034 | A.W. Tozer | Adoração | "Nunca vi um cristão alegre que não fosse uma pessoa de oração." |
+| F035 | William Carey | Expectativa | "Espere grandes coisas de Deus. Tente grandes coisas para Deus." |
+| F036 | B. Manning | Graça | "Deus te ama como você é, não como você deveria ser." |
+| F037 | Philip Yancey | Graça | "Graça significa que não há nada que possamos fazer para Deus nos amar mais, nem menos." |
+| F038 | Whitefield | Novo Nascimento | "Ajuda-me a pregar como um homem moribundo para homens moribundos." |
+| F039 | Blaise Pascal | Vazio | "Há no coração do homem um vazio do tamanho de Deus que nada pode preencher." |
+| F040 | D.L. Moody | Caráter | "Caráter é o que você é no escuro." |
+| F041 | Ravi Zacharias | Fé | "A fé não elimina as perguntas, mas confia na Resposta." |
+| F042 | G. MacDonald | Confiança | "Ser confiável é um elogio maior do que ser amado." |
+| F043 | Charles Finney | Avivamento | "O avivamento nada mais é do que um novo começo de obediência a Deus." |
+| F044 | Francis Chan | Eternidade | "Nosso maior medo não deve ser o fracasso, mas o sucesso em coisas que não importam." |
+| F045 | John Wesley | Zelo | "Coloque fogo em si mesmo e as pessoas virão de longe para ver você queimar." |
+| F046 | Watchman Nee | Vida Cristã | "Não é quanto fazemos, mas quanto Cristo faz através de nós." |
+| F047 | Andrew Murray | Humildade | "A humildade é a única escada que nos leva à presença de Deus." |
+| F048 | David Platt | Missão | "Fomos criados para algo muito maior do que apenas sobreviver." |
+| F049 | L. Ravenhill | Oração | "Um homem que se ajoelha diante de Deus pode enfrentar qualquer coisa de pé." |
+| F050 | J. Hill Perry | Santidade | "Deus não nos chamou para sermos nós mesmos; Ele nos chamou para sermos santos." |
+| F051 | G.K. Chesterton | Gratidão | "A gratidão é felicidade multiplicada pela maravilha." |
+| F052 | Henri Nouwen | Solidão | "Na solidão, aprendemos a ouvir Deus para falar com amor no barulho." |
+| F053 | E. Peterson | Constância | "A vida cristã é uma longa obediência na mesma direção." |
+| F054 | D.A. Carson | Escrituras | "Um texto sem contexto é apenas um pretexto." |
+| F055 | Paul Washer | Verdade | "Não somos amados porque somos bons; somos amados porque Ele é bom." |
+| F056 | A.W. Tozer | Contentamento | "Quem tem Deus e tudo o mais, não tem mais do que quem tem apenas Deus." |
+| F057 | Dallas Willard | Transformação | "Deus nunca usou ninguém para algo grande sem primeiro torná-lo pequeno." |
+| F058 | Beth Moore | Insegurança | "Sua confiança não vem do que você pode fazer, mas do que Deus pode fazer em você." |
+| F059 | Matt Chandler | Graça | "A graça é a força que nos capacita a fazer o que a verdade exige." |
+| F060 | Joyce Meyer | Mente | "Onde a mente vai, o homem segue." |
+| F061 | John Bunyan | Perseverança | "Não nos arrependeremos de ter sofrido por Cristo, mas de termos sofrido tão pouco." |
+| F062 | William Booth | Compaixão | "Enquanto houver uma alma perdida, eu lutarei." |
+| F063 | Catherine Booth | Ação | "Se quer ser relevante, esteja disposto a ser impopular." |
+| F064 | Jonathan Edwards | Glória | "Meu objetivo é ser o mais feliz possível em Deus por toda a eternidade." |
+| F065 | Alister McGrath | Apologética | "O cristianismo não é apenas ideias, é uma forma de ver toda a realidade." |
+| F066 | Lester Sumrall | Destino | "Alimente sua fé e suas dúvidas morrerão de fome." |
+| F067 | T.D. Jakes | Superação | "Não pode abraçar o futuro segurando o cadáver do passado." |
+| F068 | Bill Johnson | Impossível | "É difícil ter um problema maior do que a promessa de Deus." |
+| F069 | R. Bonnke | Espírito Santo | "O Espírito Santo não é um luxo, Ele é uma necessidade absoluta." |
+| F070 | Steven Furtick | Incerteza | "Não avalie o amanhã com base no cansaço do hoje." |
+| F071 | Priscilla Shirer | Identidade | "Deus não te deu espírito de medo, mas de poder e amor." |
+| F072 | Christine Caine | Resiliência | "Às vezes, quando você é enterrado, na verdade está sendo plantado." |
+| F073 | Louie Giglio | Adoração | "Adoração não é estilo musical, é resposta à grandeza de Deus." |
+| F074 | John Maxwell | Liderança | "Liderança é influência, nada mais, nada menos." |
+| F075 | Judah Smith | Jesus | "Jesus não é uma religião, Ele é uma pessoa que quer te conhecer." |
+| F076 | Bob Goff | Amor | "O amor não apenas diz 'eu te amo', o amor faz algo a respeito." |
+| F077 | J. Bethke | Religião | "Religião é o homem procurando Deus; Evangelho é Deus procurando o homem." |
+| F078 | Lisa TerKeurst | Coração | "Deus não quer só mudar comportamento, Ele quer mudar o coração." |
+| F079 | Sadhu S. Singh | Presença | "A oração não é apenas pedir, é respirar a atmosfera de Deus." |
+| F080 | Amy Carmichael | Sacrifício | "Não pode haver amor sem sofrimento, nem vida sem morte." |
+| F081 | Bede Griffiths | Silêncio | "Deus fala no silêncio do coração, e nós respondemos na nossa vida." |
+| F082 | C.S. Lewis | Maturidade | "Algum dia você será velho o suficiente para ler contos de fadas novamente." |
+| F083 | T. à Kempis | Imitação | "Não sejas orgulhoso pelo que sabes, mas humilde pelo que não sabes." |
+| F084 | Ignácio de Loyola | Serviço | "Tudo para a maior glória de Deus." |
+| F085 | Teresa de Ávila | Paciência | "Nada te turbe, nada te espante, tudo passa, Deus não muda." |
+| F086 | São Francisco | Pregar | "Pregue o Evangelho em todo tempo e, se necessário, use palavras." |
+| F087 | Fulton Sheen | Amor Divino | "É preciso três para amar: você, a outra pessoa e Deus." |
+| F088 | Padre Pio | Confiança | "Reze, espere e não se preocupe." |
+| F089 | S. Wigglesworth | Poder | "Não sou movido pelo que vejo, sou movido pelo que creio." |
+| F090 | K. Kuhlman | Entrega | "Eu não tenho nada, eu não sou nada. Tudo é dEle." |
+| F091 | A.S. McPherson | Jesus Cristo | "Jesus Cristo é o mesmo ontem, hoje e eternamente." |
+| F092 | W. Seymour | Unidade | "A cor da pele desaparece sob o sangue de Jesus." |
+| F093 | Angus Buchan | Simplicidade | "Mantenha as coisas simples; Deus é simples, o homem complica." |
+| F094 | Nicky Gumbel | Curiosidade | "As perguntas mais profundas merecem as respostas mais profundas." |
+| F095 | Ravi Zacharias | Sentido | "Deus é o único que pode dar sentido ao seu sofrimento." |
+| F096 | Lee Strobel | Evidência | "A ressurreição não é mito; é o fato mais importante da história." |
+| F097 | N.T. Wright | Reino | "O Reino de Deus não é sobre ir para o céu, mas sobre o céu vir para a terra." |
+| F098 | G. MacDonald | Ordem | "Um mundo interior ordenado é a base para uma vida exterior eficaz." |
+| F099 | Brené Brown | Vulnerabilidade | "A vulnerabilidade é o lugar onde a graça nos encontra." |
+| F100 | Jesus Cristo | Consumação | "Está consumado." |
+</secao>
+
+## FIM Conhecimento_Compilado_Essencial.v1.4.txt ##

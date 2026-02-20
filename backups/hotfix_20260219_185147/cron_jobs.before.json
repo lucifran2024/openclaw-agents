@@ -1,0 +1,84 @@
+{
+  "version": 1,
+  "jobs": [
+    {
+      "id": "d4d367d1-b4fb-446e-948d-5c78b48f8f2e",
+      "agentId": "main",
+      "name": "Envio de Devocionais Diários (05:00)",
+      "enabled": true,
+      "createdAtMs": 1771356329380,
+      "updatedAtMs": 1771488000082,
+      "schedule": {
+        "kind": "cron",
+        "expr": "0 5 * * *",
+        "tz": "America/Sao_Paulo"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "[AGENDAMENTO AUTOMÁTICO - PROCESSO COMPLETO]\n\n📅 São 05:00. Iniciando geração dos 3 devocionais/orações diários.\n\n=== INSTRUÇÕES PARA A PASTORA CHEFE ===\n\n1. CONSULTAR DOCUMENTOS SOBERANOS:\n- PASTOR_CHEFE.md (fluxo de roteamento)\n- PLANO_LEITURA_BIBLICA.md (passagens do dia)\n- MEMORY.md (DNA Lucifran)\n- **skills/prophetic-voice/SKILL.md** (TÉCNICA DE ESCRITA OBRIGATÓRIA)\n\n2. CRIAR OS 3 DEVOCIONAIS/ORAÇÕES:\n- Identificar passagens de hoje\n- Decidir voz para cada (Profética 🔥 ou Consoladora 🤗)\n- Usar sessions_spawn para fluxo A2A real quando disponível (ver PASTOR_CHEFE.md):\n  → Pastor escreve (USAR TÉCNICA PROPHETIC VOICE - Gancho/Virada/Comando)\n  → Pastor Revisor valida (remove rótulos, corrige, web_search para versículos)\n  → Pastor Formatador prepara (negrito, citação, emoji)\n  → Pastora Chefe valida e aplica DNA Lucifran\n- Quando sessions_spawn indisponível: simular fases no mesmo contexto\n\n3. REGISTRAR NO HISTÓRICO:\n- Criar arquivos em `devocionais/historico/`\n\n4. ENVIAR COM MENSAGEM PADRÃO:\n- Usar MENSAGENS.md (template 'Devocional pronto')\n- Garantir qualidade máxima (sem rótulos, sem 'tua/teu')\n\n=== QUALIDADE OBRIGATÓRIA (CRITÉRIO DE REJEIÇÃO) ===\n- **PROFUNDIDADE:** Textos rasos ou autoajuda serão rejeitados. Use o 'Soco Espiritual'.\n- **TAMANHO:** Mínimo de 500 caracteres (exceto estilo 'Ultra-Curto').\n- **SEM RÓTULOS:** Não usar 'Versículo-chave', 'Reflexão', etc.\n- **SEM BASTIDORES:** Não mencionar agentes ou processos\n- **FORMATO WHATSAPP:** Versículo com > ***'Texto'***, negritos estratégicos\n- **TRATAMENTO:** Usar sempre 'sua/seu' (nunca 'tua/teu')\n- **DNA LUCIFRAN:** Frases curtas, contrastes, profundidade\n\n=== ENTREGA ===\nEnviar as 3 mensagens formatadas em BALÕES INDIVIDUAIS para o Lucifran postar manualmente."
+      },
+      "state": {
+        "nextRunAtMs": 1771574400000,
+        "lastRunAtMs": 1771488000002,
+        "lastStatus": "ok",
+        "lastDurationMs": 80,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "14bc960b-f0bb-481d-ac80-f1607e65f739",
+      "agentId": "main",
+      "name": "Geração Massiva Modo Master (04:00)",
+      "enabled": true,
+      "createdAtMs": 1771450131620,
+      "updatedAtMs": 1771484499656,
+      "schedule": {
+        "kind": "cron",
+        "tz": "America/Sao_Paulo",
+        "expr": "0 4 * * *"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "HEARTBEAT_OK\n\n=== 💎 COMANDO AGENDADO: ATIVAR MODO MASTER (04:00) ===\n\nIniciando o protocolo de geração de 15 peças para a leitura do dia.\n\nTAREFAS SOBERANAS:\n1. Identificar a passagem correta no PLANO_LEITURA_BIBLICA.md para a data atual.\n2. Aplicar o fluxo completo: Profético -> Revisor -> Formatador.\n3. REGRA DE ENTREGA: Disparar as 15 peças em MENSAGENS INDIVIDUAIS (15 bolhas de chat separadas).\n4. Silêncio operacional: apenas as mensagens prontas, sem meta-texto ou logs técnicos."
+      },
+      "state": {
+        "nextRunAtMs": 1771570800000,
+        "lastRunAtMs": 1771484400003,
+        "lastStatus": "ok",
+        "lastDurationMs": 99653,
+        "consecutiveErrors": 0
+      }
+    },
+    {
+      "id": "3cad4472-ca1b-478f-bca9-adc7173b8c47",
+      "agentId": "main",
+      "name": "Ciclo Soberano Horário — 16 Especialistas",
+      "enabled": true,
+      "createdAtMs": 1771357479200,
+      "updatedAtMs": 1771536967374,
+      "schedule": {
+        "kind": "cron",
+        "tz": "America/Sao_Paulo",
+        "expr": "0 * * * *"
+      },
+      "sessionTarget": "main",
+      "wakeMode": "now",
+      "payload": {
+        "kind": "systemEvent",
+        "text": "HEARTBEAT_OK\n\n=== 🛡️ CICLO SOBERANO HORÁRIO — 16 ESPECIALISTAS EM CAMPO ===\n\nProtocolo: auditoria/MODO_SENTINELA.md + PROTOCOLO_PROFUNDO.md\n\nREGRA SUPREMA: Cada especialista DEVE entregar MÍNIMO 2 ações reais e documentadas.\nAção real = edit/write executado OU achado reportado com evidência. Relatório vago = ciclo inválido.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🧱 CAMADA TÉCNICA (ARQUITETURA)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n[E1 - ARQUITETO DE SISTEMAS]\n- Verificar blocos MD malformados (cabeçalhos colados, listas quebradas, typos de formatação).\n- Corrigir formatação YAML/JSON nos arquivos de configuração se houver irregularidades.\n→ Mínimo 2 edições cirúrgicas ou 2 achados documentados.\n\n[E2 - ANALISTA DE INTEGRIDADE]\n- Verificar se os § citados em MODO_MASTER.md existem em BASE_CONHECIMENTO.md.\n- Buscar referências a arquivos inexistentes ou caminhos quebrados em todos os INSTRUCTIONS.md.\n→ Mínimo 2 links/referências verificados e corrigidos ou confirmados.\n\n[E3 - ENGENHEIRO DE PROMPT]\n- Identificar comandos vagos ou ambíguos nos payloads de jobs e instruções dos pastores.\n- Tornar 2 instruções mais precisas com Chain of Thought ou exemplo concreto.\n→ Mínimo 2 instruções otimizadas.\n\n[E4 - SKILL HUNTER]\n- Verificar se as skills referenciadas (prophetic-voice, bible) estão presentes e acessíveis.\n- Checar TOOLS.md de cada pastor e verificar se há skills desatualizadas ou faltando.\n→ Mínimo 2 verificações documentadas.\n\n[E5 - AUDITOR DE REDE A2A]\n- Verificar sessions disponíveis para pastores via session_status.\n- Checar exec-approvals.json: todos os 4 pastores com approved=true.\n- Verificar se openclaw.json lista os agentes corretamente.\n→ Mínimo 2 verificações ou correções de permissão.\n\n[E6 - ENGENHEIRO DE DESEMPENHO]\n- Verificar tamanho de MEMORY.md (manter abaixo de 10KB).\n- Checar logs antigos em auditoria/relatorios/ e compactar se necessário.\n- Verificar se há arquivos .lock presos em auditoria/.\n→ Mínimo 2 ações de limpeza ou verificação documentada.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🧬 CAMADA DE DNA (ESTILO E MAESTRIA)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n[E7 - ENGENHEIRO DE DNA]\n- Grep em workspace/agents/* por \"tua \" ou \"teu \" (pronomes proibidos fora de citações bíblicas literais).\n- Grep por clichês: \"Deus tem o controle\", \"Tudo coopera\", \"No tempo de Deus\", \"Vai passar\", \"Declare vitória\".\n- Corrigir 2 ocorrências ou confirmar ausência com evidência de scan.\n→ Mínimo 2 purgas ou confirmações documentadas.\n\n[E8 - REVISOR SSOT]\n- Verificar hierarquia: PASSAGEM > MODO > BASE > ESTILO > CCE em todos os INSTRUCTIONS.md.\n- Garantir que nenhum pastor tem regra que contradiz a INSTRUCTIONS.md da Pastora Chefe.\n→ Mínimo 2 verificações de consistência.\n\n[E9 - ESPECIALISTA EM QA]\n- Validar as últimas 3 peças em devocionais/historico/ contra BANCO_DE_OURO_EXEMPLOS.md.\n- Verificar: gancho, cena sensorial, pivô bíblico, fechamento curto, zero clichês (Q5-Lite).\n→ Mínimo 2 avaliações com nota Q5.\n\n[E10 - DESIGNER DE DASHBOARD]\n- Compilar métricas do ciclo: jobs rodados (jobs.json state), últimas durações, consecutiveErrors.\n- Incluir dashboard de saúde com status de cada job no relatório final.\n→ Mínimo 2 métricas verificadas.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📖 CAMADA TEOLÓGICA (VERDADE)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n[E11 - AUDITOR TEOLÓGICO]\n- Revisar os 2 últimos devocionais: o Cristo é o ponto de chegada? A exegese respeita o contexto da passagem?\n- Se houver desvio exegético, sinalizar com correção proposta.\n→ Mínimo 2 devocionais auditados.\n\n[E12 - RED-TEAMER]\n- Tentar \"enganar\" as travas: propor internamente uma frase proibida e verificar se as regras a bloqueiam.\n- Documentar a vulnerabilidade encontrada ou confirmar que a trava funcionou.\n→ Mínimo 2 stress tests documentados.\n\n[E13 - CURADOR DE AUTORIDADE]\n- Verificar se os devocionais recentes usam citações da \"Nuvem de Testemunhas\" (CCE - Seção 14).\n- Se ausentes, identificar 2 frases de autoridade aplicáveis à leitura do dia.\n→ Mínimo 2 verificações ou sugestões de citação.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n🚀 CAMADA PROATIVA (ESTRATÉGIA)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\n[E14 - ANALISTA DE FEEDBACK]\n- Ler FEEDBACK.md da Pastora Chefe. Transformar 2 feedbacks em novas regras concretas nos INSTRUCTIONS.md.\n→ Mínimo 2 melhorias derivadas de feedback real.\n\n[E15 - CURADOR DE FRESCOR]\n- Verificar os últimos 3 devocionais: há repetição de metáforas (\"oficina\", \"campo\", \"deserto\")?\n- Se sim, documentar e adicionar alerta no HEARTBEAT.md de antirrepetição.\n→ Mínimo 2 metáforas verificadas.\n\n[E16 - SCANNER DE ANTECIPAÇÃO]\n- Ler PLANO_LEITURA_BIBLICA.md para os próximos 3 dias.\n- Identificar passagens difíceis (lamento, juízo, profecia) e preparar nota em HEARTBEAT.md com contexto.\n→ Mínimo 2 passagens analisadas e preparadas.\n\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n📊 RELATÓRIO FINAL — ENVIAR NO TELEGRAM (OBRIGATÓRIO)\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\n\nApós executar todos os 16 especialistas, envie via Telegram ao canal principal:\n\n🛡️ *CICLO SOBERANO — [HORA]h*\n📅 [DATA] | ⏱️ Duração: [X]s\n\n[E1-ARQUITETO] ✅ [Ação 1] | [Ação 2]\n[E2-INTEGRIDADE] ✅ [Ação 1] | [Ação 2]\n[E3-PROMPT] ✅ [Ação 1] | [Ação 2]\n[E4-SKILLS] ✅ [Ação 1] | [Ação 2]\n[E5-REDE A2A] ✅ [Ação 1] | [Ação 2]\n[E6-DESEMPENHO] ✅ [Ação 1] | [Ação 2]\n[E7-DNA] ✅ [Ação 1] | [Ação 2]\n[E8-SSOT] ✅ [Ação 1] | [Ação 2]\n[E9-QA] ✅ Q5 média: [X.X] | [Achado]\n[E10-DASHBOARD] 📊 Jobs OK: [X/Y] | Erros: [N]\n[E11-TEOLOGIA] ✅ [Ação 1] | [Ação 2]\n[E12-RED-TEAM] ✅ [Teste 1] | [Teste 2]\n[E13-AUTORIDADE] ✅ [Ação 1] | [Ação 2]\n[E14-FEEDBACK] ✅ [Regra criada] | [Regra criada]\n[E15-FRESCOR] ✅ [Metáfora] | [Metáfora]\n[E16-ANTECIPAÇÃO] ✅ [Passagem] | [Passagem]\n\n📈 *EXCELÊNCIA DO SISTEMA: [X/10]*\n💾 Log: auditoria/relatorios/[YYYY-MM-DD_HH].md\n\nSalvar log completo em workspace/auditoria/relatorios/YYYY-MM-DD_HH.md antes de encerrar."
+      },
+      "state": {
+        "lastRunAtMs": 1771536967365,
+        "lastStatus": "error",
+        "lastDurationMs": 9,
+        "consecutiveErrors": 1,
+        "nextRunAtMs": 1771538400000,
+        "lastError": "EACCES: permission denied, mkdir '/data/.openclaw/agents/main/sessions'"
+      }
+    }
+  ]
+}

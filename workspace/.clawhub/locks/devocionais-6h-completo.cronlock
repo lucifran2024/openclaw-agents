@@ -1,0 +1,20 @@
+# DEVOCIONAL EM ÁUDIO DIÁRIO - Cron Job
+# Executa: bash scripts/gerar-audio-para-todos-dias.sh
+# Horário: 6h SP (todos os dias)
+# Payload: Cria devocional em texto + instruções TTS para dias COM ÁUDIO
+
+{
+  "enabled": true,
+  "name": "Devocional em ÁUDIO Diário 6h Completo",
+  "payload": {
+    "kind": "agentTurn",
+    "message": "Crie um devocional em áUDIO para hoje seguindo: 1) PLANO_LEITURA_BIBLICA.md (passagem do dia), 2) MEMORY.md (100 favoritos - vocabulário OBRIGATÓRIO: secreto, lugares profundos, oficina, campo, treinamento, feed, plataforma, público, 'caráter vem antes de presença'), 3) ESTILO_DEVOCIONAL.md (sem rótulos, sem oração no final, 'sua' não 'tua'). Estrutura: reflexão curta + aplicação prática + versículo integrado + SEM oração no final. \n\nSISTEMA DE ÁUDIO: \n\n- Dias COM ÁUDIO (Segunda, Terça, Quarta): Gerar texto completo + instruções TTS no final (site TTSMP3.com, voz Vitória PT-BR). \n- Dias SEM ÁUDIO (Quinta, Sexta, Sábado, Domingo): Gerar texto REFLEXÃO (sem TTS), apenas para leitura e reflexão, sem instruções de áUDIO no final. \n\nPara todos os dias: Consultar PLANO_LEITURA_BIBLICA.md para usar passagem correta do dia (não repetir passagens do mesmo dia). Varie os ângulos dos devocionais (processo, fé, proteção, perdão, gratidão, batalha espiritual, chamado, igreja, oração, profecia, sabedoria, esperança, obediência, santidade, reino, etc.). Use o vocabulário dos favoritos SEMPRE (secreto, lugares profundos, oficina, campo, treinamento, feed, plataforma, público, 'caráter vem antes de presença'). Se o dia tiver leitura bíblica terminada, inicie o próximo livro. \n\nSalvar em: devocionais/AAAA-MM-DD-audio-texto.md (TEXTO + instruções TTS)."
+  },
+  "schedule": {
+    "expr": "0 6 * * *",
+    "kind": "cron",
+    "tz": "America/Sao_Paulo"
+  },
+  "sessionTarget": "isolated",
+  "wakeMode": "now"
+}
