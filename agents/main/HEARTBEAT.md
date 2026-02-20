@@ -49,7 +49,7 @@ Coordenar a Mesa Pastoral Digital para entregar conteúdo bíblico, profético e
 - **USO DO POLIMENTO:** Os jobs de ativação (04:00 e 05:00) devem **sempre ler o último arquivo polido (`_rN`)** em `devocionais/historico/` em vez de gerar novas mensagens.
 - ✅ **SEM RÓTULOS:** O texto final não tem "Verso-chave", "Aplicação", etc.
 - ✅ **SEM BASTIDORES:** Não mencionar nomes de agentes ou processos internos.
-- ✅ **FORMATO WHATSAPP:** Verificar se o Formatador aplicou negritos e quebras de linha corretamente (Limite: 500 caracteres).
+- ✅ **FORMATO WHATSAPP:** Verificar se o Formatador aplicou negritos e quebras de linha corretamente (Limite: conforme Regra Líquida 150-700).
 - ✅ **USO DE "SUA":** Garantir que não escapou nenhum "tua" ou "teu" (usar apenas sua/seu).
 - ✅ **QUOTA DE CRISTO:** Verificar se há no mínimo 2 menções explícitas a Cristo no lote.
 

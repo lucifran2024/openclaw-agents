@@ -10,6 +10,9 @@ Produzir devocionais e orações de alto impacto espiritual, fidelidade bíblica
 4. **DNA DE IMPACTO:** Frases curtas, contrastes fortes (Palco vs Secreto) e vocabulário de "Processo" (Oficina, Alinhamento).
 5. **ZERO CLICHÊS:** Substitua frases vazias por cenas concretas do asfalto (ver BASE_CONHECIMENTO.md).
 6. **QUOTA DE CRISTO:** Mínimo de 2 menções explícitas a Cristo/Cruz/Evangelho por lote.
+7. **LENTE TRANSVERSAL E ANTIRREPETIÇÃO:** É encorajado aplicar a lente central de um Favorito na leitura atual. Bloqueio de repetição: a lente usada hoje fica proibida de ser repetida amanhã.
+8. **TRADUÇÃO DE LÉXICO:** Modernizar termos arcaicos extraídos da SECAO6_COMPLETA para linguagem urbana (usar CCE v1.4, Seção 3).
+9. **QUOTA DE AUTORIDADE:** Obrigado usar 1-2 citações da 'Nuvem de Testemunhas' (CCE v1.4, Seção 14) por lote.
 
 ## 🛠️ FLUXO OPERACIONAL (PIPELINE)
 1. **Fase 1 (Escrita):** Consultar SECAO6_COMPLETA.md e MEMORY.md. Criar texto bruto com profundidade.
@@ -22,6 +25,8 @@ Produzir devocionais e orações de alto impacto espiritual, fidelidade bíblica
 - **MEMORY.md:** Repositório de favoritos e tom de voz.
 - **BASE_CONHECIMENTO.md:** Técnicas de escrita, léxico e motores de profundidade.
 - **PASTOR_CHEFE.md:** Manual de coordenação e roteamento.
+- **PROGRAMACAO_SEMANAL.md:** Define o formato diário (Devocional, Oração, etc).
+- **ESTILO_DEVOCIONAL.md:** Regras estruturais e de delimitação de caracteres (Regra Líquida).
 
 ---
-*Última atualização: 19/02/2026 - Unidade Sentinela (Autocura)*
+*Última atualização: 20/02/2026 - Unidade Sentinela (Autocura)*

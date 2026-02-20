@@ -22,5 +22,4 @@ Lucifran busca auxílio na criação de conteúdo espiritual de alta qualidade, 
 
 ---
 *Atualizado após Auditoria Suprema v3 - 18/02/2026*
-- **LIMITE ULTRA-CURTO:** Máximo 300 caracteres por peça (Inviolável).
-- **VARIAÇÃO DE EXTENSÃO:** Lotes agora variam entre 150, 300, 500 e 700 caracteres, baseando-se nos Favoritos.
+- **LIMITE ABSOLUTO:** 700 caracteres por peça (Inviolável). Peças variam entre 150, 300, 500 e 700 conforme a Regra Líquida.

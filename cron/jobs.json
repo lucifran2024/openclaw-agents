@@ -43,7 +43,7 @@
       "wakeMode": "now",
       "payload": {
         "kind": "systemEvent",
-        "text": "[MODO MASTER 04:00 — ENTREGA DE MENSAGENS POLIDAS]\\n\\nEntrega final das 15 peças extraordinárias.\\n\\nObrigatório:\\n1) LER o último arquivo polido (_rN) em devocionais/historico/ para a data de hoje.\\n2) Realizar a entrega final das 15 peças em mensagens individuais.\\n3) Usar obrigatoriamente BOTÕES NATIVOS (message tool property) para: [📋 Copiar] [🔁 Refazer] [⭐ Favoritar] [🎨 Variar Tom].\\n4) PROIBIDO incluir texto de botões no corpo da mensagem.\\n5) Confirmar clima do dia e cabeçalho em todas as peças antes de disparar.\\n6) Registrar a entrega final no PROGRESSO_POLIMENTO.md."
+        "text": "[MODO MASTER 04:00 — ENTREGA DE MENSAGENS POLIDAS]\\n\\nEntrega final das 15 peças extraordinárias.\\n\\nObrigatório:\\n1) LER o último arquivo polido (_rN) em devocionais/historico/ para a data de hoje.\\n2) Realizar a entrega final das 15 peças em mensagens individuais.\\n3) Usar obrigatoriamente BOTÕES NATIVOS (message tool property).\\n4) PROIBIDO incluir texto de botões no corpo da mensagem.\\n5) Confirmar clima do dia e cabeçalho em todas as peças antes de disparar.\\n6) Registrar a entrega final no PROGRESSO_POLIMENTO.md."
       },
       "state": {
         "nextRunAtMs": 1771657200000,
@@ -63,8 +63,7 @@
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
-        "tz": "America/Sao_Paulo",
-        "staggerMs": 300000
+        "tz": "America/Sao_Paulo"
       },
       "sessionTarget": "main",
       "wakeMode": "now",
@@ -84,12 +83,12 @@
       "id": "a0284439-7451-42d3-b4da-e12f030d684a",
       "agentId": "main",
       "name": "Sentinela V8 — Integridade de Documentos e Links",
-      "enabled": false,
+      "enabled": true,
       "createdAtMs": 1771552937133,
       "updatedAtMs": 1771583360096,
       "schedule": {
         "kind": "cron",
-        "expr": "30 * * * *",
+        "expr": "30 */6 * * *",
         "tz": "America/Sao_Paulo"
       },
       "sessionTarget": "main",

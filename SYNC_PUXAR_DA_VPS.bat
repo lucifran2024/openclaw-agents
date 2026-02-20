@@ -1,18 +1,18 @@
 @echo off
 setlocal
-echo --- SINCRONIZANDO (BAIXANDO DA VPS PARA O PC) ---
+echo --- SINCRONIZANDO (BAIXANDO DA origin PARA O PC) ---
 echo.
-git fetch vps
+git fetch origin
 if errorlevel 1 goto :fail
 echo.
 echo STATUS LOCAL ANTES DO RESET:
 git status --short --branch
 echo.
-set /p confirm="Isto vai sobrescrever alteracoes locais com vps/master. Continuar? (s/N): "
+set /p confirm="Isto vai sobrescrever alteracoes locais com origin/master. Continuar? (s/N): "
 if /I not "%confirm%"=="s" if /I not "%confirm%"=="sim" goto :abort
-git reset --hard vps/master
+git reset --hard origin/master
 if errorlevel 1 goto :fail
-git branch --set-upstream-to=vps/master master
+git branch --set-upstream-to=origin/master master
 echo.
 echo TUDO ATUALIZADO DO SERVIDOR!
 goto :end

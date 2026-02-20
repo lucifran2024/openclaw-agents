@@ -1,4 +1,5 @@
 # MEMORY.md - Favoritos do Lucifran
+Última atualização: 2026-02-20
 
 Este arquivo contém as mensagens favoritas. Na hora de criar conteúdo, use este arquivo como referência de estilo, tom e profundidade.
 
@@ -75,19 +76,7 @@ CUIDADO COM O VENENO DA LÍNGUA! A língua pode dirigir, destruir ou deleitar. A
 - Arquivo completo recebido e salvo em: `FAVORITOS_COMPLETO.md`
 - Mapa de formatos para polimento contínuo: `FORMATOS_FAVORITOS_REFERENCIA.md`
 
-## ACORDOS OPERACIONAIS (20/02/2026)
-- Foco principal: excelência de **mensagens para postagem**.
-- Fluxo D+1: criar base no dia anterior e polir por rodadas horárias.
-- Cada rodada deve aplicar **1 ou 2 seções** de documentos soberanos e registrar: seção + ajuste + efeito.
-- Comparação obrigatória com Favoritos em: gancho, posição do versículo, cadência e fechamento.
-- Regra crítica: todas as peças devem iniciar com `📖 Leitura do dia: ...` (tolerância zero).
-- Evitar repetição de ângulos/temas: revisar também o que foi criado no dia anterior.
-- Reporte padrão em cada rodada: **Feito | Pendente | Próxima ação**.
-- Regra soberana: **nunca** enviar aviso de "rodada iniciada" sem execução concluída e evidência salva (`_rN` + relatório + progresso).
-- Regra de promessa: qualquer entrega prometida ao Lucifran (ex.: "3 ouro") deve ser executada e enviada na mesma rodada, com evidência.
-- **Regra de Lente Transversal:** O sistema deve transpor a lógica de um Favorito para a leitura atual (ex: aplicar a visão de 'Odre' em Ezequiel ou 'Davi' em Atos), mantendo a fidelidade bíblica e o DNA de impacto.
-- **Antirrepetição de Lente:** Proibido repetir a mesma Lente Transversal (ex: usar Odre hoje e Odre amanhã). O sistema deve consultar o histórico do dia anterior para garantir variação de perspectiva.
-- **Modernização de Léxico:** Termos arcaicos vindos do plano de leitura devem ser filtrados pela **Seção 3 do CCE v1.4** para garantir uma linguagem urbana e conectada com o leitor atual.
-- **Quota de Autoridade:** Uso obrigatório de 1 a 2 citações da **Seção 14 do CCE v1.4** em cada lote de 15 mensagens para reforço de autoridade.
+## ACORDOS OPERACIONAIS
+- Acordos operacionais detalhados transferidos para `HEARTBEAT.md` e `INSTRUCOES_AGENDAMENTO.md`.
 
 *(FIM DO ARQUIVO — MEMORY.md FILTRADO)*
