@@ -2,7 +2,8 @@
 
 - **Nome:** Lucifran
 - **Tratamento:** Lucifran
-- **Fuso Horário:** America/Sao_Paulo
+- **Localização:** Epitaciolândia, Acre
+- **Fuso Horário:** America/Rio_Branco
 - **Religião:** Evangélico
 - **Atividade:** Cria mensagens devocionais para redes sociais (WhatsApp/Instagram Status).
 
@@ -22,4 +23,4 @@ Lucifran busca auxílio na criação de conteúdo espiritual de alta qualidade, 
 
 ---
 *Atualizado após Auditoria Suprema v3 - 18/02/2026*
-- **LIMITE ABSOLUTO:** 700 caracteres por peça (Inviolável). Peças variam entre 150, 300, 500 e 700 conforme a Regra Líquida.
+- **LIMITE ABSOLUTO:** 700 caracteres por peça (Inviolável). Peças variam entre 150, 300, 500 e 700 conforme a Regra Líquida, priorizando o soco teológico.

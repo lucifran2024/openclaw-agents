@@ -1,49 +1,47 @@
 # 👑 MESA PASTORAL DIGITAL — PAINEL DE CONTROLE
 
-## 📊 STATUS DE POLIMENTO (D+1: Sábado)
-- **Versão Atual:** `r39` (Salvo em: `devocionais/historico/`)
-- **Foco da Rodada:** Brilho Rítmico & Soco Final (§3.35 + §3.40.4).
-- **Próximo Salto:** Rodada das 22:00 (Contraste Luz/Sombra).
-- **Meta de Qualidade:** Extraordinário (Soco Espiritual + Alma).
+## 📊 STATUS DE POLIMENTO (D+1: Domingo)
+- **Versão Atual:** `r29` (Lote: Ezequiel 25-27)
+- **Foco da Rodada:** DNA Lucifran 100% (Visceral, Soco, Versículo Central).
+- **Próximo Salto:** Rodada das 12:00 (Acre Time).
+- **Meta de Qualidade:** Extraordinário (Identidade Profética).
 
 ---
 
-## ⚔️ EQUIPE PASTORAL (8 ESPECIALISTAS)
-- **Pastora Chefe 👑:** Coordenação e DNA (Ativa)
-- **Pastor Profético ⚔️:** Confronto e Direção (Alinhado)
-- **Pastor Consolador 🕊️:** Cura e Bálsamo (Alinhado)
-- **Pastor Poeta 🎨:** Sensorial e Beleza (OPERACIONAL)
-- **Pastor Mestre 📖:** Ensino e Doutrina (OPERACIONAL)
-- **Pastor Evangelista 📢:** Autoridade e CCE (OPERACIONAL)
-- **Pastor Revisor 🧐:** Teologia e Gramática (Vigiando)
-- **Pastor Formatador 📱:** WhatsApp e Botões Nativos (Pronto)
-- **Master Curador ⭐:** Curadoria Massiva (Vigiando)
+## ⚔️ EQUIPE PASTORAL (9 ESPECIALISTAS)
+- **Pastora Chefe 👑:** Coordenação, DNA e Alinhamento de Agenda (Ativa)
+- **Pastor Profético ⚔️:** Confronto, Direção e Autoridade (Ativo)
+- **Pastor Consolador 🕊️:** Cura, Bálsamo e Oração (Ativo)
+- **Pastor Poeta 🎨:** Sensorial, Beleza e Lirismo (Ativo)
+- **Pastor Mestre 📖:** Ensino, Doutrina e Sabedoria (Ativo)
+- **Pastor Evangelista 📢:** Chamado, Salvação e Missão (Ativo)
+- **Pastor Revisor 🧐:** Teologia e Integridade Bíblica (Ativo)
+- **Pastor Formatador 📱:** WhatsApp e Regra Líquida (Ativo)
+- **Master Curador ⭐:** Filtro Final e Jornada de Status (Ativo)
 
 ---
 
 ## 📖 DOCUMENTOS SOBERANOS
-- **SECAO6_COMPLETA.md:** Bíblia, Léxico e Insights (SSOT)
-- **SISTEMA_OPERACIONAL.md:** O Cérebro das Regras (SSOT)
-- **MEMORY.md:** DNA, Favoritos e Lentes (SSOT)
-- **BASE_UNIFICADA_v2.md:** Biblioteca de Técnicas.
-- **CCE v1.4:** Repertório e Nuvem de Testemunhas.
-- **MEU_ESTILO_PESSOAL.md:** Assinatura de Voz.
-- **BANCO_DE_OURO_EXEMPLOS.md:** Ritmo e Cadência.
+- **SECAO6_COMPLETA.md:** Fonte Única de Verdade Bíblica.
+- **MEMORY.md:** DNA Lucifran e Favoritos.
+- **SISTEMA_OPERACIONAL.md:** Regras Core (Líquida, Respiro, Sem Botões).
+- **BIBLIOTECA_DE_OURO.md:** Acervo Master de Ilustrações e Ganchos.
+- **BASE_UNIFICADA_V3_COMPLETA.md:** Técnicas de Escrita.
+- **MINHA_AGENDA.md:** Alinhamento Ministerial.
 
 ---
 
-## ⏰ AGENDAMENTOS CRÍTICOS
-- **21:00:** Rodada de Polimento (Identificação Pastoral).
-- **03:40:** Checkpoint Final de Postagem.
-- **04:00:** Postagem Modo Master (15 peças).
-- **05:00:** Postagem 3 Peças Ouro.
+## ⏰ AGENDAMENTOS CRÍTICOS (Acre Time)
+- **02:00:** Início do Job Espelho (Comparação Favoritos).
+- **03:00:** Curadoria Master (Filtro e Ordenação).
+- **04:00:** Entrega Final das 15 Peças.
 
 ---
 
 ## 🚨 ALERTAS E PENDÊNCIAS
-1. **PERMISSÃO:** Arquivo `PROGRESSO_POLIMENTO.md` recuperado e operando.
-2. **BOTÕES:** Regra soberana de botões nativos aplicada (texto [ ] proibido).
-3. **LÉXICO:** Filtro de nuances pastorais ativo (zero léxico "museu").
+1. **BOTÕES:** Regra desativada. Entrega apenas em texto limpo.
+2. **TEMA DO ANO:** "Fazer Discípulo" injetado em 100% das mensagens.
+3. **EXPLORAÇÃO:** Bíblia toda ativa (Ezequiel como inspiração, Reino como conteúdo).
 
 ---
-*Atualizado em tempo real pela Pastora Chefe.*
+*Atualizado em tempo real pela Pastora Chefe em 21/02/2026 às 11:30.*
