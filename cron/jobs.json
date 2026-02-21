@@ -77,7 +77,8 @@
         "lastStatus": "ok",
         "lastDurationMs": 341370,
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1771650294914
+        "nextRunAtMs": 1771650294914,
+        "runningAtMs": 1771650294918
       }
     },
     {
@@ -112,7 +113,7 @@
       "name": "Polimento Horário D+1 — Favoritos Primeiro",
       "enabled": true,
       "createdAtMs": 1771580095273,
-      "updatedAtMs": 1771643412936,
+      "updatedAtMs": 1771647131223,
       "schedule": {
         "kind": "cron",
         "expr": "10 * * * *",
@@ -125,12 +126,11 @@
         "text": "[POLIMENTO HORÁRIO D+1 — FAVORITOS PRIMEIRO]\\n\\nRodada de revisão de progresso e lapidação.\\n\\nChecklist:\\n1) Comparar abertura/versículo/ritmo/fechamento com FAVORITOS.\\n2) Aplicar 1 ou 2 seções concretas de docs soberanos e registrar: seção + ajuste + efeito.\\n3) Revisar rN atual e pendências da rodada anterior em PROGRESSO_POLIMENTO.md.\\n4) Revisar também o que foi criado ONTEM em devocionais/historico/ para evitar repetição de ângulos e temas.\\n5) Criar novo _rN apenas se houver ganho mensurável; se não houver, manter versão e registrar \"sem avanço\" com causa.\\n6) Atualizar auditoria/relatorios + PROGRESSO_POLIMENTO.md (append).\\n7) Reportar no chat: Feito | Pendente | Próxima ação."
       },
       "state": {
-        "nextRunAtMs": 1771647000000,
-        "lastRunAtMs": 1771643400041,
+        "nextRunAtMs": 1771650600000,
+        "lastRunAtMs": 1771647036305,
         "lastStatus": "ok",
-        "lastDurationMs": 12895,
-        "consecutiveErrors": 0,
-        "runningAtMs": 1771647036304
+        "lastDurationMs": 94918,
+        "consecutiveErrors": 0
       }
     },
     {

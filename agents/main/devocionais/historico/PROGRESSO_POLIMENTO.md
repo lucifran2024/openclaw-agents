@@ -42,8 +42,11 @@
   - Evidência: devocionais/historico/2026-02-21_lote_base_r56.md.
   - Pendências: Verificação de limites de caracteres.
 
-- 2026-02-21 01:10 | r57 (Simplicidade Absoluta e Purga de Termos)
-  - Seções aplicadas: MEMORY (Simplicidade Absoluta + Léxico de Mesa).
+- 2026-02-21 01:10 | r57
   - Mudanças: Remoção de palavras complexas ou com mais de 10 letras (ex: onipotência, linhagem, posteridade). Substituição de termos por ações e sentimentos comuns. Refino rítmico para tom de mesa de café.
-  - Evidência: devocionais/historico/2026-02-21_lote_base_r57.md.
-  - Pendências: Verificação final de caracteres e visual celular.
+
+- 2026-02-21 02:04 | r58 (Variação de Lente e Atlas)
+  - Seções aplicadas: BASE §3.25 (Lentes) + CCE §3 (Atlas).
+  - Mudanças: Rotação sistemática de lentes (Revelação, Condição Humana, Oração, Redenção, Aplicação, Esperança). Garantida a antirrepetição de temas de ontem (Davi/Odre substituídos por foco na Brecha/Fornalha). Injeção de "Música" rítmica em cada peça.
+  - Evidência: devocionais/historico/2026-02-21_lote_base_r58.md.
+  - Pendências: Verificação final de caracteres Status.
