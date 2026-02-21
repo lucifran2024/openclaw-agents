@@ -8,6 +8,7 @@
     - Cabeçalho `📖 Leitura do dia:` presente?
     - Zero texto de botão?
     - Quota de oração (mín. 1/lote) respeitada?
+    - Versículo em posição flexível (início/meio/fim)?
     - Clima do dia correto?
 
 **A postagem é o momento da verdade. Não aceite nada abaixo do extraordinário.**

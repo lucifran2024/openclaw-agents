@@ -59,7 +59,7 @@
       "name": "Polimento Soberano Horário — Mensagens",
       "enabled": true,
       "createdAtMs": 1771357479200,
-      "updatedAtMs": 1771639614786,
+      "updatedAtMs": 1771643261377,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -73,11 +73,11 @@
         "text": "[POLIMENTO SOBERANO HORÁRIO — MENSAGENS]\\n\\nExecução principal de polimento.\\n\\nA cada execução:\\n1) Ler último lote D+1 em devocionais/historico/.\\n2) Revisar também o lote de ONTEM para bloquear repetição de ângulos e temas.\\n3) Aplicar melhoria real (gancho, contraste, cadência, profundidade cristocêntrica).\\n4) Ajustar tamanho e diversidade estrutural.\\n5) Variar posição do versículo (início/meio/fim).\\n6) Comparar com FAVORITOS (MEMORY.md), Banco, BASE e CCE.\\n7) Salvar nova versão incremental (_rN) SOMENTE se houver melhoria real.\\n8) Registrar em auditoria/relatorios/ + atualizar devocionais/historico/PROGRESSO_POLIMENTO.md (append) com: rodada, seção(ões) aplicada(s), mudanças e pendências.\\n9) Reportar no chat: Feito | Pendente | Próxima ação.\\n\\nRegra anti-círculo: é proibido repetir a mesma alteração da rodada anterior."
       },
       "state": {
-        "lastRunAtMs": 1771639494923,
+        "lastRunAtMs": 1771643094918,
         "lastStatus": "ok",
-        "lastDurationMs": 119863,
+        "lastDurationMs": 166459,
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1771643094914
+        "nextRunAtMs": 1771646694914
       }
     },
     {
@@ -112,7 +112,7 @@
       "name": "Polimento Horário D+1 — Favoritos Primeiro",
       "enabled": true,
       "createdAtMs": 1771580095273,
-      "updatedAtMs": 1771639867783,
+      "updatedAtMs": 1771643412936,
       "schedule": {
         "kind": "cron",
         "expr": "10 * * * *",
@@ -125,10 +125,10 @@
         "text": "[POLIMENTO HORÁRIO D+1 — FAVORITOS PRIMEIRO]\\n\\nRodada de revisão de progresso e lapidação.\\n\\nChecklist:\\n1) Comparar abertura/versículo/ritmo/fechamento com FAVORITOS.\\n2) Aplicar 1 ou 2 seções concretas de docs soberanos e registrar: seção + ajuste + efeito.\\n3) Revisar rN atual e pendências da rodada anterior em PROGRESSO_POLIMENTO.md.\\n4) Revisar também o que foi criado ONTEM em devocionais/historico/ para evitar repetição de ângulos e temas.\\n5) Criar novo _rN apenas se houver ganho mensurável; se não houver, manter versão e registrar \"sem avanço\" com causa.\\n6) Atualizar auditoria/relatorios + PROGRESSO_POLIMENTO.md (append).\\n7) Reportar no chat: Feito | Pendente | Próxima ação."
       },
       "state": {
-        "nextRunAtMs": 1771643400000,
-        "lastRunAtMs": 1771639800012,
+        "nextRunAtMs": 1771647000000,
+        "lastRunAtMs": 1771643400041,
         "lastStatus": "ok",
-        "lastDurationMs": 67771,
+        "lastDurationMs": 12895,
         "consecutiveErrors": 0
       }
     },

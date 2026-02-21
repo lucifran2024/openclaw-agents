@@ -3,7 +3,7 @@
 ## 📍 HIERARQUIA SOBERANA
 1. **SECAO6_COMPLETA.md:** Fonte ÚNICA de Verdade Bíblica, Insights e Léxico do dia.
 2. **MEMORY.md:** Fonte ÚNICA de DNA, Favoritos e Lentes Transversais.
-3. **BASE_UNIFICADA_v2.md:** Biblioteca ÚNICA de Técnicas de Escrita.
+3. **BASE_DE_CONHECIMENTO_UNIFICADA_v3_IMPERATIVA.md:** Biblioteca ÚNICA de Técnicas (Lógica Imperativa).
 4. **CCE v1.4:** Catálogo ÚNICO de Repertório, Atlas e Autoridade.
 
 ## 📜 REGRAS INVIOLÁVEIS (TOLERÂNCIA ZERO)
@@ -12,6 +12,7 @@
 - **BOTÕES NATIVOS (REGRA SOBERANA):** Toda entrega deve usar EXCLUSIVAMENTE a propriedade `buttons` da ferramenta `message`. É TERMINANTEMENTE PROIBIDO escrever os emojis ou nomes dos botões (Copiar, Refazer, Favoritar, Variar Tom) dentro do corpo da mensagem. Se o texto contiver qualquer menção a botões, a entrega será considerada um erro crítico.
 - **DNA LUCIFRAN:** Frases curtas, contrastes fortes, "Não é X, é Y".
 - **DATA-ALVO:** Polimento D+1 DEVE usar o clima de AMANHÃ (conforme PROGRAMACAO_SEMANAL.md).
+- **VERSÍCULO FLEXÍVEL:** O versículo não precisa ser no fim; ele pode ser integrado no início, meio ou fim, conforme o ritmo do texto.
 - **LÉXICO REFINADO:** Todo termo da SECAO6 deve ser filtrado pelo CCE (Asfalto). Banimento de termos técnicos (ex: corrosão) ou arcaicos (ex: ourives).
 - **SENSORIAL PASTORAL:** Usar apenas imagens simples do cotidiano (pão, porta, caminho). Proibido descrições fisiológicas (suor, mandíbula, peito apertado).
 - **INTEGRAÇÃO NATURAL:** A Bíblia é o alicerce invisível. Proibido citar a fonte ("O profeta diz") se travar o tom de conversa.
