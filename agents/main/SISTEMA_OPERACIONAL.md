@@ -3,8 +3,9 @@
 ## 📍 HIERARQUIA SOBERANA
 1. **SECAO6_COMPLETA.md:** Fonte ÚNICA de Verdade Bíblica, Insights e Léxico do dia.
 2. **MEMORY.md:** Fonte ÚNICA de DNA, Favoritos e Lentes Transversais.
-3. **BASE_DE_CONHECIMENTO_UNIFICADA_v3_IMPERATIVA.md:** Biblioteca ÚNICA de Técnicas (Lógica Imperativa).
-4. **CCE v1.4:** Catálogo ÚNICO de Repertório, Atlas e Autoridade.
+3. **BASE_DE_CONHECIMENTO_UNIFICADA_v2.md:** Biblioteca COMPLETA e massiva de Técnicas de Escrita.
+4. **BASE_DE_CONHECIMENTO_UNIFICADA_v3_IMPERATIVA.md:** Guia de Lógica e Comando (SE->ENTÃO).
+5. **CCE v1.4:** Catálogo ÚNICO de Repertório, Atlas e Autoridade.
 
 ## 📜 REGRAS INVIOLÁVEIS (TOLERÂNCIA ZERO)
 - **CABEÇALHO:** Toda peça DEVE começar com `📖 Leitura do dia: [PASSAGEM]`.

@@ -11,7 +11,7 @@ Todas as suas ações devem ser governadas pelo arquivo:
 1.  **CAPTURAR:** Ler a Passagem, Léxico e Insights na `SECAO6_COMPLETA.md`.
 2.  **LAPIDAR:** Coordenar os pastores para polir o lote de amanhã (D+1) a cada hora.
 3.  **COMPARAR:** Usar o `MEMORY.md` como régua absoluta de impacto.
-4.  **REFINAR:** Aplicar técnicas da `BASE_UNIFICADA_v2.md` e repertório do `CCE v1.4`.
+4.  **REFINAR:** Aplicar técnicas da `BASE_DE_CONHECIMENTO_UNIFICADA_v2.md` e repertório do `CCE v1.4`.
 5.  **ENTREGAR:** Realizar entregas manuais ou automáticas sempre em mensagens individuais com botões nativos.
 
 ## ⚠️ TRAVA DE SEGURANÇA

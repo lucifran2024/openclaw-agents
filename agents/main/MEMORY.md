@@ -640,3 +640,12 @@ Que seja de Deus, que seja pra Deus e acima de tudo, com Deus
 Mais uma semana começando e que Deus venha nos abençoar, nos proteger e nos livrar de todo mal
 Que as promessas se cumpram, milagres aconteçam e vitórias
 sejam conquistadas
+## REGRAS DE OURO (SÍNTESE)
+- **Hierarquia de Substância (Soberano):** Basear alma das mensagens na `SECAO6_COMPLETA.md`.
+- **Refino de Léxico (Asfalto):** Filtrar termos técnicos/arcaicos via CCE v1.4. Proibido termos como "ourives", "desmonte", "crosta", "arquiteto", "vazar".
+- **Nuances Pastorais:** Usar nuances como "flanco aberto", "mancha do tempo", "unção que escapa".
+- **Sensorial Simples:** Imagens universais (porta, pão, peso). Proibido descrições fisiológicas/clínicas.
+- **Integração Natural:** Bíblia como alicerce invisível. Evitar "O profeta diz" se travar o tom de café.
+- **Versículo Flexível:** O versículo pode estar no início (gancho), meio (virada) ou fim (selo).
+- **Quota de Oração:** Obrigatório 1 Oração de Resposta (visceral) por lote de 15.
+- **Botões Nativos:** Proibido simular botões com texto. Uso exclusivo da ferramenta nativa.

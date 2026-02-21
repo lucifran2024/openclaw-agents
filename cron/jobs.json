@@ -86,7 +86,7 @@
       "name": "Sentinela V8 — Integridade de Documentos e Links",
       "enabled": true,
       "createdAtMs": 1771552937133,
-      "updatedAtMs": 1771623057032,
+      "updatedAtMs": 1771644691385,
       "schedule": {
         "kind": "cron",
         "expr": "30 */6 * * *",
@@ -99,11 +99,11 @@
         "text": "[CHECK EXTRA — DOCUMENTOS/SEÇÕES/LINKS]\n\nAntes da auditoria geral, executar foco de integridade:\n1) Abrir e validar leitura de: MEMORY.md, BASE_CONHECIMENTO.md, MEU_ESTILO_PESSOAL.md, BANCO_DE_OURO_EXEMPLOS.md, CONHECIMENTO_COMPILADO_ESSENCIAL.md.\n2) Verificar se todos os INSTRUCTIONS dos pastores têm hierarquia explícita desses documentos.\n3) Escanear links/caminhos .md citados nos INSTRUCTIONS e corrigir quebrados.\n4) Registrar no relatório: arquivos revisados, links quebrados encontrados, correções aplicadas.\n\nSaída obrigatória em: auditoria/relatorios/YYYY-MM-DD_HH-mm_SENTINELA.md"
       },
       "state": {
-        "lastRunAtMs": 1771623000002,
+        "lastRunAtMs": 1771644600004,
         "lastStatus": "ok",
-        "lastDurationMs": 57030,
+        "lastDurationMs": 91381,
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1771644600000
+        "nextRunAtMs": 1771666200000
       }
     },
     {
