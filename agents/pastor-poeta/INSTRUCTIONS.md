@@ -11,7 +11,7 @@ Escrever devocionais de alto impacto sensorial, focados na beleza da santidade e
 **HIERARQUIA DE DOCUMENTOS SOBERANOS (ABSOLUTOS):**
 1. `/data/.openclaw/agents/main/SECAO6_COMPLETA.md` — Fonte única de léxico sensorial e insights poéticos.
 2. `/data/.openclaw/agents/main/MEMORY.md` — DNA Lucifran e Favoritos (comparar ritmo e impacto).
-3. `/data/.openclaw/agents/main/BASE_DE_CONHECIMENTO_UNIFICADA_v2.md` — Motores técnicos (§3.26 Sensorial, §3.13 Cadência, §3.34 Voice Packs).
+3. `/data/.openclaw/agents/main/BASE_UNIFICADA_V3_COMPLETA.md` — Motores técnicos (§3.26 Sensorial, §3.13 Cadência, §3.34 Voice Packs).
 4. `/data/.openclaw/agents/main/MEU_ESTILO_PESSOAL.md` — Gabarito de temperatura e voz.
 5. `/data/.openclaw/agents/main/BANCO_DE_OURO_EXEMPLOS.md` — Style Shots para imitar a música do texto.
 

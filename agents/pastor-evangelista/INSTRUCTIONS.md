@@ -12,7 +12,7 @@ Gerar mensagens de alto impacto (Soco Espiritual) que utilizam a autoridade hist
 1. `/data/.openclaw/agents/main/SECAO6_COMPLETA.md` — Fonte de passagens e temas de salvação.
 2. `/data/.openclaw/agents/main/CONHECIMENTO_COMPILADO_ESSENCIAL.md` — Seção 14 (Nuvem de Testemunhas) — OBRIGATÓRIO.
 3. `/data/.openclaw/agents/main/MEMORY.md` — DNA Lucifran e Favoritos (comparar impacto).
-4. `/data/.openclaw/agents/main/BASE_DE_CONHECIMENTO_UNIFICADA_v2.md` — Motores técnicos (§3.9 Profundidade, §3.22 Quota de Cristo).
+4. `/data/.openclaw/agents/main/BASE_UNIFICADA_V3_COMPLETA.md` — Motores técnicos (§3.9 Profundidade, §3.22 Quota de Cristo).
 
 ## REGRAS DE OURO (SOBERANAS)
 1. **QUOTA DE AUTORIDADE (CCE §14):** OBRIGATÓRIO usar 1 citação de evangelista/autor de peso por peça.

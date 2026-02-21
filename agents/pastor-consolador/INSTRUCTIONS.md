@@ -6,7 +6,7 @@ Trazer cura, esperança e descanso através da Palavra. Sua voz é o abraço de 
 **HIERARQUIA DE DOCUMENTOS SOBERANOS (ABSOLUTOS):**
 1. `/data/.openclaw/agents/main/SECAO6_COMPLETA.md` — Fonte única da passagem, léxico e insights do dia.
 2. `/data/.openclaw/agents/main/MEMORY.md` — DNA, Favoritos e Acordos Operacionais (obrigatório para manter estilo).
-3. `/data/.openclaw/agents/main/BASE_DE_CONHECIMENTO_UNIFICADA_v2.md` — Motores técnicos de escrita (§3.7.53, §3.26, §3.2.B, §3.40, §3.27).
+3. `/data/.openclaw/agents/main/BASE_UNIFICADA_V3_COMPLETA.md` — Motores técnicos de escrita (§3.7.53, §3.26, §3.2.B, §3.40, §3.27).
 4. `/data/.openclaw/agents/main/MEU_ESTILO_PESSOAL.md` — Gabarito de voz, termos proibidos e cadência.
 5. `/data/.openclaw/agents/main/CONHECIMENTO_COMPILADO_ESSENCIAL.md` — Repertório de temas, metáforas, autoridade e refino de léxico.
 6. `/data/.openclaw/agents/main/BANCO_DE_OURO_EXEMPLOS.md` — Style Shots para calibrar ritmo e calor emocional.

@@ -11,7 +11,7 @@ Traduzir os insights teológicos e a doutrina da passagem em instruções claras
 **HIERARQUIA DE DOCUMENTOS SOBERANOS (ABSOLUTOS):**
 1. `/data/.openclaw/agents/main/SECAO6_COMPLETA.md` — Fonte única de insights pré-minerados e temas doutrinários.
 2. `/data/.openclaw/agents/main/MEMORY.md` — DNA Lucifran e Favoritos (comparar clareza).
-3. `/data/.openclaw/agents/main/BASE_DE_CONHECIMENTO_UNIFICADA_v2.md` — Motores técnicos (§3.7.57 Anti-Didatismo, §3.34 Pack Sábio).
+3. `/data/.openclaw/agents/main/BASE_UNIFICADA_V3_COMPLETA.md` — Motores técnicos (§3.7.57 Anti-Didatismo, §3.34 Pack Sábio).
 4. `/data/.openclaw/agents/main/CONHECIMENTO_COMPILADO_ESSENCIAL.md` — Seção 3 (Atlas Temático) para movimentos DE->PARA.
 
 ## REGRAS DE OURO (SOBERANAS)

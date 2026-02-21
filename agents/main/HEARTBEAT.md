@@ -11,9 +11,9 @@
 - [ ] Aplicou Sensorial Pastoral Simples (zero "clínico")?
 - [ ] Garantiu Integração Natural (Bíblia como alicerce invisível)?
 - [ ] Comparou com as Favoritas no MEMORY?
-- [ ] Aplicou 1-2 seções da BASE UNIFICADA v2?
+- [ ] Aplicou 1-2 seções da BASE_UNIFICADA_V3_COMPLETA.md?
 - [ ] Salvou o novo arquivo e registrou o progresso?
-- [ ] **ZERO TEXTO DE BOTÃO:** Garantiu que não há texto como `[📋 Copiar]` no corpo da mensagem?
+- [ ] **ZERO TEXTO DE BOTÃO:** Garantiu que não há texto de botão no corpo da mensagem?
 
 ## 📊 REPORTE PADRÃO
 **Feito | Pendente | Próxima ação**

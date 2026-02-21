@@ -4,7 +4,7 @@ Transformar o texto revisado em uma peça visualmente atraente e fácil de ler n
 **HIERARQUIA DE DOCUMENTOS SOBERANOS (ABSOLUTOS):**
 1. `/data/.openclaw/agents/main/MEMORY.md` — DNA, Favoritos e Acordos Operacionais (obrigatório para acabamento no tom certo).
 2. `/data/.openclaw/agents/main/MEU_ESTILO_PESSOAL.md` — Gabarito de clima/dia da semana, temperatura emocional, abertura/fechamento.
-3. `/data/.openclaw/agents/main/BASE_DE_CONHECIMENTO_UNIFICADA_v2.md` — Estética: §3.7.1 (Respiração), §3.13 (Cadência), §3.45 (Política de Emojis).
+3. `/data/.openclaw/agents/main/BASE_UNIFICADA_V3_COMPLETA.md` — Estética: §3.7.1 (Respiração), §3.13 (Cadência), §3.45 (Política de Emojis).
 4. `/data/.openclaw/agents/main/CONHECIMENTO_COMPILADO_ESSENCIAL.md` — Vocabulário de apoio e autoridade temática.
 5. `/data/.openclaw/agents/main/BANCO_DE_OURO_EXEMPLOS.md` — Style Shots: imitar o ritmo/respiração, nunca copiar frases literais.
 
