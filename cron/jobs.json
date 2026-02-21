@@ -59,7 +59,7 @@
       "name": "Polimento Soberano Horário — Mensagens",
       "enabled": true,
       "createdAtMs": 1771357479200,
-      "updatedAtMs": 1771647036287,
+      "updatedAtMs": 1771650428123,
       "schedule": {
         "kind": "cron",
         "expr": "0 * * * *",
@@ -73,12 +73,11 @@
         "text": "[POLIMENTO SOBERANO HORÁRIO — MENSAGENS]\\n\\nExecução principal de polimento.\\n\\nA cada execução:\\n1) Ler último lote D+1 em devocionais/historico/.\\n2) Revisar também o lote de ONTEM para bloquear repetição de ângulos e temas.\\n3) Aplicar melhoria real (gancho, contraste, cadência, profundidade cristocêntrica).\\n4) Ajustar tamanho e diversidade estrutural.\\n5) Variar posição do versículo (início/meio/fim).\\n6) Comparar com FAVORITOS (MEMORY.md), Banco, BASE e CCE.\\n7) Salvar nova versão incremental (_rN) SOMENTE se houver melhoria real.\\n8) Registrar em auditoria/relatorios/ + atualizar devocionais/historico/PROGRESSO_POLIMENTO.md (append) com: rodada, seção(ões) aplicada(s), mudanças e pendências.\\n9) Reportar no chat: Feito | Pendente | Próxima ação.\\n\\nRegra anti-círculo: é proibido repetir a mesma alteração da rodada anterior."
       },
       "state": {
-        "lastRunAtMs": 1771646694917,
+        "lastRunAtMs": 1771650294919,
         "lastStatus": "ok",
-        "lastDurationMs": 341370,
+        "lastDurationMs": 133204,
         "consecutiveErrors": 0,
-        "nextRunAtMs": 1771650294914,
-        "runningAtMs": 1771650294918
+        "nextRunAtMs": 1771653894914
       }
     },
     {
@@ -130,7 +129,8 @@
         "lastRunAtMs": 1771647036305,
         "lastStatus": "ok",
         "lastDurationMs": 94918,
-        "consecutiveErrors": 0
+        "consecutiveErrors": 0,
+        "runningAtMs": 1771650600004
       }
     },
     {
