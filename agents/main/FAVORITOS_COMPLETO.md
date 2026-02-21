@@ -717,3 +717,16 @@ Transformação sempre foi o plano. permanecer ferido nunca foi o objetivo
 Todos chegam machucados.
 Mas ninguém foi chamado para permanecer doente por dentro.A igreja é lugar de processo e maturidade. O Reino não forma pacientes Hospital cuida de pacientes. A igreja forma discípulos que aprendem a viver como Cristo.
 -CF. 1 Coríntios 11:1
+----------------------------------------
+ORAÇÃO DE ENTREGA
+
+Senhor, hoje eu escolho soltar o controle e colocar toda a minha vida nas Tuas mãos.
+Aquilo que eu tentei resolver sozinho, aquilo que me tirou o sono e aquilo que eu já não sei mais como lidar, eu entrego a Ti.
+
+Aquieta a minha mente e me ensina a confiar mesmo quando não entendo, a descansar mesmo quando ainda não vejo respostas.
+
+Que os meus planos não falem mais alto que os Teus.
+Que a Tua direção seja clara e que eu tenha coragem para obedecer, mesmo quando o caminho exigir fé.
+
+Eu confio em Ti, Senhor, porque sei que nada foge do Teu controle.
+Em nome de Jesus, amém.

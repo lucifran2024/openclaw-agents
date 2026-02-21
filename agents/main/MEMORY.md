@@ -76,7 +76,11 @@ CUIDADO COM O VENENO DA LÍNGUA! A língua pode dirigir, destruir ou deleitar. A
 - Arquivo completo recebido e salvo em: `FAVORITOS_COMPLETO.md`
 - Mapa de formatos para polimento contínuo: `FORMATOS_FAVORITOS_REFERENCIA.md`
 
-## ACORDOS OPERACIONAIS
-- Acordos operacionais detalhados transferidos para `HEARTBEAT.md` e `INSTRUCOES_AGENDAMENTO.md`.
-
-*(FIM DO ARQUIVO — MEMORY.md FILTRADO)*
+- **Hierarquia de Substância (Soberano):** É obrigatório basear a alma de cada mensagem (insights, léxico e contexto bíblico real) na `SECAO6_COMPLETA.md`. Proibido gerar conteúdo genérico ou apenas "polir a forma" sem extrair a profundidade real do plano de leitura.
+- **Refino de Léxico (Filtro CCE):** O léxico do dia deve ser obrigatoriamente refinado usando o **CCE v1.4** para transformar termos técnicos ou arcaicos em linguagem de "mesa de café" e sensações reais.
+- **Nuances de Léxico Bíblico:** É proibido repetir termos técnicos da passagem (ex: brecha, ferrugem) em todas as peças. O sistema deve usar as **nuances pastorais** dessas palavras (ex: 'flanco aberto', 'peso do ontem', 'mancha que o tempo criou') para garantir o frescor e o impacto visceral sem parecer repetitivo.
+- **Léxico de Mesa:** Evite palavras que soem como "museu" ou técnicas demais (ex: ourives, escabelo, opróbrio, desmonte, vazar). Evite também termos que soem "clínicos" ou agressivos (ex: crosta, ferida aberta). Substitua pela sensação ou pela ação (ex: 'A mão que purifica', 'O lugar de descanso', 'A vergonha pública', 'ruína sendo refeita', 'o que o tempo manchou', 'paz que se perde', 'deixar a unção escapar').
+- **Nomes Divinos SOBERANOS:** Use preferencialmente **Senhor** ou **Deus**. É proibido o uso de termos "modernistas" ou "técnicos" para se referir ao Criador, como "Arquiteto", "Universo" ou "Energia", a menos que a metáfora da passagem exija estritamente (e mesmo assim, priorize os nomes bíblicos).
+- **Sensorial Pastoral Simples:** Priorize a tangibilidade através de imagens do cotidiano pastoral e espiritual simples (pão, caminho, porta, silêncio, barulho, peso, leveza). Evite descrições fisiológicas excessivas (ex: 'suor frio', 'mandíbula travada') que soem clínicas. O sensorial deve ser um "toque na alma" através do simples.
+- **Integração Natural:** A verdade da passagem deve estar na "alma" do texto. Não force a citação de termos bíblicos se eles não encaixarem organicamente no tom "amigo no café". Evite "O profeta diz" ou "O livro fala"; deixe o insight fluir como uma verdade atemporal.
+- **Quota de Oração:** Em cada lote de 15, ao menos 1 peça deve ser formatada como uma oração em primeira pessoa baseada na verdade da passagem.

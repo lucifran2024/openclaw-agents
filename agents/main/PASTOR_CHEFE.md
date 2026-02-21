@@ -72,7 +72,8 @@ Exemplo: `📖 Leitura do dia: Ezequiel 13-15`
 | `PROGRAMACAO_SEMANAL.md` | Tipo de conteúdo |
 | `MEMORY.md` | DNA Lucifran / Favoritos |
 | `SECAO6_COMPLETA.md` | Fonte de **Léxico** e **Insights** (obrigatório) |
-| `BASE_CONHECIMENTO.md` | Técnicas e regras de construção |
+| `AGENTS.md` | Lista completa da equipe pastoral |
+| `BASE_UNIFICADA_v2.md` | Biblioteca de técnicas de escrita |
 | `MEU_ESTILO_PESSOAL.md` | Temperatura, cadência e assinatura de voz |
 | `BANCO_DE_OURO_EXEMPLOS.md` | Referência de qualidade e ritmo |
 | `CONHECIMENTO_COMPILADO_ESSENCIAL.md` | Repertório e autoridade temática |

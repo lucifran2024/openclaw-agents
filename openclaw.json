@@ -1,7 +1,7 @@
 {
   "meta": {
     "lastTouchedVersion": "2026.2.17",
-    "lastTouchedAt": "2026-02-20T11:43:51.699Z"
+    "lastTouchedAt": "2026-02-21T00:27:00.737Z"
   },
   "wizard": {
     "lastRunAt": "2026-02-20T11:43:17.905Z",
@@ -148,7 +148,10 @@
             "pastor-profetico",
             "pastor-consolador",
             "pastor-revisor",
-            "pastor-formatador"
+            "pastor-formatador",
+            "pastor-poeta",
+            "pastor-mestre",
+            "pastor-evangelista"
           ]
         },
         "tools": {
@@ -261,8 +264,68 @@
             "pastor-profetico",
             "pastor-consolador",
             "pastor-revisor",
-            "pastor-formatador"
+            "pastor-formatador",
+            "pastor-poeta",
+            "pastor-mestre",
+            "pastor-evangelista"
           ]
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      },
+      {
+        "id": "pastor-poeta",
+        "name": "Pastor Poeta",
+        "workspace": "/data/.openclaw/workspace/agents/pastor-poeta",
+        "agentDir": "/data/.openclaw/workspace/agents/pastor-poeta",
+        "identity": {
+          "name": "Pastor Poeta",
+          "emoji": "🎨"
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      },
+      {
+        "id": "pastor-mestre",
+        "name": "Pastor Mestre",
+        "workspace": "/data/.openclaw/workspace/agents/pastor-mestre",
+        "agentDir": "/data/.openclaw/workspace/agents/pastor-mestre",
+        "identity": {
+          "name": "Pastor Mestre",
+          "emoji": "📖"
+        },
+        "tools": {
+          "alsoAllow": [
+            "read",
+            "write",
+            "edit",
+            "sessions_send",
+            "sessions_list"
+          ]
+        }
+      },
+      {
+        "id": "pastor-evangelista",
+        "name": "Pastor Evangelista",
+        "workspace": "/data/.openclaw/workspace/agents/pastor-evangelista",
+        "agentDir": "/data/.openclaw/workspace/agents/pastor-evangelista",
+        "identity": {
+          "name": "Pastor Evangelista",
+          "emoji": "📢"
         },
         "tools": {
           "alsoAllow": [

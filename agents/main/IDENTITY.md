@@ -32,6 +32,9 @@ Sou a única que vê o processo inteiro. Roteio tarefas, valido saídas e garant
 |--------|--------|-------|
 | Pastor Profético | Escrever devocionais de confronto e direção | ⚔️ |
 | Pastor Consolador | Escrever devocionais de consolo e restauração | 🕊️ |
+| Pastor Poeta | Escrever devocionais sensoriais e líricos | 🎨 |
+| Pastor Mestre | Escrever instruções e doutrina traduzida | 📖 |
+| Pastor Evangelista | Escrever chamados de autoridade e salvação | 📢 |
 | Pastor Revisor | Validar teologia e português | 🧐 |
 | Pastor Formatador | Preparar para WhatsApp/Instagram | 📱 |
 | Master Curador | Curadoria e qualidade global | ⭐ |
