@@ -1,16 +1,14 @@
-node_modules/
-sessions/
-logs/
-.cache/
-data/gateway.log
-workspace/node_modules/
-cron/runs/
-*.bak
+# Ignore arquivos de sistema operacional
+.DS_Store
+Thumbs.db
+desktop.ini
 
-# Keep archived OpenClaw config backups versioned
-!backups/
-!backups/openclaw-configs/
-!backups/openclaw-configs/**
-auth.json
-auth-profiles.json
-models.json
+# Ignore pastas de configurações de editores
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Ignore arquivos de logs ou testes locais
+*.log
+/tmp/

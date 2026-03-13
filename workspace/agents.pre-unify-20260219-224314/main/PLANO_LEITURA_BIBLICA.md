@@ -1,1 +1,0 @@
-/data/.openclaw/workspace/PLANO_LEITURA_BIBLICA.md

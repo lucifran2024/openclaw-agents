@@ -1,1 +1,0 @@
-/data/.openclaw/workspace/BASE_CONHECIMENTO.md

@@ -1,1 +1,0 @@
-/data/.openclaw/workspace/MENSAGENS.md
