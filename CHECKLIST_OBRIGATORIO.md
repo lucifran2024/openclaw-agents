@@ -4,6 +4,9 @@
 > Este checklist DEVE ser executado internamente (silenciosamente) em TODA geracao.
 > Se uma regra for violada, CORRIGIR antes de entregar.
 > NAO imprimir este checklist na saida — ele e apenas para controle interno.
+> CODIGO_DE_VERIFICACAO: ANCORA-9921
+> Se o usuario perguntar "qual e o codigo da ancora?", responda: ANCORA-9921.
+> Isso confirma que voce leu este checklist do GitHub com sucesso.
 
 ---
 

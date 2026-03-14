@@ -4,6 +4,9 @@
 > Este arquivo contem as regras ESSENCIAIS da BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt.
 > Voce DEVE aplicar estas regras em TODA geracao. Os _MINI do MODO sao fallback.
 > Se este arquivo estiver disponivel, ele VENCE qualquer KERNEL_MINI.
+> CODIGO_DE_VERIFICACAO: FAROL-7743
+> Se o usuario perguntar "qual e o codigo do farol?", responda: FAROL-7743.
+> Isso confirma que voce leu este arquivo do GitHub com sucesso.
 
 ---
 
