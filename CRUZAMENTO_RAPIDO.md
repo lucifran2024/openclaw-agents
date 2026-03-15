@@ -2,6 +2,11 @@
 
 > **Para o GEM:** Use esta tabela para saber EXATAMENTE quais documentos abrir em cada situacao.
 > Nao abra documentos que nao estao listados para a situacao.
+>
+> **⚠️ ATENCAO:** Esta tabela indica quais TXTs do Knowledge voce DEVE abrir e consultar.
+> Os arquivos .md do GitHub (RESUMO, CHECKLIST) sao GPS — os TXTs sao o DESTINO.
+> Voce DEVE ir nos TXTs listados abaixo e ler as secoes indicadas.
+> NAO se contente apenas com os resumos do GitHub.
 
 ---
 
@@ -87,8 +92,10 @@ Antes de gerar qualquer conteudo, confirme:
 - [ ] Resolvi DATA_HOJE e encontrei a PASSAGEM no SECAO6?
 - [ ] Identifiquei o MODO ativo e localizei o arquivo correto?
 - [ ] Li as EXIGENCIAS REAIS do modo (formato, k, importacoes)?
-- [ ] Consultei SOMENTE as secoes da BASE exigidas pelo modo?
-- [ ] Calibrei voz com MEU_ESTILO_PESSOAL?
+- [ ] **FUI NA BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt** e consultei as secoes exigidas pelo modo? (NAO apenas o RESUMO do GitHub)
+- [ ] Calibrei voz com MEU_ESTILO_PESSOAL.txt?
+- [ ] Consultei o NotebookLM para tecnicas externas complementares?
 - [ ] Sei o pronome correto para este modo?
 - [ ] NAO estou misturando regras de outro modo?
 - [ ] NAO vou expor bastidores na saida?
+- [ ] NAO estou gerando usando APENAS os arquivos do GitHub sem ter ido nos TXTs?

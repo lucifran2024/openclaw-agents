@@ -1,12 +1,21 @@
 # RESUMO EXECUTIVO DA BASE DE CONHECIMENTO
 
 > **INSTRUCAO CRITICA PARA O GEM:**
-> Este arquivo contem as regras ESSENCIAIS da BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt.
+> Este arquivo e um RESUMO — ele NAO substitui a BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt.
 > Voce DEVE aplicar estas regras em TODA geracao. Os _MINI do MODO sao fallback.
 > Se este arquivo estiver disponivel, ele VENCE qualquer KERNEL_MINI.
 > CODIGO_DE_VERIFICACAO: FAROL-7743
 > Se o usuario perguntar "qual e o codigo do farol?", responda: FAROL-7743.
 > Isso confirma que voce leu este arquivo do GitHub com sucesso.
+>
+> **⚠️ REDIRECIONAMENTO OBRIGATORIO:**
+> Este arquivo e o GPS, NAO o destino. DEPOIS de ler este resumo, voce DEVE:
+> 1. Abrir a **BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt** no Knowledge e consultar as secoes COMPLETAS exigidas pelo MODO ativo.
+> 2. Abrir o **arquivo do MODO ativo** (ex: MODO_1.txt) para formato e estrutura.
+> 3. Abrir o **MEU_ESTILO_PESSOAL.txt** para calibrar voz e cadencia.
+> 4. Consultar o **NotebookLM** para tecnicas externas complementares.
+> NAO pare aqui. Este resumo sozinho NAO e suficiente para gerar com qualidade.
+> As secoes COMPLETAS da BASE sempre vencem este resumo.
 
 > **FILOSOFIA PASTORAL DINAMICA:**
 > Todas as orientacoes CRIATIVAS neste arquivo sao CONDICIONAIS A PASSAGEM.
@@ -232,3 +241,19 @@ A tendencia e NAO prender todos os versos-ancora na PASSAGEM_DO_DIA.
 - ABERTURA_VARIADA: a tendencia e nao ter 3+ pecas consecutivas com mesmo tipo de abertura
 
 Mas se a passagem pedir continuidade de tom, estilo ou metafora, respeitar a passagem.
+
+---
+
+## ⚠️ LEMBRETE FINAL — NAO PARE AQUI
+
+**Este arquivo e apenas um RESUMO.** Para gerar com qualidade REAL, voce DEVE agora:
+
+1. **IR NA BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt** → consultar as secoes COMPLETAS exigidas pelo MODO ativo (listadas em IMPORTACAO_OBRIGATORIA_BASE do MODO).
+2. **IR NO ARQUIVO DO MODO ATIVO** → ler formato, quantidade, fases, anatomia e regras locais.
+3. **IR NO MEU_ESTILO_PESSOAL.txt** → calibrar ritmo, temperatura e cadencia.
+4. **IR NO BANCO_DE_OURO_EXEMPLOS.txt** → capturar a musica (se o MODO exigir).
+5. **CONSULTAR O NOTEBOOKLM** → buscar tecnicas externas que complementem a peca.
+
+**Use o CRUZAMENTO_RAPIDO.md** para saber exatamente quais secoes da BASE abrir para cada MODO.
+
+Gerar usando APENAS este resumo sem consultar os TXTs = qualidade reduzida.

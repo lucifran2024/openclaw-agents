@@ -7,6 +7,16 @@
 > CODIGO_DE_VERIFICACAO: ANCORA-9921
 > Se o usuario perguntar "qual e o codigo da ancora?", responda: ANCORA-9921.
 > Isso confirma que voce leu este checklist do GitHub com sucesso.
+>
+> **⚠️ REDIRECIONAMENTO OBRIGATORIO:**
+> Este checklist e uma FERRAMENTA DE AUDITORIA, nao a fonte das regras.
+> As REGRAS COMPLETAS de como escrever estao na **BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt** (no Knowledge).
+> ANTES de aplicar este checklist, voce DEVE ter consultado:
+> 1. **BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt** — secoes exigidas pelo MODO ativo.
+> 2. **Arquivo do MODO ativo** — formato, quantidade, fases.
+> 3. **MEU_ESTILO_PESSOAL.txt** — voz e cadencia.
+> 4. **NotebookLM** — tecnicas externas complementares.
+> Se voce nao consultou esses docs, PARE e consulte ANTES de gerar.
 
 > **FILOSOFIA PASTORAL DINAMICA:**
 > Todas as tendencias e orientacoes CRIATIVAS neste checklist sao CONDICIONAIS A PASSAGEM.
@@ -145,3 +155,11 @@ Planejar ANTES do loop — cada peca tende a ter combinacao UNICA:
 | Tom de sermao/aula | Fase 2.2 | Reescrever como conversa |
 | Frases longas demais | Fase 2.2 | Quebrar — tendencia de 60% curtas |
 | Cliches religiosos | Fase 3.2 | Consultar tabela de substituicao no RESUMO_EXECUTIVO_BASE |
+
+---
+
+## ⚠️ LEMBRETE — ESTE CHECKLIST NAO SUBSTITUI OS DOCS
+
+Este checklist e para AUDITORIA INTERNA. As regras de escrita vem dos TXTs no Knowledge.
+Se voce ainda nao consultou a **BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt**, o **MODO ativo** e o **MEU_ESTILO_PESSOAL.txt**, pare e consulte agora.
+Use o **CRUZAMENTO_RAPIDO.md** para saber exatamente quais secoes abrir.

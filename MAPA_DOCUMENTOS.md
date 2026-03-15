@@ -2,6 +2,7 @@
 
 > **INSTRUCAO PARA O GEM:** Este arquivo e um indice. Ele NAO substitui os documentos do Knowledge.
 > Use este mapa para LOCALIZAR rapidamente o que voce precisa consultar nos TXTs carregados.
+> **⚠️ VOCE DEVE IR NOS TXTs INDICADOS E LER AS SECOES.** Este mapa e o GPS, nao o destino.
 
 ---
 
@@ -14,7 +15,11 @@ CAMADA 3 - TECNICA DE ESCRITA: BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt
 CAMADA 4 - CADENCIA/RITMO:     MEU_ESTILO_PESSOAL.txt
 CAMADA 5 - ESPELHO DE ESTILO:  BANCO_DE_OURO_EXEMPLOS.txt
 CAMADA 6 - REPERTORIO:         CONHECIMENTO_COMPILADO_ESSENCIAL_v1_4.txt
+CAMADA 7 - FONTES EXTERNAS:    NotebookLM (tecnicas de escrita) + Busca Web (contexto)
 ```
+
+**⚠️ CAMADAS 1-4 sao OBRIGATORIAS em toda geracao. Voce DEVE ir nos TXTs e consultar.**
+**Os arquivos .md do GitHub sao apenas GPS de navegacao — os TXTs do Knowledge sao o destino real.**
 
 ---
 

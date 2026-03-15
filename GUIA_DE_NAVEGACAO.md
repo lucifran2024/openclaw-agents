@@ -2,6 +2,10 @@
 
 > **VOCE (GEM) DEVE LER ESTE ARQUIVO ANTES DE QUALQUER GERACAO.**
 > Ele ensina como consultar os documentos do Knowledge de forma eficiente.
+>
+> **⚠️ ATENCAO:** Este guia e um MAPA DE NAVEGACAO. Ele NAO substitui os documentos reais.
+> Voce DEVE ir nos TXTs do Knowledge e consultar as secoes indicadas.
+> Ler apenas os arquivos do GitHub SEM consultar os TXTs = qualidade reduzida.
 
 ---
 
@@ -40,11 +44,13 @@
 3. Leia APENAS a secao do modo pedido dentro do arquivo.
 4. Identifique: formato, quantidade (k=?), importacoes obrigatorias da BASE.
 
-### PASSO 3 - CONSULTAR A BASE (somente o necessario)
+### PASSO 3 - CONSULTAR A BASE (OBRIGATORIO — NAO PULAR)
 1. O MODO ativo vai listar quais secoes da BASE sao obrigatorias (ex: S3.7, S3.12, S3.20)
-2. Abra **BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt**
-3. Consulte SOMENTE as secoes listadas pelo modo
-4. **PROIBIDO varrer a BASE inteira.** Use o indice S0.99 para localizar rapidamente.
+2. **VA AGORA na BASE_DE_CONHECIMENTO_UNIFICADA_v2.txt** no Knowledge e ABRA as secoes exigidas
+3. Consulte SOMENTE as secoes listadas pelo modo — use o indice S0.99 para localizar
+4. **Este passo e INEGOCIAVEL.** O RESUMO_EXECUTIVO_BASE.md (GitHub) e apenas um lembrete das regras.
+   As secoes COMPLETAS da BASE no Knowledge sao mais ricas e detalhadas.
+   Se voce pular este passo, a qualidade da geracao vai cair.
 
 ### PASSO 4 - CALIBRAR A VOZ
 1. Consulte **MEU_ESTILO_PESSOAL.txt** para ritmo e cadencia
@@ -55,6 +61,13 @@
 1. Se o modo permitir e fizer sentido, consulte **CONHECIMENTO_COMPILADO_ESSENCIAL_v1_4.txt**
 2. **Maximo:** 0-1 ingrediente forte por geracao
 3. **O CCE sempre perde em conflito** com qualquer outro documento
+
+### PASSO 6 - FONTES EXTERNAS (NotebookLM + Web)
+1. Consulte o **NotebookLM** para buscar tecnicas externas que complementem a peca
+   (copywriting emocional, homiletica narrativa, retorica biblica, storytelling curto, escrita contemplativa)
+2. Se precisar de contexto adicional (historico, hebraico/grego, referencia biblica), use **busca web**
+3. **Maximo:** 1-2 tecnicas externas por peca, integradas de forma organica
+4. **Hierarquia:** PASSAGEM > MODO > BASE > ESTILO > NotebookLM/Web
 
 ---
 
@@ -78,6 +91,12 @@
 ### "Preciso de um VERSICULO ou TEMA complementar"
 → CONHECIMENTO_COMPILADO_ESSENCIAL_v1_4.txt (opcional, subordinado)
 
+### "Preciso de TECNICAS DE ESCRITA novas ou complementares"
+→ NotebookLM (fontes externas de copywriting, homiletica, retorica biblica)
+
+### "Preciso de CONTEXTO HISTORICO ou significado hebraico/grego"
+→ Busca web (apoio, nunca autoridade)
+
 ### "Preciso ver EXEMPLOS reais do autor"
 → FAVORITAS.txt (DNA do que o autor gosta)
 → EXEMPLOS_MODO_31.txt (exemplos especificos para M3.5)
@@ -98,7 +117,7 @@ Se dois documentos dizem coisas diferentes:
 
 ---
 
-## PROIBICOES ABSOLUTAS
+## TRAVAS TECNICAS (estas sim sao fixas)
 
 1. **NAO** leia o SECAO6 inteiro - so a linha do dia
 2. **NAO** varra a BASE inteira - so as secoes exigidas pelo modo
@@ -108,6 +127,7 @@ Se dois documentos dizem coisas diferentes:
 6. **NAO** exponha bastidores, logs, nomes de secoes ou raciocinio interno
 7. **NAO** reduza o lote por conveniencia (se o modo pede 15, entregue 15)
 8. **NAO** carregue exigencias de um modo para outro
+9. **NAO** gere usando APENAS os arquivos do GitHub sem consultar os TXTs do Knowledge
 
 ---
 
