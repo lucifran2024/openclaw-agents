@@ -112,7 +112,8 @@ Se dois documentos dizem coisas diferentes:
 | Conteudo/Tema/Tese | SECAO6.txt (passagem) vence TUDO |
 | Formato/Estrutura/Quantidade | MODO ativo vence |
 | Regras gerais de redacao | BASE_DE_CONHECIMENTO vence |
-| Estilo/Cadencia/Voz | MEU_ESTILO_PESSOAL vence a Base |
+| Regras de escrita (voz, anti-cliche, conflito, lexico) | BASE_DE_CONHECIMENTO vence (OBRIGATORIA) |
+| Calibracao fina de ritmo e cadencia | MEU_ESTILO_PESSOAL complementa a Base (so DEPOIS de consultar a BASE) |
 | Exemplos e favoritos | NUNCA governam, apenas espelham |
 
 ---
