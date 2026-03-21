@@ -189,7 +189,16 @@ export class SchedulingController {
     @CurrentTenant() tenantId: string,
     @Query() query: AvailabilityQueryDto,
   ) {
-    return this.availabilityService.getAvailableSlots(tenantId, query);
+    const rawSlots = await this.availabilityService.getAvailableSlots(tenantId, query);
+    return {
+      slots: rawSlots.map((s) => ({
+        startAt: s.start,
+        endAt: s.end,
+        available: true,
+        resourceId: s.resourceId,
+        resourceName: s.resourceName,
+      })),
+    };
   }
 
   // ── Appointments ───────────────────────────────────────────────

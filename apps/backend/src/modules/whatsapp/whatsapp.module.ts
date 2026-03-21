@@ -18,6 +18,7 @@ import { WhatsAppAdminController } from './whatsapp-admin.controller';
 import { EvolutionAdminController } from './evolution-admin.controller';
 import { shouldRegisterQueueProcessors } from '../../common/runtime/app-runtime';
 import { InboxModule } from '../inbox/inbox.module';
+import { ContactsModule } from '../contacts/contacts.module';
 
 const whatsappWorkerProviders = [WebhookProcessorWorker, OutboundProcessorWorker];
 
@@ -33,6 +34,7 @@ const whatsappWorkerProviders = [WebhookProcessorWorker, OutboundProcessorWorker
       { name: 'whatsapp_webhook' },
     ),
     InboxModule,
+    ContactsModule,
   ],
   controllers: [
     WhatsAppWebhookController,

@@ -8,6 +8,7 @@ import { WindowTrackerService } from '../window-tracker.service';
 import { QualityRating, WhatsAppAccountEntity, WhatsAppProvider, AccountStatus } from '../whatsapp-account.entity';
 import { ConversationService } from '../../inbox/conversation.service';
 import { MessageService } from '../../inbox/message.service';
+import { ContactService } from '../../contacts/contact.service';
 import { ConversationChannel } from '../../inbox/conversation.entity';
 import { MessageSenderType, MessageContentType, MessageStatus } from '../../inbox/message.entity';
 
@@ -28,6 +29,7 @@ export class WebhookProcessorWorker extends WorkerHost {
     private readonly windowTracker: WindowTrackerService,
     private readonly conversationService: ConversationService,
     private readonly messageService: MessageService,
+    private readonly contactService: ContactService,
   ) {
     super();
   }
@@ -214,6 +216,18 @@ export class WebhookProcessorWorker extends WorkerHost {
       timestamp: Date;
     },
   ) {
+    // Find or create contact by phone number
+    let contact = await this.contactService.findByPhone(tenantId, params.contactPhone);
+    if (!contact) {
+      contact = await this.contactService.create(tenantId, {
+        name: params.contactPhone,
+        phone: params.contactPhone,
+        whatsappId: params.contactPhone,
+        source: 'whatsapp',
+      } as any);
+      this.logger.log(`Created contact ${contact.id} for phone ${params.contactPhone}`);
+    }
+
     // Find or create conversation
     let conversation = await this.conversationService.findByChannelId(
       tenantId,
@@ -223,7 +237,7 @@ export class WebhookProcessorWorker extends WorkerHost {
 
     if (!conversation) {
       conversation = await this.conversationService.create(tenantId, {
-        contactId: params.contactPhone,
+        contactId: contact.id,
         channel: ConversationChannel.WHATSAPP,
         channelId: params.channelId,
       });
