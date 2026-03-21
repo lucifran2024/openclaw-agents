@@ -1,6 +1,6 @@
 import { Processor, WorkerHost } from '@nestjs/bullmq';
 import { Logger } from '@nestjs/common';
-import { EntityManager } from '@mikro-orm/core';
+import { EntityManager, CreateRequestContext } from '@mikro-orm/core';
 import { Job } from 'bullmq';
 import { WhatsAppCloudAdapter } from '../whatsapp-cloud.adapter';
 import { EvolutionApiAdapter } from '../evolution-api.adapter';
@@ -27,6 +27,7 @@ export class OutboundProcessorWorker extends WorkerHost {
     super();
   }
 
+  @CreateRequestContext()
   async process(job: Job<OutboundJobData>): Promise<void> {
     const { tenantId, phoneNumberId, accessToken, to, type, content } = job.data;
 

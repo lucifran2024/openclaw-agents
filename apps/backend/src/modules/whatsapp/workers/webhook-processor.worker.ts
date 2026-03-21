@@ -1,6 +1,6 @@
 import { Processor, WorkerHost } from '@nestjs/bullmq';
 import { Logger, Inject, forwardRef } from '@nestjs/common';
-import { EntityManager } from '@mikro-orm/core';
+import { EntityManager, CreateRequestContext } from '@mikro-orm/core';
 import { Job } from 'bullmq';
 import { WebhookEventEntity } from '../webhook-event.entity';
 import { QualityMonitorService } from '../quality-monitor.service';
@@ -34,6 +34,7 @@ export class WebhookProcessorWorker extends WorkerHost {
     super();
   }
 
+  @CreateRequestContext()
   async process(job: Job<WebhookJobData>): Promise<void> {
     const { eventId, tenantId, eventType, payload } = job.data;
 
