@@ -1,0 +1,47 @@
+{
+  "name": "@repo/frontend",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "prebuild": "pnpm --filter @repo/shared build",
+    "dev": "next dev -p 3000",
+    "build": "next build",
+    "start": "next start -p 3000",
+    "lint": "next lint",
+    "clean": "rimraf .next"
+  },
+  "dependencies": {
+    "@dnd-kit/core": "^6.3.1",
+    "@dnd-kit/sortable": "^10.0.0",
+    "@dnd-kit/utilities": "^3.2.2",
+    "@repo/shared": "workspace:*",
+    "@tanstack/react-query": "^5.67.0",
+    "@tanstack/react-table": "^8.21.2",
+    "clsx": "^2.1.1",
+    "cmdk": "^1.1.1",
+    "date-fns": "^4.1.0",
+    "lucide-react": "^0.577.0",
+    "next": "^15.1.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "reactflow": "^11.11.4",
+    "recharts": "^2.15.2",
+    "socket.io-client": "^4.8.3",
+    "tailwind-merge": "^3.5.0",
+    "zod": "^3.24.2",
+    "zustand": "^5.0.3"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.58.2",
+    "@repo/tsconfig": "workspace:*",
+    "@tailwindcss/postcss": "^4.2.2",
+    "@types/node": "^22.13.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "autoprefixer": "^10.4.27",
+    "postcss": "^8.5.8",
+    "rimraf": "^6.0.1",
+    "tailwindcss": "^4.2.2",
+    "typescript": "^5.7.3"
+  }
+}

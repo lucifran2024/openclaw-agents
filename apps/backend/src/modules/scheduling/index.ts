@@ -1,0 +1,12 @@
+export { SchedulingModule } from './scheduling.module';
+export { SchedulingService } from './scheduling.service';
+export { AvailabilityService } from './availability.service';
+export type { TimeSlot } from './availability.service';
+export { AppointmentService } from './appointment.service';
+export { WaitlistService } from './waitlist.service';
+export { ServiceTypeEntity } from './entities/service-type.entity';
+export { ResourceEntity, ResourceType } from './entities/resource.entity';
+export { ScheduleRuleEntity } from './entities/schedule-rule.entity';
+export { ScheduleExceptionEntity, ScheduleExceptionType } from './entities/schedule-exception.entity';
+export { AppointmentEntity, AppointmentStatus } from './entities/appointment.entity';
+export { WaitlistEntity, WaitlistStatus } from './entities/waitlist.entity';
