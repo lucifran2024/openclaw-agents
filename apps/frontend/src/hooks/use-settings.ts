@@ -52,6 +52,8 @@ export interface UpdateUserDto {
 
 export interface WhatsAppAccount {
   id: string;
+  provider?: 'meta' | 'evolution';
+  evolutionInstanceName?: string;
   wabaId: string;
   phoneNumberId: string;
   phoneNumber: string;
@@ -62,6 +64,37 @@ export interface WhatsAppAccount {
   webhookSecret?: string;
   capabilities: Record<string, unknown>;
   createdAt: string;
+}
+
+export interface EvolutionInstance {
+  id: string;
+  instanceName: string;
+  displayName: string;
+  phoneNumber: string;
+  status: 'active' | 'inactive' | 'pending';
+  provider: 'evolution';
+  evolutionInstanceName: string;
+  createdAt: string;
+}
+
+export interface EvolutionConnectionStatus {
+  id: string;
+  instanceName: string;
+  displayName: string;
+  phoneNumber: string;
+  accountStatus: 'active' | 'inactive' | 'pending';
+  connection: {
+    connected: boolean;
+    state: 'open' | 'close' | 'connecting' | 'unknown';
+    phoneNumber?: string;
+    name?: string;
+  };
+}
+
+export interface EvolutionQrCode {
+  instanceName: string;
+  qrCode: string;
+  pairingCode?: string;
 }
 
 export interface CreateWhatsAppAccountDto {
@@ -372,6 +405,94 @@ export function useSyncWhatsAppTemplates() {
     },
     onSuccess: () => {
       queryClient.invalidateQueries({ queryKey: ['settings', 'whatsapp', 'templates'] });
+    },
+  });
+}
+
+// ─── Evolution API hooks ─────────────────────────────────────
+
+export function useEvolutionInstances() {
+  return useQuery({
+    queryKey: ['settings', 'whatsapp', 'evolution', 'instances'],
+    queryFn: async () => {
+      const res = await apiClient.get<WhatsAppAccount[]>('/whatsapp/evolution/instances');
+      return res.data;
+    },
+  });
+}
+
+export function useCreateEvolutionInstance() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: async (data: { displayName: string; phoneNumber?: string }) => {
+      const res = await apiClient.post<{ id: string; instanceName: string; status: string; message: string }>(
+        '/whatsapp/evolution/instances',
+        data,
+      );
+      return res.data;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['settings', 'whatsapp', 'evolution'] });
+      queryClient.invalidateQueries({ queryKey: ['settings', 'whatsapp', 'accounts'] });
+    },
+  });
+}
+
+export function useEvolutionQrCode(instanceId: string | null) {
+  return useQuery({
+    queryKey: ['settings', 'whatsapp', 'evolution', 'qr', instanceId],
+    queryFn: async () => {
+      const res = await apiClient.get<EvolutionQrCode>(
+        `/whatsapp/evolution/instances/${instanceId}/qr`,
+      );
+      return res.data;
+    },
+    enabled: !!instanceId,
+    refetchInterval: 15000, // Refresh QR every 15 seconds
+  });
+}
+
+export function useEvolutionStatus(instanceId: string | null) {
+  return useQuery({
+    queryKey: ['settings', 'whatsapp', 'evolution', 'status', instanceId],
+    queryFn: async () => {
+      const res = await apiClient.get<EvolutionConnectionStatus>(
+        `/whatsapp/evolution/instances/${instanceId}/status`,
+      );
+      return res.data;
+    },
+    enabled: !!instanceId,
+    refetchInterval: 5000, // Check status every 5 seconds
+  });
+}
+
+export function useDeleteEvolutionInstance() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: async (id: string) => {
+      await apiClient.delete(`/whatsapp/evolution/instances/${id}`);
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['settings', 'whatsapp', 'evolution'] });
+      queryClient.invalidateQueries({ queryKey: ['settings', 'whatsapp', 'accounts'] });
+    },
+  });
+}
+
+export function useReconnectEvolutionInstance() {
+  const queryClient = useQueryClient();
+
+  return useMutation({
+    mutationFn: async (id: string) => {
+      const res = await apiClient.post<EvolutionQrCode>(
+        `/whatsapp/evolution/instances/${id}/reconnect`,
+      );
+      return res.data;
+    },
+    onSuccess: () => {
+      queryClient.invalidateQueries({ queryKey: ['settings', 'whatsapp', 'evolution'] });
     },
   });
 }

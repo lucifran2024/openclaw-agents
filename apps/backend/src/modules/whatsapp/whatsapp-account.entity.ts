@@ -13,10 +13,22 @@ export enum AccountStatus {
   PENDING = 'pending',
 }
 
+export enum WhatsAppProvider {
+  META = 'meta',
+  EVOLUTION = 'evolution',
+}
+
 @Entity({ tableName: 'whatsapp_accounts' })
 @Index({ properties: ['tenantId', 'phoneNumberId'] })
 @Index({ properties: ['tenantId', 'status'] })
+@Index({ properties: ['tenantId', 'provider'] })
 export class WhatsAppAccountEntity extends TenantBaseEntity {
+  @Enum({ items: () => WhatsAppProvider, default: WhatsAppProvider.META })
+  provider: WhatsAppProvider = WhatsAppProvider.META;
+
+  @Property({ type: 'varchar', length: 255, nullable: true })
+  evolutionInstanceName?: string;
+
   @Property({ type: 'varchar', length: 100 })
   wabaId!: string;
 
