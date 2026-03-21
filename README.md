@@ -7,7 +7,8 @@ Monorepo da plataforma SaaS multi-tenant de atendimento, operacao e automacao om
 - `apps/frontend`: frontend em Next.js
 - `apps/backend`: backend em NestJS
 - `packages/shared`: tipos e utilitarios compartilhados
-- `infra/docker`: stack Docker para desenvolvimento e certificacao local
+- `infra/docker`: stack Docker para desenvolvimento local
+- `infra/deploy`: contratos de ambiente para Vercel e Railway
 
 ## Stack principal
 
@@ -19,18 +20,30 @@ Monorepo da plataforma SaaS multi-tenant de atendimento, operacao e automacao om
 
 ## Workspace
 
-Este repositório usa `pnpm` workspaces.
+Este repositorio usa `pnpm` workspaces.
 
-### Comandos úteis
+## Comandos uteis
 
 ```bash
 pnpm install
-pnpm --filter @repo/frontend build
-pnpm --filter @repo/backend build
+pnpm build:frontend
+pnpm build:backend
+pnpm migration:up
 ```
+
+## Deploy alvo
+
+- Frontend em Vercel
+- Backend API em Railway
+- Workers BullMQ em Railway
+- PostgreSQL em Railway
+- Redis em Railway
+
+Guia operacional: [DEPLOY_VERCEL_RAILWAY.md](/Users/dj_Lu/whatsapp-post-tool/DEPLOY_VERCEL_RAILWAY.md)
 
 ## Estado atual
 
-- Fase 1 e Fase 2 concluídas
-- Fase 3 implementada em código
-- Deploy alvo em adaptação para frontend na Vercel e backend/workers em Railway
+- Fase 1 e Fase 2 concluidas
+- Fase 3 implementada em codigo
+- Repositorio oficial ja publicado em `main`
+- Proxima etapa operacional: publicacao em Vercel + Railway

@@ -7,6 +7,9 @@ import { DashboardService } from './dashboard.service';
 import { KpiMaterializationService } from './kpi-materialization.service';
 import { KpiMaterializationWorker } from './workers/kpi-materialization.worker';
 import { DashboardController } from './dashboard.controller';
+import { shouldRegisterQueueProcessors } from '../../common/runtime/app-runtime';
+
+const dashboardWorkerProviders = [KpiMaterializationWorker];
 
 @Module({
   imports: [
@@ -22,7 +25,7 @@ import { DashboardController } from './dashboard.controller';
   providers: [
     DashboardService,
     KpiMaterializationService,
-    KpiMaterializationWorker,
+    ...(shouldRegisterQueueProcessors() ? dashboardWorkerProviders : []),
   ],
   exports: [DashboardService],
 })

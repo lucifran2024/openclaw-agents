@@ -14,6 +14,9 @@ import { WaitlistService } from './waitlist.service';
 import { ReminderWorker } from './workers/reminder.worker';
 import { WaitlistWorker } from './workers/waitlist.worker';
 import { SchedulingController } from './scheduling.controller';
+import { shouldRegisterQueueProcessors } from '../../common/runtime/app-runtime';
+
+const schedulingWorkerProviders = [ReminderWorker, WaitlistWorker];
 
 @Module({
   imports: [
@@ -36,8 +39,7 @@ import { SchedulingController } from './scheduling.controller';
     AvailabilityService,
     AppointmentService,
     WaitlistService,
-    ReminderWorker,
-    WaitlistWorker,
+    ...(shouldRegisterQueueProcessors() ? schedulingWorkerProviders : []),
   ],
   exports: [
     SchedulingService,

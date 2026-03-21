@@ -16,6 +16,9 @@ import { AiPipelineService } from './ai-pipeline.service';
 import { AiChatbotController } from './ai-chatbot.controller';
 import { AiPipelineWorker } from './workers/ai-pipeline.worker';
 import { EmbeddingWorker } from './workers/embedding.worker';
+import { shouldRegisterQueueProcessors } from '../../common/runtime/app-runtime';
+
+const aiWorkerProviders = [AiPipelineWorker, EmbeddingWorker];
 
 @Module({
   imports: [
@@ -46,8 +49,7 @@ import { EmbeddingWorker } from './workers/embedding.worker';
     KnowledgeService,
     KnowledgeCaptureService,
     AiPipelineService,
-    AiPipelineWorker,
-    EmbeddingWorker,
+    ...(shouldRegisterQueueProcessors() ? aiWorkerProviders : []),
   ],
   exports: [AiPipelineService, RagService, KnowledgeService, EmbeddingService],
 })

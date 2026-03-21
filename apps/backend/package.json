@@ -2,12 +2,16 @@
   "name": "@repo/backend",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": ">=20 <23"
+  },
   "scripts": {
     "prebuild": "pnpm --filter @repo/shared build",
     "build": "nest build",
     "dev": "nest start --watch",
     "prestart": "pnpm --filter @repo/shared build",
-    "start": "node dist/main",
+    "start": "node dist/main.js",
+    "start:worker": "node dist/main.worker.js",
     "start:debug": "nest start --debug --watch",
     "lint": "eslint \"{src,test}/**/*.ts\"",
     "test": "jest",

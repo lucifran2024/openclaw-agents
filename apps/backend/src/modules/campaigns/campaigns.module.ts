@@ -14,6 +14,13 @@ import { CampaignSenderWorker } from './workers/campaign-sender.worker';
 import { CampaignDlqWorker } from './workers/campaign-dlq.worker';
 import { WhatsAppModule } from '../whatsapp/whatsapp.module';
 import { RedisModule } from '../../common/redis/redis.module';
+import { shouldRegisterQueueProcessors } from '../../common/runtime/app-runtime';
+
+const campaignWorkerProviders = [
+  CampaignDispatcherWorker,
+  CampaignSenderWorker,
+  CampaignDlqWorker,
+];
 
 @Module({
   imports: [
@@ -42,9 +49,7 @@ import { RedisModule } from '../../common/redis/redis.module';
     CampaignService,
     CampaignGovernorService,
     SuppressionService,
-    CampaignDispatcherWorker,
-    CampaignSenderWorker,
-    CampaignDlqWorker,
+    ...(shouldRegisterQueueProcessors() ? campaignWorkerProviders : []),
   ],
   exports: [CampaignService, CampaignGovernorService, SuppressionService],
 })

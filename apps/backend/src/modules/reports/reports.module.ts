@@ -8,6 +8,9 @@ import { ReportService } from './report.service';
 import { ExportService } from './export.service';
 import { ReportsController } from './reports.controller';
 import { ExportWorker } from './workers/export.worker';
+import { shouldRegisterQueueProcessors } from '../../common/runtime/app-runtime';
+
+const reportWorkerProviders = [ExportWorker];
 
 @Module({
   imports: [
@@ -25,7 +28,11 @@ import { ExportWorker } from './workers/export.worker';
     }),
   ],
   controllers: [ReportsController],
-  providers: [ReportService, ExportService, ExportWorker],
+  providers: [
+    ReportService,
+    ExportService,
+    ...(shouldRegisterQueueProcessors() ? reportWorkerProviders : []),
+  ],
   exports: [ReportService, ExportService],
 })
 export class ReportsModule {}

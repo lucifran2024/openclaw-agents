@@ -3,12 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "packageManager": "pnpm@9.15.4",
+  "engines": {
+    "node": ">=20 <23"
+  },
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "build:frontend": "pnpm --filter @repo/frontend build",
+    "build:backend": "pnpm --filter @repo/backend build",
     "lint": "turbo run lint",
     "test": "turbo run test",
     "test:integration": "turbo run test:integration",
+    "start:backend": "pnpm --filter @repo/backend start",
+    "start:worker": "pnpm --filter @repo/backend start:worker",
+    "migration:up": "pnpm --filter @repo/backend migration:up",
     "clean": "turbo run clean",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\""
   },

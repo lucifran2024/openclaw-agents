@@ -1,17 +1,20 @@
 export const CORE_RUNTIME_ENV_KEYS = [
-  'DATABASE_HOST',
-  'DATABASE_PORT',
-  'DATABASE_NAME',
-  'DATABASE_USER',
-  'DATABASE_PASSWORD',
-  'REDIS_HOST',
-  'REDIS_PORT',
   'JWT_SECRET',
   'JWT_REFRESH_SECRET',
   'OPENAI_API_KEY',
   'BACKEND_URL',
   'FRONTEND_URL',
 ] as const;
+
+const DATABASE_ENV_KEYS = [
+  'DATABASE_HOST',
+  'DATABASE_PORT',
+  'DATABASE_NAME',
+  'DATABASE_USER',
+  'DATABASE_PASSWORD',
+] as const;
+
+const REDIS_ENV_KEYS = ['REDIS_HOST', 'REDIS_PORT'] as const;
 
 export const CONDITIONAL_RUNTIME_ENV_GROUPS = [
   {
@@ -45,10 +48,18 @@ function isMissing(value: unknown) {
 
 export function validateRuntimeEnv(config: Record<string, unknown>) {
   const missingCore = CORE_RUNTIME_ENV_KEYS.filter((key) => isMissing(config[key]));
+  const hasDatabaseUrl = !isMissing(config.DATABASE_URL);
+  const hasRedisUrl = !isMissing(config.REDIS_URL);
+  const missingDatabase = hasDatabaseUrl
+    ? []
+    : DATABASE_ENV_KEYS.filter((key) => isMissing(config[key]));
+  const missingRedis = hasRedisUrl ? [] : REDIS_ENV_KEYS.filter((key) => isMissing(config[key]));
 
-  if (missingCore.length) {
+  const missing = [...missingCore, ...missingDatabase, ...missingRedis];
+
+  if (missing.length) {
     throw new Error(
-      `Missing required runtime environment variables: ${missingCore.join(', ')}. ` +
+      `Missing required runtime environment variables: ${missing.join(', ')}. ` +
         'See .env.example and PHASE_3_CLOSURE.md for the Phase 3 runtime contract.',
     );
   }

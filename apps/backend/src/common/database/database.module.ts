@@ -11,11 +11,17 @@ import { TenantValidationSubscriber } from './tenant-validation.subscriber';
       driver: PostgreSqlDriver,
       useFactory: (config: ConfigService) => ({
         driver: PostgreSqlDriver,
+        clientUrl: config.get<string>('database.url'),
         host: config.get('database.host'),
         port: config.get('database.port'),
         dbName: config.get('database.name'),
         user: config.get('database.user'),
         password: config.get('database.password'),
+        driverOptions: {
+          connection: {
+            ssl: config.get('database.ssl') ? { rejectUnauthorized: false } : false,
+          },
+        },
         entities: ['./dist/modules/**/*.entity.js'],
         entitiesTs: ['./src/modules/**/*.entity.ts'],
         discovery: { warnWhenNoEntities: false },

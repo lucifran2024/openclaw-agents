@@ -12,6 +12,9 @@ import { WindowTrackerService } from './window-tracker.service';
 import { QualityMonitorService } from './quality-monitor.service';
 import { WebhookProcessorWorker } from './workers/webhook-processor.worker';
 import { WhatsAppAdminController } from './whatsapp-admin.controller';
+import { shouldRegisterQueueProcessors } from '../../common/runtime/app-runtime';
+
+const whatsappWorkerProviders = [WebhookProcessorWorker];
 
 @Module({
   imports: [
@@ -32,7 +35,7 @@ import { WhatsAppAdminController } from './whatsapp-admin.controller';
     TemplateService,
     WindowTrackerService,
     QualityMonitorService,
-    WebhookProcessorWorker,
+    ...(shouldRegisterQueueProcessors() ? whatsappWorkerProviders : []),
   ],
   exports: [WhatsAppSenderService, TemplateService, WindowTrackerService],
 })
