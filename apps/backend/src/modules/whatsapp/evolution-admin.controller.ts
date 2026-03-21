@@ -66,31 +66,44 @@ export class EvolutionAdminController {
     const webhookUrl = `${backendUrl}/api/v1/whatsapp/evolution-webhook`;
 
     // Create instance on Evolution API
-    const result = await this.evolutionAdapter.createInstance(instanceName, webhookUrl);
+    let result: { instanceName: string; status: string };
+    try {
+      result = await this.evolutionAdapter.createInstance(instanceName, webhookUrl);
+    } catch (error) {
+      this.logger.error(`Failed to create Evolution instance on API: ${(error as Error).message}`);
+      throw new BadRequestException(`Failed to create instance: ${(error as Error).message}`);
+    }
 
     // Save account to database
-    const account = this.em.create(WhatsAppAccountEntity, {
-      tenantId,
-      provider: WhatsAppProvider.EVOLUTION,
-      evolutionInstanceName: instanceName,
-      wabaId: `evo_${instanceName}`,
-      phoneNumberId: instanceName,
-      phoneNumber: body.phoneNumber || '',
-      displayName: body.displayName,
-      accessTokenEncrypted: 'evolution', // Not used for Evolution, but field is required
-      status: AccountStatus.PENDING,
-    } as any);
+    try {
+      const account = this.em.create(WhatsAppAccountEntity, {
+        tenantId,
+        provider: WhatsAppProvider.EVOLUTION,
+        evolutionInstanceName: instanceName,
+        wabaId: `evo_${instanceName}`,
+        phoneNumberId: instanceName,
+        phoneNumber: body.phoneNumber || '',
+        displayName: body.displayName,
+        accessTokenEncrypted: 'evolution', // Not used for Evolution, but field is required
+        status: AccountStatus.PENDING,
+      } as any);
 
-    await this.em.persistAndFlush(account);
+      await this.em.persistAndFlush(account);
 
-    this.logger.log(`Created Evolution instance: ${instanceName} for tenant ${tenantId}`);
+      this.logger.log(`Created Evolution instance: ${instanceName} for tenant ${tenantId}`);
 
-    return {
-      id: account.id,
-      instanceName,
-      status: result.status,
-      message: 'Instance created. Use GET /whatsapp/evolution/instances/:id/qr to get the QR code.',
-    };
+      return {
+        id: account.id,
+        instanceName,
+        status: result.status,
+        message: 'Instance created. Use GET /whatsapp/evolution/instances/:id/qr to get the QR code.',
+      };
+    } catch (error) {
+      this.logger.error(`Failed to save Evolution account to DB: ${(error as Error).message}`, (error as Error).stack);
+      // Try to cleanup the instance we created on Evolution API
+      try { await this.evolutionAdapter.deleteInstance(instanceName); } catch { /* ignore cleanup errors */ }
+      throw new BadRequestException(`Failed to save account: ${(error as Error).message}`);
+    }
   }
 
   @Get('instances/:id/qr')
