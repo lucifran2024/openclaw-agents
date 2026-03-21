@@ -44,8 +44,8 @@ export class WhatsAppAccountEntity extends TenantBaseEntity {
   @Enum({ items: () => QualityRating, default: QualityRating.GREEN })
   qualityRating: QualityRating = QualityRating.GREEN;
 
-  @Property({ type: 'varchar', length: 50, default: '1000' })
-  messagingTier: string = '1000';
+  @Property({ type: 'varchar', length: 50, default: '1K' })
+  messagingTier: string = '1K';
 
   @Enum({ items: () => AccountStatus, default: AccountStatus.PENDING })
   status: AccountStatus = AccountStatus.PENDING;
