@@ -35,10 +35,10 @@ export class WhatsAppAccountEntity extends TenantBaseEntity {
   @Property({ type: 'varchar', length: 100 })
   phoneNumberId!: string;
 
-  @Property({ type: 'varchar', length: 50 })
+  @Property({ type: 'varchar', length: 50, fieldName: 'display_phone' })
   phoneNumber!: string;
 
-  @Property({ type: 'varchar', length: 255 })
+  @Property({ type: 'varchar', length: 255, fieldName: 'verified_name' })
   displayName!: string;
 
   @Enum({ items: () => QualityRating, default: QualityRating.GREEN })
@@ -50,11 +50,8 @@ export class WhatsAppAccountEntity extends TenantBaseEntity {
   @Enum({ items: () => AccountStatus, default: AccountStatus.PENDING })
   status: AccountStatus = AccountStatus.PENDING;
 
-  @Property({ type: 'text' })
+  @Property({ type: 'text', fieldName: 'access_token' })
   accessTokenEncrypted!: string;
-
-  @Property({ type: 'varchar', length: 255, nullable: true })
-  webhookSecret?: string;
 
   @Property({ type: 'jsonb', default: '{}' })
   capabilities: Record<string, unknown> = {};
