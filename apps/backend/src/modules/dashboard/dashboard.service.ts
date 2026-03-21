@@ -55,58 +55,68 @@ export class DashboardService {
 
   async getOverview(tenantId: string): Promise<Record<string, any>> {
     const conn = this.em.getConnection();
-
-    const [conversationCounts] = await conn.execute<any[]>(
-      `SELECT
-         COUNT(*) FILTER (WHERE status = 'open') AS "openConversations",
-         COUNT(*) FILTER (WHERE status = 'pending') AS "pendingConversations"
-       FROM conversations
-       WHERE tenant_id = ?`,
-      [tenantId],
-    );
-
     const todayStart = new Date();
     todayStart.setHours(0, 0, 0, 0);
 
-    const [messageCounts] = await conn.execute<any[]>(
-      `SELECT COUNT(*) AS "todayMessages"
-       FROM messages
-       WHERE tenant_id = ? AND created_at >= ?`,
-      [tenantId, todayStart],
-    );
+    try {
+      const [conversationCounts] = await conn.execute<any[]>(
+        `SELECT
+           COUNT(*) FILTER (WHERE status = 'open') AS "openConversations",
+           COUNT(*) FILTER (WHERE status = 'pending') AS "pendingConversations"
+         FROM conversations
+         WHERE tenant_id = ?`,
+        [tenantId],
+      );
 
-    const [responseTimes] = await conn.execute<any[]>(
-      `SELECT
-         COALESCE(AVG(first_response_time_seconds), 0) AS "avgFrt",
-         COALESCE(AVG(avg_response_time_seconds), 0) AS "avgArt"
-       FROM conversations
-       WHERE tenant_id = ? AND status IN ('open', 'pending', 'resolved')
-         AND first_response_time_seconds IS NOT NULL
-         AND created_at >= ?`,
-      [tenantId, todayStart],
-    );
+      const [messageCounts] = await conn.execute<any[]>(
+        `SELECT COUNT(*) AS "todayMessages"
+         FROM messages
+         WHERE tenant_id = ? AND created_at >= ?`,
+        [tenantId, todayStart],
+      );
 
-    const [slaCounts] = await conn.execute<any[]>(
-      `SELECT
-         CASE WHEN COUNT(*) = 0 THEN 100
-         ELSE ROUND(
-           COUNT(*) FILTER (WHERE sla_breached = false)::numeric / COUNT(*)::numeric * 100,
-           2
-         )
-         END AS "slaCompliance"
-       FROM conversations
-       WHERE tenant_id = ? AND created_at >= ?`,
-      [tenantId, todayStart],
-    );
+      const [responseTimes] = await conn.execute<any[]>(
+        `SELECT
+           COALESCE(AVG(first_response_time_seconds), 0) AS "avgFrt",
+           COALESCE(AVG(avg_response_time_seconds), 0) AS "avgArt"
+         FROM conversations
+         WHERE tenant_id = ? AND status IN ('open', 'pending', 'resolved')
+           AND first_response_time_seconds IS NOT NULL
+           AND created_at >= ?`,
+        [tenantId, todayStart],
+      );
 
-    return {
-      openConversations: parseInt(conversationCounts?.openConversations ?? '0', 10),
-      pendingConversations: parseInt(conversationCounts?.pendingConversations ?? '0', 10),
-      avgFrt: parseFloat(responseTimes?.avgFrt ?? '0'),
-      avgArt: parseFloat(responseTimes?.avgArt ?? '0'),
-      slaCompliance: parseFloat(slaCounts?.slaCompliance ?? '100'),
-      todayMessages: parseInt(messageCounts?.todayMessages ?? '0', 10),
-    };
+      const [slaCounts] = await conn.execute<any[]>(
+        `SELECT
+           CASE WHEN COUNT(*) = 0 THEN 100
+           ELSE ROUND(
+             COUNT(*) FILTER (WHERE sla_breached = false)::numeric / COUNT(*)::numeric * 100,
+             2
+           )
+           END AS "slaCompliance"
+         FROM conversations
+         WHERE tenant_id = ? AND created_at >= ?`,
+        [tenantId, todayStart],
+      );
+
+      return {
+        openConversations: parseInt(conversationCounts?.openConversations ?? '0', 10),
+        pendingConversations: parseInt(conversationCounts?.pendingConversations ?? '0', 10),
+        avgFrt: parseFloat(responseTimes?.avgFrt ?? '0'),
+        avgArt: parseFloat(responseTimes?.avgArt ?? '0'),
+        slaCompliance: parseFloat(slaCounts?.slaCompliance ?? '100'),
+        todayMessages: parseInt(messageCounts?.todayMessages ?? '0', 10),
+      };
+    } catch {
+      return {
+        openConversations: 0,
+        pendingConversations: 0,
+        avgFrt: 0,
+        avgArt: 0,
+        slaCompliance: 100,
+        todayMessages: 0,
+      };
+    }
   }
 
   async getWidgetLayout(

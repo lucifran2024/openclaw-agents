@@ -30,7 +30,7 @@ export function DayView({
 }: DayViewProps) {
   const serviceTypeMap = useMemo(() => {
     const map = new Map<string, ServiceType>();
-    serviceTypes.forEach((st) => map.set(st.id, st));
+    (serviceTypes || []).forEach((st) => map.set(st.id, st));
     return map;
   }, [serviceTypes]);
 
